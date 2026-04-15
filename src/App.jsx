@@ -5,6 +5,7 @@ import Footer from "./components/layouts/Footer";
 import FloatingLogo from "./components/layouts/FloatingLogo";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Company from "./pages/Company";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/company" element ={<Company />} />
       </Routes>
 
       <Footer />

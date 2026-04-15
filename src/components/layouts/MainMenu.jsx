@@ -40,7 +40,7 @@ function MainMenu() {
 
             <ul className={`submenu ${submenu === "quienes" ? "show" : ""}`}>
               <li>
-                <Link to="/empresa">Nuestra Empresa</Link>
+                <Link to="/company">Nuestra Empresa</Link>
               </li>
               <li>
                 <Link to="/trabaje">Trabaje con Nosotros</Link>

@@ -117,7 +117,7 @@ function AboutSummary() {
         </div>
 
         <div className="about-summary__actions">
-          <Link to="/quienes-somos" className="about-summary__button">
+          <Link to="/about" className="about-summary__button">
             Conoce más de nosotros
           </Link>
         </div>
