@@ -1,9 +1,9 @@
-import logoCedicaf from "../../assets/iconos/logo-cedicaf.png";
-import logoDiaxme from "../../assets/iconos/logo-dioxme.png";
-import consultarCitaIcon from "../../assets/iconos/consultarita.png";
-import telefonoIcon from "../../assets/iconos/telefono.png";
-import resultadosIcon from "../../assets/iconos/resultados.png";
-import pseIcon from "../../assets/iconos/pse.png";
+import logoCedicaf from "../../assets/Iconos/logo-cedicaf.png";
+import logoDiaxme from "../../assets/Iconos/logo-dioxme.png";
+import consultarCitaIcon from "../../assets/Iconos/consultarita.png";
+import telefonoIcon from "../../assets/Iconos/telefono.png";
+import resultadosIcon from "../../assets/Iconos/resultados.png";
+import pseIcon from "../../assets/Iconos/pse.png";
 
 function Navbar() {
   return (

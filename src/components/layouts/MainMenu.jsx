@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logoRadiologos from "../../assets/iconos/logo-radiologos.png";
-import resonanciaIcon from "../../assets/iconos/resonancia.png";
+import logoRadiologos from "../../assets/Iconos/logo-radiologos.png";
+import resonanciaIcon from "../../assets/Iconos/resonancia.png";
 
 function MainMenu() {
   const [menuOpen, setMenuOpen] = useState(false);

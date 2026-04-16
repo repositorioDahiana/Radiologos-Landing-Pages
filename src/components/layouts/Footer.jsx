@@ -1,10 +1,10 @@
-import logo from "../../assets/iconos/logo-radiologos.png";
-import icontec from "../../assets/iconos/icontec.png";
-import iqnet from "../../assets/iconos/iqnet.png";
-import supersalud from "../../assets/iconos/supersalud.png";
-import telefono from "../../assets/iconos/telefono.png";
-import email from "../../assets/iconos/email.png";
-import ubicacion from "../../assets/iconos/ubicacion.png";
+import logo from "../../assets/Iconos/logo-radiologos.png";
+import icontec from "../../assets/Iconos/icontec.png";
+import iqnet from "../../assets/Iconos/iqnet.png";
+import supersalud from "../../assets/Iconos/supersalud.png";
+import telefono from "../../assets/Iconos/telefono.png";
+import email from "../../assets/Iconos/email.png";
+import ubicacion from "../../assets/Iconos/ubicacion.png";
 
 function Footer() {
   return (
