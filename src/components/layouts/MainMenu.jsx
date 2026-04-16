@@ -43,7 +43,7 @@ function MainMenu() {
                 <Link to="/company">Nuestra Empresa</Link>
               </li>
               <li>
-                <Link to="/trabaje">Trabaje con Nosotros</Link>
+                <Link to="/careers">Trabaje con Nosotros</Link>
               </li>
               <li>
                 <Link to="/especialistas">Especialistas</Link>

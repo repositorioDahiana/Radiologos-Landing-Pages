@@ -1,0 +1,123 @@
+import bienestarIcon from "../../assets/Iconos/bienestar.png";
+import formacionIcon from "../../assets/Iconos/formacion.png";
+import tecnologiaIcon from "../../assets/Iconos/paciente1.png";
+import estabilidadIcon from "../../assets/Iconos/estabilidad.png";
+import equipoIcon from "../../assets/Iconos/equipo.png";
+import crecimientoIcon from "../../assets/Iconos/crecimiento.png";
+
+function CareersBenefits() {
+  return (
+    <section className="careers-benefits">
+
+      <div className="careers-benefits__container">
+
+        {/* HEADER */}
+        <span className="careers-benefits__badge">
+          ¿Por qué elegirnos?
+        </span>
+
+        <h2 className="careers-benefits__title">
+          Beneficios de <span className="text-gradient-blue">trabajar con nosotros</span>
+        </h2>
+
+        <p className="careers-benefits__description">
+          Más que un empleo, te ofrecemos un proyecto de vida en una organización
+          comprometida con el bienestar de sus colaboradores.
+        </p>
+
+        {/* GRID */}
+        <div className="careers-benefits__grid">
+
+          {/* 1 */}
+          <div className="benefit-card benefit-card--blue">
+            <div className="benefit-card__header">
+              <div className="benefit-card__icon">
+                <img src={bienestarIcon} alt="Bienestar" />
+              </div>
+              <h3>Bienestar Integral</h3>
+            </div>
+            <p>
+              Programas de salud, bienestar y calidad de vida para ti y tu familia.
+              Tu salud es nuestra prioridad.
+            </p>
+          </div>
+
+          {/* 2 */}
+          <div className="benefit-card">
+            <div className="benefit-card__header">
+              <div className="benefit-card__icon">
+                <img src={formacionIcon} alt="Formación" />
+              </div>
+              <h3>Formación Continua</h3>
+            </div>
+            <p>
+              Acceso a capacitaciones, congresos médicos y programas de actualización
+              profesional permanente.
+            </p>
+          </div>
+
+          {/* 3 */}
+          <div className="benefit-card benefit-card--blue">
+            <div className="benefit-card__header">
+              <div className="benefit-card__icon">
+                <img src={tecnologiaIcon} alt="Tecnología" />
+              </div>
+              <h3>Tecnología de Punta</h3>
+            </div>
+            <p>
+              Trabaja con equipos de última generación en imágenes diagnósticas,
+              resonancia y cardiología.
+            </p>
+          </div>
+
+          {/* 4 */}
+          <div className="benefit-card">
+            <div className="benefit-card__header">
+              <div className="benefit-card__icon">
+                <img src={estabilidadIcon} alt="Estabilidad" />
+              </div>
+              <h3>Estabilidad Laboral</h3>
+            </div>
+            <p>
+              Contratación directa, prestaciones de ley completas y un ambiente
+              de trabajo seguro y estable.
+            </p>
+          </div>
+
+          {/* 5 */}
+          <div className="benefit-card benefit-card--blue">
+            <div className="benefit-card__header">
+              <div className="benefit-card__icon">
+                <img src={equipoIcon} alt="Equipo" />
+              </div>
+              <h3>Equipo Humano</h3>
+            </div>
+            <p>
+              Un equipo multidisciplinario comprometido, con valores de respeto,
+              empatía y trabajo en equipo.
+            </p>
+          </div>
+
+          {/* 6 */}
+          <div className="benefit-card">
+            <div className="benefit-card__header">
+              <div className="benefit-card__icon">
+                <img src={crecimientoIcon} alt="Crecimiento" />
+              </div>
+              <h3>Crecimiento Profesional</h3>
+            </div>
+            <p>
+              Planes de carrera y oportunidades de ascenso dentro del grupo
+              empresarial Radiólogos, CEDICAF y DIAXME.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}
+
+export default CareersBenefits;

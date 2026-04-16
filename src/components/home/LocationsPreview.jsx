@@ -134,7 +134,7 @@ function LocationsPreview() {
   }, [activeCity]);
 
   return (
-    <section className="locations-preview">
+    <section className="locations-preview" id="ubicacion">
       <div className="locations-preview__container">
         <div className="locations-preview__header">
           <span className="locations-preview__badge">

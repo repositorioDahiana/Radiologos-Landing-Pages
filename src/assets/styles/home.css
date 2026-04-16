@@ -123,6 +123,8 @@ body {
   color: var(--color-white);
 }
 
+
+
 /* ==================== HERO ==================== */
 .hero {
   position: relative;
@@ -251,7 +253,10 @@ body {
   color: var(--color-white);
   background: var(--gradient-button);
   box-shadow: var(--shadow-stat);
+  cursor: pointer;
+  transition: var(--transition-base);
 }
+
 
 .hero__statIcon {
   width: 30px;

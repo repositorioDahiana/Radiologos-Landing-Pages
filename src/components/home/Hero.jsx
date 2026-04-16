@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { useNavigate } from "react-router-dom";
 import tecnologiaHero from "../../assets/images/Fondo.jpg";
 import especialistasHero from "../../assets/images/Fondo.jpg";
 import clinicaHero from "../../assets/images/Fondo.jpg";
@@ -39,8 +39,10 @@ const slides = [
   },
 ];
 
+
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -101,7 +103,12 @@ function Hero() {
         </div>
 
         <div className="hero__stats">
-          <div className="hero__statItem">
+
+          {/* 1 - ABOUT */}
+          <div
+            className="hero__statItem"
+            onClick={() => navigate("/about")}
+          >
             <img
               src={experienciaIcon}
               alt="Años de experiencia"
@@ -113,19 +120,26 @@ function Hero() {
             </div>
           </div>
 
+          {/* 2 - SCROLL A HOME SECTION */}
+          <a href="#ubicacion">
           <div className="hero__statItem">
-          <img
-            src={sedesIcon}
-            alt="Sedes"
-            className="hero__statIcon hero__statIcon--sedes"
-          />
+            <img
+              src={sedesIcon}
+              alt="Sedes"
+              className="hero__statIcon hero__statIcon--sedes"
+            />
             <div className="hero__statText">
               <div className="hero__statNumber">10+</div>
               <div className="hero__statLabel">Sedes</div>
             </div>
           </div>
+          </a>
 
-          <div className="hero__statItem">
+          {/* 3 - ABOUT */}
+          <div
+            className="hero__statItem"
+            onClick={() => navigate("/about")}
+          >
             <img
               src={pacientesIcon}
               alt="Pacientes"
@@ -136,6 +150,7 @@ function Hero() {
               <div className="hero__statLabel">Pacientes</div>
             </div>
           </div>
+
         </div>
 
         <button

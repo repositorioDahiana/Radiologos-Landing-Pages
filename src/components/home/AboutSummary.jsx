@@ -80,7 +80,7 @@ function AboutSummary() {
           </h2>
 
           <p className="about-summary__description">
-            Más de cuadro décadas de compromiso con la excelencia en servicios
+            Más de cuatro décadas de compromiso con la excelencia en servicios
             médicos y diagnóstico.
           </p>
 
