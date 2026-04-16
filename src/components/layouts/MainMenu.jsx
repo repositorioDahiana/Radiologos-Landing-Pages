@@ -7,10 +7,16 @@ function MainMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [submenu, setSubmenu] = useState(null);
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+    setSubmenu(null);
+  };
+
   return (
     <nav className="main-navbar">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4">
-        <Link to="/" className="logo">
+
+        <Link to="/" className="logo" onClick={closeMenu}>
           <img
             src={logoRadiologos}
             className="h-12"
@@ -27,7 +33,8 @@ function MainMenu() {
         </button>
 
         <ul className={`menu-items ${menuOpen ? "menu-open" : ""}`}>
-          <li>
+
+          <li onClick={closeMenu}>
             <Link to="/">Inicio</Link>
           </li>
 
@@ -36,16 +43,18 @@ function MainMenu() {
             onMouseEnter={() => setSubmenu("quienes")}
             onMouseLeave={() => setSubmenu(null)}
           >
-            <Link to="/about">Quiénes Somos</Link>
+            <Link to="/about" onClick={closeMenu}>
+              Quiénes Somos
+            </Link>
 
             <ul className={`submenu ${submenu === "quienes" ? "show" : ""}`}>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/company">Nuestra Empresa</Link>
               </li>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/careers">Trabaje con Nosotros</Link>
               </li>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/especialistas">Especialistas</Link>
               </li>
             </ul>
@@ -59,10 +68,10 @@ function MainMenu() {
             <span>Servicios</span>
 
             <ul className={`submenu ${submenu === "servicios" ? "show" : ""}`}>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/corazon">Centro Médico del Corazón</Link>
               </li>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/mujer">Centro Médico de la Mujer</Link>
               </li>
             </ul>
@@ -76,13 +85,13 @@ function MainMenu() {
             <span>Paciente</span>
 
             <ul className={`submenu ${submenu === "paciente" ? "show" : ""}`}>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/polizas">Derechos y Deberes</Link>
               </li>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/convenios">Políticas de Seguridad</Link>
               </li>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/caja">PQRSF</Link>
               </li>
             </ul>
@@ -96,26 +105,26 @@ function MainMenu() {
             <span>Aliados</span>
 
             <ul className={`submenu ${submenu === "aliados" ? "show" : ""}`}>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/prepagada">Medicina Prepagada</Link>
               </li>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/polizas">Pólizas</Link>
               </li>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/convenios">Convenios Empresas</Link>
               </li>
-              <li>
+              <li onClick={closeMenu}>
                 <Link to="/caja">Caja de Compensación</Link>
               </li>
             </ul>
           </li>
 
-          <li>
+          <li onClick={closeMenu}>
             <Link to="/sedes">Sedes</Link>
           </li>
 
-          <li>
+          <li onClick={closeMenu}>
             <a
               href="https://appcedira.com/solicitarcita/public/solicitud-examen"
               target="_blank"
@@ -126,6 +135,7 @@ function MainMenu() {
               Agenda tu cita
             </a>
           </li>
+
         </ul>
       </div>
     </nav>
