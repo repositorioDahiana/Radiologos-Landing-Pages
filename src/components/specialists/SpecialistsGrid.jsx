@@ -15,37 +15,62 @@ import img14 from "../../assets/images/Fondo.jpg";
 import img15 from "../../assets/images/Fondo.jpg";
 
 const specialists = [
-  { id: 1, name: "Dr. Carlos Gómez", specialty: "Radiología", image: img1 },
-  { id: 2, name: "Dra. Laura Martínez", specialty: "Resonancia Magnética", image: img2 },
-  { id: 3, name: "Dr. Andrés López", specialty: "Tomografía (TAC)", image: img3 },
-  { id: 4, name: "Dra. María Rodríguez", specialty: "Ecografía", image: img4 },
-  { id: 5, name: "Dr. Juan Pérez", specialty: "Cardiología", image: img5 },
-  { id: 6, name: "Dra. Sofía Ramírez", specialty: "Radiología Intervencionista", image: img6 },
-  { id: 7, name: "Dr. Miguel Torres", specialty: "Neuroradiología", image: img7 },
-  { id: 8, name: "Dra. Paula Sánchez", specialty: "Mamografía", image: img8 },
-  { id: 9, name: "Dr. Diego Herrera", specialty: "Ultrasonido", image: img9 },
-  { id: 10, name: "Dra. Camila Rojas", specialty: "Radiología Pediátrica", image: img10 },
-  { id: 11, name: "Dr. Felipe Castro", specialty: "Imagenología", image: img11 },
-  { id: 12, name: "Dra. Natalia Vargas", specialty: "Diagnóstico Digital", image: img12 },
-  { id: 13, name: "Dr. Luis Moreno", specialty: "Cardioimagen", image: img13 },
-  { id: 14, name: "Dra. Daniela Ruiz", specialty: "Radiología Clínica", image: img14 },
-  { id: 15, name: "Dr. Jorge Castillo", specialty: "Imagen Avanzada", image: img15 },
+  {
+    id: 1,
+    name: "Dr. Carlos Andrés Mejía",
+    specialty: "Radiología Diagnóstica",
+    sub: "Neurorradiología",
+    exp: "18 años de experiencia",
+    tags: ["Resonancia Magnética", "Neurorradiología"],
+    image: img1,
+  },
+  {
+    id: 2,
+    name: "Dra. Marcela Ríos Ospina",
+    specialty: "Radiología e Imágenes Diagnósticas",
+    sub: "Radiología de Mama",
+    exp: "14 años de experiencia",
+    tags: ["Mamografía", "Ecografía Mamaria"],
+    image: img2,
+  },
+  // 👇 puedes repetir patrón hasta 15
+  {
+    id: 3,
+    name: "Dr. Hernán Darío Zuluaga",
+    specialty: "Cardiología",
+    sub: "Ecocardiografía",
+    exp: "22 años de experiencia",
+    tags: ["Ecocardiografía", "Holter"],
+    image: img3,
+  },
+  {
+    id: 4,
+    name: "Dra. Paola Andrea Gómez",
+    specialty: "Radiología Intervencionista",
+    sub: "Procedimientos guiados",
+    exp: "11 años de experiencia",
+    tags: ["Biopsias", "Drenajes"],
+    image: img4,
+  },
 ];
 
 function SpecialistsGrid() {
   return (
-    <section className="specialists-grid" id="equipo">
+    <section className="specialists-grid"  id="equipo">
       <div className="specialists-grid__container">
 
         {/* HEADER */}
         <div className="specialists-grid__header">
+          <span className="specialists-grid__badge">Equipo Médico</span>
+
           <h2 className="specialists-grid__title">
-            Nuestro <span className="text-gradient-blue">Equipo Médico</span>
+            Conoce a Nuestros{" "}
+            <span className="text-gradient-blue">Especialistas</span>
           </h2>
 
           <p className="specialists-grid__description">
-            Contamos con especialistas altamente capacitados en diferentes áreas
-            de la radiología y diagnóstico médico.
+            Médicos radiólogos y especialistas altamente calificados,
+            comprometidos con la excelencia diagnóstica.
           </p>
         </div>
 
@@ -54,13 +79,31 @@ function SpecialistsGrid() {
           {specialists.map((doc) => (
             <article key={doc.id} className="specialist-card">
 
+              {/* IMAGE */}
               <div className="specialist-card__image">
                 <img src={doc.image} alt={doc.name} />
               </div>
 
+              {/* INFO */}
               <div className="specialist-card__info">
-                <h3>{doc.name}</h3>
-                <p>{doc.specialty}</p>
+                <h3 className="specialist-card__name">{doc.name}</h3>
+
+                <span className="specialist-card__specialty">
+                  {doc.specialty}
+                </span>
+
+                <p className="specialist-card__sub">{doc.sub}</p>
+
+                <div className="specialist-card__exp">
+                  ⏱ {doc.exp}
+                </div>
+
+                {/* TAGS */}
+                <div className="specialist-card__tags">
+                  {doc.tags.map((tag, i) => (
+                    <span key={i}>{tag}</span>
+                  ))}
+                </div>
               </div>
 
             </article>

@@ -61,7 +61,7 @@ function MainMenu() {
           </li>
 
           <li onClick={closeMenu}>
-            <Link to="/sedes">Servicio</Link>
+            <Link to="/services">Servicio</Link>
           </li>
 
           <li

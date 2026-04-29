@@ -227,55 +227,58 @@
 /* HEADER */
 .specialists-grid__header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.specialists-grid__badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--color-blue-main);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 12px;
 }
 
 .specialists-grid__title {
-  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
   margin-bottom: 12px;
   color: var(--color-hero-title);
-  font-weight: 700;
 }
 
 .specialists-grid__description {
+  color: var(--color-text-body);
   max-width: 600px;
   margin: auto;
-  color: var(--color-text-body);
-  line-height: 1.6;
 }
 
 /* GRID */
 .specialists-grid__content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
 
 /* CARD */
 .specialist-card {
-  background: var(--bg-card);
+  background: white;
   border-radius: var(--radius-md);
   overflow: hidden;
-  text-align: center;
   box-shadow: var(--shadow-card);
   transition: var(--transition-base);
 }
 
 .specialist-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   box-shadow: var(--shadow-card-hover);
 }
 
 /* IMAGE */
-.specialist-card__image {
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
-}
-
 .specialist-card__image img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -284,16 +287,43 @@
   padding: 16px;
 }
 
-.specialist-card__info h3 {
+.specialist-card__name {
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 6px;
-  color: var(--color-text-dark);
+  margin-bottom: 4px;
 }
 
-.specialist-card__info p {
+.specialist-card__specialty {
+  color: var(--color-blue-bright);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.specialist-card__sub {
   font-size: 0.85rem;
   color: var(--color-text-body);
+  margin-bottom: 8px;
+}
+
+.specialist-card__exp {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+/* TAGS */
+.specialist-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.specialist-card__tags span {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--color-blue-bright);
 }
 
 /* ==================== RESPONSIVE ==================== */

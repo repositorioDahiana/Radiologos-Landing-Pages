@@ -16,9 +16,8 @@ function SpecialistsHero() {
           </h1>
 
           <p className="specialists-hero__description">
-            Contamos con un equipo médico altamente calificado, comprometido
-            con brindar diagnósticos precisos y atención de excelencia a cada
-            paciente.
+            Un equipo de médicos radiólogos y especialistas con más de 46 años de experiencia combinada, 
+            comprometidos con diagnósticos precisos y atención humanizada.
           </p>
 
           <div className="specialists-hero__actions">

@@ -12,7 +12,7 @@ function ServicesPreview() {
       title: "Radiología\nResonancia Magnética",
       description:
         "Ponemos la mejor tecnología al servicio de tu salud. Realizamos estudios de alta precisión como Angiotac coronario y Score de calcio para detectar a tiempo riesgos cardiovasculares. Además, ofrecemos resonancias especializadas para el seguimiento de prótesis mamarias y la detección de biopolímeros",
-      link: "/servicios",
+      link: "/services",
       featured: true,
     },
     {
@@ -21,7 +21,7 @@ function ServicesPreview() {
       title: "Centro Médico para la Mujer",
       description:
         "Un espacio diseñado para la mujer. Contamos con mamografía con tomosíntesis para una detección precisa, y un portafolio integral en ginecología, obstetricia, perinatología y terapias de piso pélvico, con los más altos estándares de salud.",
-      link: "/servicios",
+      link: "/services",
       featured: false,
     },
     {
@@ -30,7 +30,7 @@ function ServicesPreview() {
       title: "Centro Médico para el Corazón",
       description:
         "Expertos en cuidar el motor de tu vida. Integramos tecnología de última generación para diagnósticos cardiovasculares avanzados. Contamos con servicio de prueba de mesa basculante, ecocardiogramas transesofágicos, entre otros. Garantizando precisión en tu salud cardiovascular.",
-      link: "/servicios",
+      link: "/services",
       featured: false,
     },
     
@@ -60,7 +60,7 @@ function ServicesPreview() {
           <div className="services-preview__line"></div>
 
           <div className="services-preview__top-action">
-            <Link to="/servicios" className="services-preview__all-button">
+            <Link to="/services" className="services-preview__all-button">
               Ver todos los servicios
               <span className="services-preview__arrow">→</span>
             </Link>
