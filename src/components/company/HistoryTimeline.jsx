@@ -27,7 +27,7 @@ function HistoryTimeline() {
               <span className="history__year">1980</span>
               <h3>Fundación de Radiólogos Asociados</h3>
               <p>
-                Por iniciativa de dos destacados profesionales de la medicina Dr. Blas Cárdenas y Dr. Jorge Iván Ospina,
+                Por iniciativa de dos destacados profesionales de la medicina,
                 se crea en Pereira el Centro Radiológico Ecográfico y
                 Escanográfico, hoy Radiólogos Asociados. La primera empresa de
                 imágenes diagnósticas del departamento de Risaralda.

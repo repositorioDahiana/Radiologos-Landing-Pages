@@ -84,7 +84,7 @@ function Navbar() {
             </div>
 
             <span className="pse-text hide-mobile-sm">
-              Pagar PSE
+              Pagos Seguros en Línea
             </span>
           </a>
         </div>

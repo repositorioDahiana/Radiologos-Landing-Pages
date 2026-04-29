@@ -34,11 +34,11 @@ function CareersBenefits() {
               <div className="benefit-card__icon">
                 <img src={bienestarIcon} alt="Bienestar" />
               </div>
-              <h3>Bienestar Integral</h3>
+              <h3>Bienestar Laboral</h3>
             </div>
             <p>
-              Programas de salud, bienestar y calidad de vida para ti y tu familia.
-              Tu salud es nuestra prioridad.
+              Contamos con un programa alineado con las necesidades de nuestro(a)s colaboradore(a)s, alianzas comerciales, 
+              reconocimientos, convenios de salud, descuentos en procedimientos, horarios flexibles, entre otros
             </p>
           </div>
 
@@ -48,11 +48,11 @@ function CareersBenefits() {
               <div className="benefit-card__icon">
                 <img src={formacionIcon} alt="Formación" />
               </div>
-              <h3>Formación Continua</h3>
+              <h3>Formación</h3>
             </div>
             <p>
-              Acceso a capacitaciones, congresos médicos y programas de actualización
-              profesional permanente.
+              Contamos con un plan de formación basado en el desarrollo de competencias técnicas y del ser. 
+              Capacitaciones que contribuyen a mejorar tu perfil profesional
             </p>
           </div>
 
@@ -79,8 +79,8 @@ function CareersBenefits() {
               <h3>Estabilidad Laboral</h3>
             </div>
             <p>
-              Contratación directa, prestaciones de ley completas y un ambiente
-              de trabajo seguro y estable.
+              Brindamos una contratación directa con la compañía con todas las garantías de ley, con un ambiente 
+              óptimo para trabajar evaluados por nuestro(a)s colaboradore(a)s en un 90% de satisfacción
             </p>
           </div>
 
@@ -93,8 +93,7 @@ function CareersBenefits() {
               <h3>Equipo Humano</h3>
             </div>
             <p>
-              Un equipo multidisciplinario comprometido, con valores de respeto,
-              empatía y trabajo en equipo.
+              Contamos con un equipo de profesionales altamente calificado, comprometido y empático
             </p>
           </div>
 
@@ -107,8 +106,8 @@ function CareersBenefits() {
               <h3>Crecimiento Profesional</h3>
             </div>
             <p>
-              Planes de carrera y oportunidades de ascenso dentro del grupo
-              empresarial Radiólogos, CEDICAF y DIAXME.
+              Planes de carrera y oportunidades de ascenso 
+              dentro de las compañias Radiólogos Asociados, Cedicaf y Diaxme
             </p>
           </div>
 

@@ -113,14 +113,14 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  width:40px;
-  height:36px;
+  width:41px;
+  height:41px;
   background:linear-gradient(135deg, #facc15, #fbbf24);
 }
 
 .pse-icon-zone img{
-  width:28px;
-  height:28px;
+  width:36px;
+  height:36px;
   object-fit:contain;
 }
 
@@ -136,7 +136,11 @@
   );
   background-size:300% 300%;
   animation:pseGradient 6s ease infinite;
-  white-space:nowrap;
+  font-size: 11px;       
+  line-height: 1.2;
+  max-width: 120px;       
+  text-align: center;
+  white-space:normal;
 }
 
 .pse-button:hover{
@@ -349,12 +353,12 @@
   justify-content:center;
   gap:8px;
 
-  min-width:170px;
+  min-width:180px;
   height:42px;
   padding:0 16px;
 
   border-radius:999px;
-  font-size:14px;
+  font-size:10px;
   font-weight:500;
   color:white;
   text-decoration:none;

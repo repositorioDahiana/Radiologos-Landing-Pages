@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import tecnologiaHero from "../../assets/images/Fondo.jpg";
-import especialistasHero from "../../assets/images/Fondo.jpg";
-import clinicaHero from "../../assets/images/Fondo.jpg";
+import tecnologiaHero from "../../assets/images/HomeHero1.jpg";
+import especialistasHero from "../../assets/images/HomeHero2.png";
+import clinicaHero from "../../assets/images/HomeHero3.jpg";
 import resultadosIcon from "../../assets/Iconos/resultados.png";
 import agendarIcon from "../../assets/Iconos/consultarita.png";
 import experienciaIcon from "../../assets/Iconos/tiempo.png";
@@ -55,7 +55,7 @@ function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
@@ -129,7 +129,7 @@ function Hero() {
               className="hero__statIcon hero__statIcon--sedes"
             />
             <div className="hero__statText">
-              <div className="hero__statNumber">10+</div>
+              <div className="hero__statNumber">17+</div>
               <div className="hero__statLabel">Sedes</div>
             </div>
           </div>

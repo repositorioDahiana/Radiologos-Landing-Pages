@@ -46,6 +46,11 @@ function ApplySection() {
               <input type="text" placeholder="Ej: Tecnólogo en Radiología" />
             </div>
 
+            <div className="apply__field">
+              <label>Perfil de Linkedin *</label>
+              <input type="text" placeholder="Ej: https://co.linkedin.com/" />
+            </div>
+
         </div>
 
 

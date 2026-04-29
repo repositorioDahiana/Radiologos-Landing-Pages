@@ -1,4 +1,4 @@
-import techImg from "../../assets/images/Fondo.jpg";
+import techImg from "../../assets/images/Tecnologia.jpg";
 
 import equipoIcon from "../../assets/Iconos/resonancia.png";
 import certificacionIcon from "../../assets/Iconos/insignia.png";
@@ -75,11 +75,6 @@ function TechnologySection() {
           {/* DERECHA - IMAGEN */}
           <div className="technology__image">
             <img src={techImg} alt="Tecnología Médica" />
-
-            <div className="technology__badge">
-              <strong>ISO 9001</strong>
-              <span>Certificación</span>
-            </div>
           </div>
 
         </div>

@@ -4,7 +4,7 @@ import losRosalesImg from "../../assets/images/Fondo.jpg";
 import comfamiliarImg from "../../assets/images/Fondo.jpg";
 import sanRafaelImg from "../../assets/images/Fondo.jpg";
 import centroMedicoImg from "../../assets/images/Fondo.jpg";
-import pinaresImg from "../../assets/images/Fondo.jpg";
+import pinaresImg from "../../assets/images/UbicacionPlus.jpg";
 import ubicacionIcon from "../../assets/Iconos/ubicacion.png";
 import relojIcon from "../../assets/Iconos/reloj.png";
 

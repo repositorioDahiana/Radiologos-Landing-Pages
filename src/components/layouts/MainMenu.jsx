@@ -55,26 +55,13 @@ function MainMenu() {
                 <Link to="/careers">Trabaje con Nosotros</Link>
               </li>
               <li onClick={closeMenu}>
-                <Link to="/especialistas">Especialistas</Link>
+                <Link to="/specialists">Especialistas</Link>
               </li>
             </ul>
           </li>
 
-          <li
-            className="dropdown"
-            onMouseEnter={() => setSubmenu("servicios")}
-            onMouseLeave={() => setSubmenu(null)}
-          >
-            <span>Servicios</span>
-
-            <ul className={`submenu ${submenu === "servicios" ? "show" : ""}`}>
-              <li onClick={closeMenu}>
-                <Link to="/corazon">Centro Médico del Corazón</Link>
-              </li>
-              <li onClick={closeMenu}>
-                <Link to="/mujer">Centro Médico de la Mujer</Link>
-              </li>
-            </ul>
+          <li onClick={closeMenu}>
+            <Link to="/sedes">Servicio</Link>
           </li>
 
           <li
@@ -120,8 +107,21 @@ function MainMenu() {
             </ul>
           </li>
 
-          <li onClick={closeMenu}>
-            <Link to="/sedes">Sedes</Link>
+          <li
+            className="dropdown"
+            onMouseEnter={() => setSubmenu("sedes")}
+            onMouseLeave={() => setSubmenu(null)}
+          >
+            <span>Sedes</span>
+
+            <ul className={`submenu ${submenu === "sedes" ? "show" : ""}`}>
+              <li onClick={closeMenu}>
+                <Link to="/corazon">Centro Médico del Corazón</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="/mujer">Centro Médico de la Mujer</Link>
+              </li>
+            </ul>
           </li>
 
           <li onClick={closeMenu}>
@@ -132,7 +132,7 @@ function MainMenu() {
               className="agenda-btn"
             >
               <img src={resonanciaIcon} alt="Agendar cita" />
-              Agenda tu cita
+              Usuario Particular
             </a>
           </li>
 

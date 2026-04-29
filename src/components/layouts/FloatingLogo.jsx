@@ -16,10 +16,10 @@ function FloatingLogo() {
     <a
       href="https://appcedira.com/solicitarcita/public/solicitud-examen"
       className="floating-logo"
-      aria-label="Agende aquí su cita"
+      aria-label="Agende tu cita"
     >
       <span className="floating-logo__tooltip">
-        Agende aquí su cita
+        Agende tu cita
       </span>
 
       <img

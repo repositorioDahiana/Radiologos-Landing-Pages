@@ -57,7 +57,7 @@ function MissionVision() {
             </div>
 
             <p>
-              Ser referentes a nivel nacional para el año 2025, por nuestro modelo de gestión como una IPS innovadora 
+              Ser referentes a nivel nacional para el año 2027, por nuestro modelo de gestión como una IPS innovadora 
               y  eficiente, soportada por los principios de responsabilidad, confiabilidad y servicio al paciente. 
             </p>
 

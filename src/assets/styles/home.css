@@ -546,16 +546,24 @@ body {
     left: 16px;
     right: 16px;
     bottom: 16px;
-    display: flex;
-    gap: 6px;
-    flex-wrap: nowrap;
+
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 8px;
   }
 
   .hero__statItem {
     min-width: 0;
-    flex: 1;
-    gap: 6px;
-    padding: 7px 8px;
+    width: 100%; 
+    height: 60px; 
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .hero__statIcon {

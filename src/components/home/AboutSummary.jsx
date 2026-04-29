@@ -48,7 +48,7 @@ function AboutSummary() {
     {
       id: 2,
       icon: sedesIcon,
-      end: 10,
+      end: 17,
       suffix: "+",
       label: "Sedes en Colombia",
       iconClass: "about-summary__icon-box--blue",

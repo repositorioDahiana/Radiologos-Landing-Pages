@@ -1,7 +1,7 @@
-import historiaBg from "../../assets/images/Fondo.jpg";
+import historiaBg from "../../assets/images/QuienesSomos.jpg";
 
 import sedesIcon from "../../assets/Iconos/sedes.png";
-import isoIcon from "../../assets/Iconos/insignia.png";
+import isoIcon from "../../assets/Iconos/icontec.png";
 import pacientesIcon from "../../assets/Iconos/paciente1.png";
 
 function AboutHero() {
@@ -41,7 +41,7 @@ function AboutHero() {
             <img src={sedesIcon} className="about-hero__statIcon" />
 
             <div className="about-hero__statText">
-              <strong>+15 sedes</strong>
+              <strong>+17 sedes</strong>
               <span>en Colombia</span>
             </div>
           </article>

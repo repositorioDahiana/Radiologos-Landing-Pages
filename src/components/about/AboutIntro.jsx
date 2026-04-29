@@ -34,7 +34,7 @@ function AboutIntro() {
 
         <div className="about-intro__card">
           <img src={sedesIcon} />
-          <h3>+15</h3>
+          <h3>+17</h3>
           <span>Sedes en Colombia</span>
         </div>
 
