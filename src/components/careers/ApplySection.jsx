@@ -47,7 +47,7 @@ function ApplySection() {
             </div>
 
             <div className="apply__field">
-              <label>Perfil de Linkedin *</label>
+              <label>Perfil de Linkedin</label>
               <input type="text" placeholder="Ej: https://co.linkedin.com/" />
             </div>
 

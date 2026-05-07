@@ -73,13 +73,16 @@ function MainMenu() {
 
             <ul className={`submenu ${submenu === "paciente" ? "show" : ""}`}>
               <li onClick={closeMenu}>
-                <Link to="/polizas">Derechos y Deberes</Link>
+                <Link to="/patientrights">Derechos y Deberes</Link>
               </li>
               <li onClick={closeMenu}>
-                <Link to="/convenios">Políticas de Seguridad</Link>
+                <Link to="/patientsecurity">Políticas de Seguridad</Link>
               </li>
               <li onClick={closeMenu}>
-                <Link to="/caja">PQRSF</Link>
+                <Link to="/pqrs">PQRSF</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="/ppss">PPSS</Link>
               </li>
             </ul>
           </li>

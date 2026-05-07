@@ -8,8 +8,8 @@ const slides = [
   {
     title: (
       <>
-        Servicios <span className="text-gradient-blue">Únicos</span> en el{" "}
-        <span className="text-gradient-blue">País</span>
+        Servicios <span className="text-gradient-blue">Exclusivos</span> en algunas{" "}
+        <span className="text-gradient-blue">Regiones del País</span>
       </>
     ),
     description:
@@ -67,11 +67,6 @@ function ServicesHero() {
 
       <div className="services-hero__container">
         <div className="services-hero__content">
-
-          <span className="services-hero__badge">
-            Nuestros Servicios
-          </span>
-
           <h1 className="services-hero__title">
             {slide.title}
           </h1>
@@ -90,20 +85,12 @@ function ServicesHero() {
       </div>
 
       {/* Flechas */}
-      <button
-        className="nav-arrow left"
-        onClick={prevSlide}
-        aria-label="Anterior"
-      >
-        ←
+      <button className="nav-arrow left" onClick={prevSlide}>
+        ‹
       </button>
 
-      <button
-        className="nav-arrow right"
-        onClick={nextSlide}
-        aria-label="Siguiente"
-      >
-        →
+      <button className="nav-arrow right" onClick={nextSlide}>
+        ›
       </button>
     </section>
   );

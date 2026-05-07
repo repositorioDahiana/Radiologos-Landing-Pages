@@ -8,11 +8,6 @@ function CompanyHero() {
 
         {/* IZQUIERDA */}
         <div className="company-hero__content">
-
-          <span className="company-hero__badge">
-            Nuestra identidad
-          </span>
-
           <h1 className="company-hero__title">
             Nuestra <span className="text-gradient-blue">Empresa</span>
           </h1>

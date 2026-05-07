@@ -137,11 +137,6 @@ function LocationsPreview() {
     <section className="locations-preview" id="ubicacion">
       <div className="locations-preview__container">
         <div className="locations-preview__header">
-          <span className="locations-preview__badge">
-            <span className="locations-preview__badge-dot"></span>
-            Cobertura Nacional
-          </span>
-
           <h2 className="locations-preview__title">
             Nuestras <span>Ubicaciones</span>
           </h2>

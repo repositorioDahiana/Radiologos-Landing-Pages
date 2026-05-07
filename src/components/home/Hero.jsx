@@ -153,21 +153,13 @@ function Hero() {
 
         </div>
 
-        <button
-          className="nav-arrow left"
-          onClick={prevSlide}
-          aria-label="Slide anterior"
-        >
-          ←
-        </button>
+          <button className="nav-arrow left" onClick={prevSlide}>
+            ‹
+          </button>
 
-        <button
-          className="nav-arrow right"
-          onClick={nextSlide}
-          aria-label="Siguiente slide"
-        >
-          →
-        </button>
+          <button className="nav-arrow right" onClick={nextSlide}>
+            ›
+          </button>
       </div>
     </section>
   );

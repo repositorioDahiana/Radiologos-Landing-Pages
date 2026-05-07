@@ -101,7 +101,7 @@ const specialties = [
     id: 15, 
     title: "Tomografía Multicorte", 
     icon: tacdIcon, 
-    desc: "Velocidad y resolución extrema en segundos. Esta tecnología avanzada de TAC de múltiples cortes captura cientos de imágenes en un solo giro, permitiendo visualizar órganos en movimiento (como el corazón) y vasos sanguíneos con una nitidez insuperable. Es el estándar de oro para diagnósticos críticos que requieren el máximo nivel de detalle anatómico.." 
+    desc: "Velocidad y resolución extrema en segundos. Esta tecnología avanzada de TAC de múltiples cortes captura cientos de imágenes en un solo giro, permitiendo visualizar órganos en movimiento (como el corazón) y vasos sanguíneos con una nitidez insuperable. Es el estándar de oro para diagnósticos críticos que requieren el máximo nivel de detalle anatómico." 
   },
 ];
 

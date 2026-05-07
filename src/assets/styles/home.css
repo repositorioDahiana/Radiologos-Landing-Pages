@@ -165,7 +165,7 @@ body {
 }
 
 .hero__content {
-  max-width: 620px;
+  max-width: 700px;
   margin-left: 50px;
 }
 
@@ -293,30 +293,137 @@ body {
   position: absolute;
   top: 50%;
   z-index: 4;
-  width: 48px;
-  height: 48px;
+
+  background: transparent !important; /* 🔥 elimina fondo */
   border: none;
-  border-radius: 50%;
+  box-shadow: none;
+
+  width: auto;     /* 🔥 quita tamaño fijo */
+  height: auto;
+
+  font-size: 2.5rem; /* tamaño de la flecha */
+  color: var(--color-hero-title);
+
   cursor: pointer;
   transform: translateY(-50%);
-  font-size: 1.5rem;
-  color: var(--color-hero-title);
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: var(--shadow-nav);
   transition: var(--transition-fast);
 }
 
+/* Hover limpio */
 .nav-arrow:hover {
-  background: var(--color-blue-hover);
-  color: var(--color-white);
+  color: var(--color-blue-main);
 }
 
+/* Posiciones */
 .nav-arrow.left {
-  left: 8px;
+  left: 20px;
 }
 
 .nav-arrow.right {
-  right: 18px;
+  right: 20px;
+}
+
+
+/* ==================== RESPONSIVE HERO ==================== */
+@media (max-width: 992px) {
+  .hero__container {
+    padding: 120px 24px 120px;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__stats {
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    gap: 10px;
+  }
+
+  .hero__statItem {
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero__container {
+    min-height: auto;
+    padding: 110px 16px 150px;
+  }
+
+  .hero__title {
+    font-size: 2.2rem;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero__actions {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 11px 16px;
+    font-size: 0.88rem;
+  }
+
+  .hero__stats {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 8px;
+  }
+
+  .hero__statItem {
+    min-width: 0;
+    width: 100%; 
+    height: 60px; 
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hero__statIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hero__statNumber {
+    font-size: 0.88rem;
+  }
+
+  .hero__statLabel {
+    font-size: 0.58rem;
+  }
+
+  .nav-arrow {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  .nav-arrow.left {
+    left: 10px;
+  }
+
+  .nav-arrow.right {
+    right: 10px;
+  }
 }
 
 /* ==================== ABOUT SUMMARY ==================== */
@@ -490,108 +597,6 @@ body {
 .about-summary__button:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-button-hover);
-}
-
-/* ==================== RESPONSIVE HERO ==================== */
-@media (max-width: 992px) {
-  .hero__container {
-    padding: 120px 24px 120px;
-  }
-
-  .hero__content {
-    max-width: 100%;
-  }
-
-  .hero__stats {
-    left: 24px;
-    right: 24px;
-    bottom: 24px;
-    gap: 10px;
-  }
-
-  .hero__statItem {
-    min-width: 160px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    min-height: auto;
-  }
-
-  .hero__container {
-    min-height: auto;
-    padding: 110px 16px 150px;
-  }
-
-  .hero__title {
-    font-size: 2.2rem;
-  }
-
-  .hero__description {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  .hero__actions {
-    gap: 10px;
-  }
-
-  .btn {
-    padding: 11px 16px;
-    font-size: 0.88rem;
-  }
-
-  .hero__stats {
-    left: 16px;
-    right: 16px;
-    bottom: 16px;
-
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 8px;
-  }
-
-  .hero__statItem {
-    min-width: 0;
-    width: 100%; 
-    height: 60px; 
-    padding: 8px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    text-align: center;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .hero__statIcon {
-    width: 18px;
-    height: 18px;
-  }
-
-  .hero__statNumber {
-    font-size: 0.88rem;
-  }
-
-  .hero__statLabel {
-    font-size: 0.58rem;
-  }
-
-  .nav-arrow {
-    width: 42px;
-    height: 42px;
-    font-size: 1.2rem;
-  }
-
-  .nav-arrow.left {
-    left: 10px;
-  }
-
-  .nav-arrow.right {
-    right: 10px;
-  }
 }
 
 /* ==================== RESPONSIVE ABOUT SUMMARY ==================== */

@@ -12,7 +12,6 @@ function Home() {
       <AboutSummary />
       <ServicesPreview />
       <LocationsPreview />
-      <ExternalPartners />
     </main>
   );
 }

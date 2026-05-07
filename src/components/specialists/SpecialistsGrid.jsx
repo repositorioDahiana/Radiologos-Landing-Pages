@@ -61,8 +61,6 @@ function SpecialistsGrid() {
 
         {/* HEADER */}
         <div className="specialists-grid__header">
-          <span className="specialists-grid__badge">Equipo Médico</span>
-
           <h2 className="specialists-grid__title">
             Conoce a Nuestros{" "}
             <span className="text-gradient-blue">Especialistas</span>

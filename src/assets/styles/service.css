@@ -225,18 +225,39 @@
   line-height: 1.5;
 }
 
+/* Flechas */
 .nav-arrow {
   position: absolute;
   top: 50%;
-  z-index: 5;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
+  z-index: 4;
+  background: transparent !important; 
   border: none;
+  box-shadow: none;
+  width: auto;    
+  height: auto;
+
+  font-size: 2.5rem;  
+  color: var(--color-hero-title);
+
   cursor: pointer;
   transform: translateY(-50%);
-  background: rgba(255,255,255,0.9);
+  transition: var(--transition-fast);
 }
+
+/* Hover limpio */
+.nav-arrow:hover {
+  color: var(--color-blue-main);
+}
+
+/* Posiciones */
+.nav-arrow.left {
+  left: 20px;
+}
+
+.nav-arrow.right {
+  right: 20px;
+}
+
 
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 992px) {
@@ -267,7 +288,7 @@
 
 .services-highlight {
   padding: 50px 20px 50px;
-  background: #f8fafc; /* mismo fondo que careers */
+  background: #f8fafc;
 }
 
 .services-highlight__container {
@@ -310,7 +331,8 @@
   gap: 25px;
 }
 
-/* CARD BASE */
+/* ==================== CARD BASE ==================== */
+
 .service-card {
   padding: 28px 22px;
   border-radius: var(--radius-md);
@@ -327,6 +349,8 @@
   display: flex;
   gap: 14px;
   align-items: flex-start;
+
+  height: 100%; /* 🔥 importante */
 }
 
 .service-card:hover {
@@ -334,7 +358,7 @@
   box-shadow: var(--shadow-card-hover);
 }
 
-/* 🔵 CARD AZUL (IGUAL QUE CAREERS) */
+/* 🔵 CARD AZUL */
 .service-card--blue {
   background: linear-gradient(
     135deg,
@@ -342,14 +366,6 @@
     rgba(37, 99, 235, 0.08)
   );
   border: 1px solid rgba(10, 78, 163, 0.15);
-}
-
-/* HEADER CARD */
-.service-card__header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
 }
 
 /* ICONO */
@@ -374,7 +390,7 @@
 
 /* CONTENT */
 .service-card__content h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 6px;
   color: var(--color-text-dark);
@@ -384,6 +400,69 @@
   font-size: 0.85rem;
   line-height: 1.6;
   color: var(--color-text-body);
+}
+
+/* ==================== FLIP CARD ==================== */
+
+.service-card-flip {
+  perspective: 1200px;
+  height: 100%;
+}
+
+.service-card-flip__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 280px; /* 🔥 respeta tamaño */
+
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+/* EFECTO */
+.service-card-flip:hover .service-card-flip__inner {
+  transform: rotateY(180deg);
+}
+
+/* CARAS */
+.service-card--front,
+.service-card--back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  backface-visibility: hidden;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+/* FRONT */
+.service-card--front {
+  z-index: 2;
+}
+
+/* BACK */
+.service-card--back {
+  transform: rotateY(180deg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(10, 78, 163, 0.08),
+    rgba(37, 99, 235, 0.05)
+  );
+}
+
+/* IMAGEN PERFECTA */
+.service-card--back img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain; /* 🔥 NO corta */
 }
 
 /* ==================== RESPONSIVE ==================== */

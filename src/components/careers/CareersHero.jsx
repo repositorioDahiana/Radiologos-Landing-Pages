@@ -15,11 +15,6 @@ function CareersHero() {
 
       <div className="careers-hero__container">
         <div className="careers-hero__content">
-
-          <span className="careers-hero__badge">
-            Oportunidades de Empleo
-          </span>
-
           <h1 className="careers-hero__title">
             Trabaja <span className="text-gradient-blue">con Nosotros</span>
           </h1>

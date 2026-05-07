@@ -7,11 +7,6 @@ function MissionVision() {
 
       <div className="mission-vision__container">
 
-        {/* Badge */}
-        <span className="mission-vision__badge">
-          Nuestro Propósito
-        </span>
-
         {/* Título */}
         <h2 className="mission-vision__title">
           Misión y <span className="text-gradient-blue">Visión</span>

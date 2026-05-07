@@ -11,10 +11,6 @@ function PrinciplesSection() {
       <div className="principles__container">
 
         {/* HEADER */}
-        <span className="principles__badge">
-          Nuestros Pilares
-        </span>
-
         <h2 className="principles__title">
           Principios <span className="text-gradient-blue">Corporativos</span>
         </h2>

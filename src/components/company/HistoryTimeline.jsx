@@ -8,11 +8,6 @@ function HistoryTimeline() {
     <section className="history">
 
       <div className="history__container">
-
-        <span className="history__badge">
-          Nuestra Trayectoria
-        </span>
-
         <h2 className="history__title">
           Reseña <span className="text-gradient-blue">Histórica</span>
         </h2>
