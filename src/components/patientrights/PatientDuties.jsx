@@ -51,13 +51,8 @@ function PatientDuties() {
   return (
     <section className="patient-duties" id="deberes">
       <div className="patient-duties__container">
-
-        <span className="patient-duties__badge">
-          Deberes del Paciente
-        </span>
-
         <h2 className="patient-duties__title">
-          Responsabilidades como <span className="text-gradient-blue">Usuario</span>
+          Deberes de los <span className="text-gradient-blue">Pacientes</span>
         </h2>
 
         <p className="patient-duties__description">

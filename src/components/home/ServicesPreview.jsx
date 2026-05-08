@@ -11,7 +11,7 @@ function ServicesPreview() {
       icon: radiologiaIcon,
       title: "Radiología\nResonancia Magnética",
       description:
-        "Ponemos la mejor tecnología al servicio de tu salud. Realizamos estudios de alta precisión como Angiotac coronario y Score de calcio para detectar a tiempo riesgos cardiovasculares. Además, ofrecemos resonancias especializadas para el seguimiento de prótesis mamarias y la detección de biopolímeros.",
+        "Ponemos la mejor tecnología al servicio de tu salud. Realizamos estudios especializados como angiotac coronario y score de calcio para la detección oportuna de riesgos cardiovasculares.  Además, contamos con resonancias enfocadas en el seguimiento de prótesis mamarias y la detección de biopolímeros, brindando resultados confiables para tu tranquilidad.",
       link: "/services",
       featured: true,
     },

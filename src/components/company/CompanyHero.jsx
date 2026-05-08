@@ -13,10 +13,9 @@ function CompanyHero() {
           </h1>
 
           <p className="company-hero__description">
-            Somos una organización comprometida con la excelencia en el sector
-            salud, integrando tecnología avanzada, talento humano altamente
-            calificado y procesos innovadores para brindar diagnósticos
-            confiables y oportunos.
+          Somos una organización comprometida con la excelencia, que integra tecnología de vanguardia, 
+          talento humano altamente calificado y procesos innovadores para brindarte diagnósticos confiables, 
+          oportunos y con altos estándares de calidad. 
           </p>
 
           <a href="/contacto" className="btn-base btn-primary-blue">

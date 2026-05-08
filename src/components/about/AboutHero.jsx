@@ -26,10 +26,7 @@ function AboutHero() {
 
           <p className="about-hero__description">
             Somos una institución líder con más de <span className="highlight">46 años de experiencia</span> en el sector salud. 
-            En <span className="brand">Radiólogos Asociados</span> transformamos 
-            <span className="highlight-soft"> tecnología de punta</span> en diagnósticos 
-            confiables de <span className="highlight">alta complejidad</span>, medicina nuclear y laboratorio clínico, 
-            brindando la claridad que tú y tu médico necesitan para cuidar tu bienestar.
+            Transformamos la tecnología avanzada en diagnósticos confiables de alta complejidad, medicina nuclear y laboratorio clínico, ofreciendo información clara y oportuna para el cuidado de tu salud 
           </p>
         </div>
 

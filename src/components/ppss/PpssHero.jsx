@@ -18,9 +18,9 @@ function PpssHero() {
         <div className="ppss-hero__content">
 
           <h1 className="ppss-hero__title">
-            Participación Social en{" "}
+              Política de Participación {" "}
             <span className="text-gradient-blue">
-              Salud
+              Social en Salud
             </span>
           </h1>
 

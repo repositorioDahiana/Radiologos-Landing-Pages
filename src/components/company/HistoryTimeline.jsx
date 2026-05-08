@@ -20,12 +20,11 @@ function HistoryTimeline() {
           <div className="history__item">
             <div className="history__content">
               <span className="history__year">1980</span>
-              <h3>Fundación de Radiólogos Asociados</h3>
+              <h3>Nace Radiólogos Asociados</h3>
               <p>
                 Por iniciativa de dos destacados profesionales de la medicina,
-                se crea en Pereira el Centro Radiológico Ecográfico y
-                Escanográfico, hoy Radiólogos Asociados. La primera empresa de
-                imágenes diagnósticas del departamento de Risaralda.
+                nacemos en Pereira como el Centro Radiológico Ecográfico y Escanográfico, 
+                pioneros en la imagen diagnóstica en Risaralda, hoy Radiólogos Asociados. 
               </p>
             </div>
 
@@ -40,9 +39,8 @@ function HistoryTimeline() {
               <span className="history__year">1994</span>
               <h3>Nace CEDICAF S.A.</h3>
               <p>
-                Ante el crecimiento en la demanda y la incursión de nuevas
-                tecnologías, se crea CEDICAF S.A., empresa especializada en
-                resonancia magnética en el eje cafetero.
+                Como respuesta al crecimiento del sector y la evolución tecnológica, 
+                se crea CEDICAF S.A., especializada en resonancia magnética en el Eje Cafetero. 
               </p>
             </div>
 
@@ -57,10 +55,8 @@ function HistoryTimeline() {
               <span className="history__year">2014</span>
               <h3>DIAXME llega a Villavicencio</h3>
               <p>
-                Se crea DIAXME en Villavicencio, integrando servicios
-                especializados en tomografía, resonancia magnética, rayos X y
-                ecografía, consolidando la integralidad en la prestación de
-                servicios en el centro occidente del país.
+                Se crea DIAXME, integrando servicios de tomografía, resonancia magnética, 
+                rayos X y ecografía, fortaleciendo la atención integral en el centro occidente del país. 
               </p>
             </div>
 
@@ -75,10 +71,10 @@ function HistoryTimeline() {
               <span className="history__year">Hoy</span>
               <h3>Presencia Nacional y Medicina Nuclear</h3>
               <p>
-                Presencia en Pereira, Armenia, Tuluá, Cartago, Ibagué y
-                Villavicencio. Pioneros en el desarrollo de medicina nuclear en
-                Ibagué, siendo referentes nacionales en diagnóstico médico de
-                alta complejidad.
+                Contamos con presencia en Pereira, Armenia, Tuluá, Cartago, Ibagué y 
+                Villavicencio. Somos pioneros en medicina nuclear en Ibagué y referentes 
+                a nivel nacional en diagnóstico especializado, ofreciendo respaldo, experiencia 
+                y confianza en cada resultado. 
               </p>
             </div>
 
