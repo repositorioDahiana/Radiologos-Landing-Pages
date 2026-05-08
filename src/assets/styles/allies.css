@@ -1,0 +1,627 @@
+/* ==================== DESIGN TOKENS ==================== */
+:root {
+    /* Tipografías */
+    --font-body: 'Inter', sans-serif;
+    --font-title: 'Poppins', sans-serif;
+  
+    /* Colores base */
+    --color-white: #ffffff;
+    --color-text-dark: #111827;
+    --color-text-body: #4b5563;
+    --color-text-soft: #374151;
+    --color-text-hero: #334155;
+    --color-hero-title: #0a2540;
+    --color-blue-dark: #0a3d91;
+    --color-blue-main: #0a4ea3;
+    --color-blue-medium: #1565c0;
+    --color-blue-light: #1d75d8;
+    --color-blue-soft: #4aa3ff;
+    --color-blue-bright: #2563eb;
+    --color-blue-hover: #0a58ca;
+    --color-border-light: #e5e7eb;
+    --color-border-soft: #dbe3ef;
+  
+    /* Gradientes */
+    --gradient-title: linear-gradient(90deg, #0a4ea3, #1d75d8, #4aa3ff);
+    --gradient-line: linear-gradient(90deg, #0a4ea3, #2563eb, #4aa3ff);
+    --gradient-button: linear-gradient(135deg, #0a3d91, #1565c0, #1f87e7);
+    --gradient-number: linear-gradient(90deg, #0a4ea3, #2563eb, #38bdf8);
+    --gradient-dot: linear-gradient(135deg, #0a4ea3, #1d75d8);
+  
+    /* Fondos */
+    --bg-grid-line: rgba(10, 78, 163, 0.06);
+    --bg-card: rgba(255, 255, 255, 0.88);
+    --bg-card-soft: rgba(255, 255, 255, 0.92);
+    --bg-btn-secondary: rgba(255, 255, 255, 0.75);
+    --bg-icon-blue: rgba(37, 99, 235, 0.12);
+  
+    /* Sombras */
+    --shadow-card: 0 12px 35px rgba(15, 23, 42, 0.05);
+    --shadow-card-hover: 0 18px 40px rgba(15, 23, 42, 0.08);
+    --shadow-stat: 0 8px 18px rgba(10, 61, 145, 0.18);
+    --shadow-button: 0 12px 28px rgba(21, 101, 192, 0.22);
+    --shadow-button-hover: 0 16px 34px rgba(37, 99, 235, 0.24);
+    --shadow-nav: 0 10px 24px rgba(0, 0, 0, 0.14);
+    --shadow-highlight: 0 10px 30px rgba(15, 23, 42, 0.05);
+  
+    /* Bordes */
+    --radius-full: 999px;
+    --radius-lg: 28px;
+    --radius-md: 22px;
+    --radius-sm: 18px;
+    --radius-xs: 12px;
+  
+    /* Transiciones */
+    --transition-base: all 0.3s ease;
+    --transition-fast: all 0.25s ease;
+  }
+  
+  /* ==================== GLOBAL ==================== */
+  body {
+    font-family: var(--font-body);
+  }
+  
+  .home-page,
+  .about-page {
+    width: 100%;
+  }
+  
+  /* ==================== TYPOGRAPHY ==================== */
+  .home-page .hero__title,
+  .home-page .about-summary__title,
+  .home-page .about-summary__number,
+  .home-page .services-preview__title,
+  .home-page .services-preview__card-title,
+  .home-page .locations-preview__title,
+  .home-page .locations-preview__card-title,
+  .about-page .about-hero__title,
+  .about-page .about-section__title,
+  .about-page .about-card__title,
+  .about-page .about-stat__number {
+    font-family: var(--font-title);
+  }
+  
+  /* ==================== UTILITIES ==================== */
+  .text-gradient-blue {
+    background: var(--gradient-title);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .section-line-blue {
+    background: var(--gradient-line);
+    border-radius: var(--radius-full);
+  }
+  
+  .btn-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    transition: var(--transition-base);
+  }
+  
+  .btn-primary-blue {
+    padding: 14px 26px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--color-white);
+    background: var(--gradient-button);
+    box-shadow: var(--shadow-button);
+  }
+  
+  .btn-primary-blue:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-button-hover);
+  }
+  
+  .btn-secondary-outline {
+    background: var(--bg-btn-secondary);
+    color: var(--color-blue-hover);
+    border: 1.8px solid var(--color-blue-hover);
+  }
+  
+  .btn-secondary-outline:hover {
+    background: var(--color-blue-hover);
+    color: var(--color-white);
+  }
+
+  /* ==================== ALLIES HERO ==================== */
+
+.allies-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 72vh;
+
+  display: flex;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* OVERLAY */
+
+.allies-hero__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.92) 0%,
+    rgba(255, 255, 255, 0.78) 38%,
+    rgba(255, 255, 255, 0.38) 70%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+
+  z-index: 1;
+}
+
+/* CONTAINER */
+
+.allies-hero__container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding: 90px 20px;
+}
+
+/* CONTENT */
+
+.allies-hero__content {
+  max-width: 780px;
+}
+
+/* TITLE */
+
+.allies-hero__title {
+  font-size: clamp(2.5rem, 5vw, 3.6rem);
+  font-weight: 800;
+
+  line-height: 1.15;
+
+  color: var(--color-hero-title);
+
+  margin-bottom: 18px;
+}
+
+/* DESCRIPTION */
+
+.allies-hero__description {
+  font-size: 1.08rem;
+  line-height: 1.9;
+
+  color: var(--color-text-body);
+
+  margin-bottom: 34px;
+}
+
+/* ==================== STATS ==================== */
+
+.allies-hero__stats {
+  display: flex;
+  flex-wrap: nowrap;
+
+  gap: 12px;
+}
+
+/* CARD */
+
+.allies-hero__stat {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  width: 300px;
+
+  padding: 12px 14px;
+
+  border-radius: var(--radius-md);
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--color-border-soft);
+
+  box-shadow: var(--shadow-card);
+
+  transition: var(--transition-base);
+}
+
+.allies-hero__stat:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* ICON */
+
+.allies-hero__stat img {
+  width: 30px;
+  height: 30px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+/* TEXT */
+
+.allies-hero__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.allies-hero__label {
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  color: var(--color-blue-main);
+
+  line-height: 1.3;
+
+  margin-bottom: 2px;
+}
+
+.allies-hero__desc {
+  font-size: 0.72rem;
+  line-height: 1.4;
+
+  color: var(--color-text-body);
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 768px) {
+
+  .allies-hero {
+    min-height: auto;
+  }
+
+  .allies-hero__container {
+    padding: 100px 16px 60px;
+  }
+
+  .allies-hero__stats {
+    flex-direction: column;
+  }
+
+  .allies-hero__stat {
+    width: 100%;
+  }
+
+  .allies-hero__title {
+    font-size: 2.4rem;
+  }
+
+}
+
+/* ==================== ALLIES INTRO ==================== */
+
+.allies-intro {
+  position: relative;
+
+  padding: 110px 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7fbff 100%
+    );
+}
+
+/* CONTAINER */
+
+.allies-intro__container {
+  width: 100%;
+  max-width: 950px;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+/* LINE */
+
+.allies-intro .section-line-blue {
+  width: 90px;
+  height: 5px;
+
+  display: block;
+
+  margin: 0 auto 24px;
+}
+
+/* TITLE */
+
+.allies-intro__title {
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  font-weight: 900;
+
+  line-height: 1.2;
+
+  color: var(--color-hero-title);
+
+  margin-bottom: 22px;
+}
+
+/* DESCRIPTION */
+
+.allies-intro__description {
+  font-size: 1.08rem;
+  line-height: 1.9;
+
+  color: var(--color-text-body);
+
+  max-width: 760px;
+
+  margin: 0 auto 38px;
+}
+
+/* BUTTON */
+
+.allies-intro__button {
+  min-width: 180px;
+}
+
+/* ==================== HOVER ==================== */
+
+.allies-intro__button:hover {
+  transform: translateY(-3px);
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 768px) {
+
+  .allies-intro {
+    padding: 80px 20px;
+  }
+
+  .allies-intro__title {
+    font-size: 2.3rem;
+  }
+
+  .allies-intro__description {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+}
+
+/* ==================== ALLIES PREPAID ==================== */
+
+.allies-prepaid {
+  position: relative;
+
+  padding: 100px 20px;
+
+  background: #ffffff;
+}
+
+/* CONTAINER */
+
+.allies-prepaid__container {
+  width: 100%;
+  max-width: 1320px;
+
+  margin: auto;
+}
+
+/* ==================== HEADER ==================== */
+
+.allies-prepaid__header {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-lg);
+
+  min-height: 220px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 50px;
+
+  margin-bottom: 40px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 18px 40px rgba(10, 78, 163, 0.14);
+}
+
+/* OVERLAY */
+
+.allies-prepaid__overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.12),
+      rgba(37, 99, 235, 0.15),
+      rgba(74, 163, 255, 0.08)
+    );
+}
+
+/* CONTENT */
+
+.allies-prepaid__content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ICON */
+
+.allies-prepaid__icon {
+  width: 78px;
+  height: 78px;
+
+  border-radius: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.14);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.allies-prepaid__icon img {
+  width: 38px;
+  height: 38px;
+
+  object-fit: contain;
+}
+
+/* TITLE */
+
+.allies-prepaid__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+
+  color: var(--color-blue-dark);
+
+  margin-bottom: 8px;
+}
+
+/* SUBTITLE */
+
+.allies-prepaid__subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+
+  color: var(--color-text-soft);
+}
+/* ==================== GRID ==================== */
+
+.allies-prepaid__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 24px;
+}
+
+/* CARD */
+
+.allies-prepaid__card {
+  padding: 34px 24px;
+
+  border-radius: var(--radius-md);
+
+  background: #ffffff;
+
+  border: 1px solid var(--color-border-light);
+
+  box-shadow: var(--shadow-card);
+
+  text-align: center;
+
+  transition: var(--transition-base);
+}
+
+.allies-prepaid__card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* CARD ICON */
+
+.allies-prepaid__card-icon {
+  width: 68px;
+  height: 68px;
+
+  margin: 0 auto 22px;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.allies-prepaid__card-icon img {
+  width: 32px;
+  height: 32px;
+
+  object-fit: contain;
+}
+
+/* TITLE */
+
+.allies-prepaid__card-title {
+  font-size: 1.08rem;
+  font-weight: 800;
+
+  color: var(--color-blue-dark);
+
+  margin-bottom: 14px;
+}
+
+/* STATUS */
+
+.allies-prepaid__status {
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  color: var(--color-blue-main);
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 1100px) {
+
+  .allies-prepaid__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .allies-prepaid {
+    padding: 80px 20px;
+  }
+
+  .allies-prepaid__header {
+    padding: 34px 24px;
+    min-height: 180px;
+  }
+
+  .allies-prepaid__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .allies-prepaid__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .allies-prepaid__title {
+    font-size: 2rem;
+  }
+
+}

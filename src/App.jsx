@@ -14,6 +14,8 @@ import PatientRights from "./pages/PatientRights";
 import PatientSecurity from "./pages/PatientSecurity";
 import Pqrs from "./pages/Pqrs";
 import Ppss from "./pages/Ppss";
+import Allies from "./pages/Allies";
+import Location from "./pages/Location";
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
         <Route path="/patientsecurity" element = {<PatientSecurity />} />
         <Route path="/pqrs" element = {<Pqrs />} />
         <Route path="/ppss" element = {<Ppss />} />
+        <Route path="/allies" element = {<Allies />} />
+        <Route path="/location" element = {<Location />} />
       </Routes>
 
       <Footer />

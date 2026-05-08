@@ -92,39 +92,30 @@ function MainMenu() {
             onMouseEnter={() => setSubmenu("aliados")}
             onMouseLeave={() => setSubmenu(null)}
           >
-            <span>Aliados</span>
-
+            <Link to="/allies" onClick={closeMenu}>
+              Aliados
+            </Link>
             <ul className={`submenu ${submenu === "aliados" ? "show" : ""}`}>
               <li onClick={closeMenu}>
-                <Link to="/prepagada">Medicina Prepagada</Link>
+                <Link to="/allies#medicinaprepagada">Medicina Prepagada</Link>
               </li>
               <li onClick={closeMenu}>
-                <Link to="/polizas">Pólizas</Link>
+                <Link to="/allies#polizas">Pólizas</Link>
               </li>
               <li onClick={closeMenu}>
-                <Link to="/convenios">Convenios Empresas</Link>
+                <Link to="/allies#convenioempre">Convenios Empresas</Link>
               </li>
               <li onClick={closeMenu}>
-                <Link to="/caja">Caja de Compensación</Link>
+                <Link to="/allies#regimenEsp">Regimen Especial</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="/allies#caja">Caja de Compensación</Link>
               </li>
             </ul>
           </li>
 
-          <li
-            className="dropdown"
-            onMouseEnter={() => setSubmenu("sedes")}
-            onMouseLeave={() => setSubmenu(null)}
-          >
-            <span>Sedes</span>
-
-            <ul className={`submenu ${submenu === "sedes" ? "show" : ""}`}>
-              <li onClick={closeMenu}>
-                <Link to="/corazon">Centro Médico del Corazón</Link>
-              </li>
-              <li onClick={closeMenu}>
-                <Link to="/mujer">Centro Médico de la Mujer</Link>
-              </li>
-            </ul>
+          <li onClick={closeMenu}>
+            <Link to="/location">Sedes</Link>
           </li>
 
           <li onClick={closeMenu}>
