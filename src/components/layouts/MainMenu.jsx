@@ -106,7 +106,7 @@ function MainMenu() {
                 <Link to="/allies#convenioempre">Convenios Empresas</Link>
               </li>
               <li onClick={closeMenu}>
-                <Link to="/allies#regimenEsp">Regimen Especial</Link>
+                <Link to="/allies#regimenEsp">Régimen Especial y EPS</Link>
               </li>
               <li onClick={closeMenu}>
                 <Link to="/allies#caja">Caja de Compensación</Link>

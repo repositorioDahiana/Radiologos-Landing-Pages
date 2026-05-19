@@ -391,7 +391,7 @@
 /* ==================== VACANCIES ==================== */
 
 .vacancies {
-  padding: 60px 20px;
+  padding: 80px 20px;
   background: #f8fafc;
 }
 
@@ -410,7 +410,8 @@
   font-weight: 600;
   color: var(--color-blue-main);
   background: rgba(10, 78, 163, 0.1);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
 }
 
 .vacancies__title {
@@ -424,107 +425,260 @@
 .vacancies__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  gap: 32px;
 }
 
-/* CARD */
+/* CARD PREMIUM & DINÁMICA */
 .vacancy-card {
-  background: var(--bg-card);
-  border-radius: var(--radius-md);
-  padding: 28px 22px;
-  border: 1px solid var(--color-border-soft);
+  background: var(--bg-card, #ffffff);
+  border-radius: var(--radius-md, 16px);
+  padding: 32px 28px;
+  border: 1px solid var(--color-border-soft, #e2e8f0);
   box-shadow: var(--shadow-card);
   text-align: left;
-  transition: var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Espaciado uniforme entre secciones internas */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Línea de acento animada superior (Efecto Dinámico) */
+.vacancy-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-blue-main), #2563eb);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+/* Interacciones al hacer Hover */
 .vacancy-card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-card-hover);
+  box-shadow: var(--shadow-card-hover, 0 20px 25px -5px rgba(0, 0, 0, 0.05));
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+.vacancy-card:hover::before {
+  transform: scaleX(1);
 }
 
 /* HEADER CARD (ICONO + TITULO) */
 .vacancy-card__header {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 12px;
-}
-
-.vacancy-card__header h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--color-text-dark);
+  gap: 16px;
 }
 
 /* ICONO */
 .vacancy-card__icon {
-  width: 60px;
-  height: 60px;
-  border-radius: var(--radius-sm);
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-icon-blue);
+  background: var(--bg-icon-blue, rgba(37, 99, 235, 0.06));
+  transition: var(--transition-base);
+}
+
+.vacancy-card:hover .vacancy-card__icon {
+  background: rgba(37, 99, 235, 0.12);
+  transform: scale(1.05);
 }
 
 .vacancy-card__icon img {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
-/* TEXTO */
-.vacancy-card p {
-  font-size: 0.9rem;
-  color: var(--color-text-body);
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-/* LISTA TIPO TAGS */
-.vacancy-card ul {
+/* TEXTO DEL HEADER */
+.vacancy-card__header-info {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vacancy-card__header-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-dark, #1e293b);
+}
+
+/* BADGE DE CIUDAD */
+.vacancy-card__city {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: var(--radius-full, 9999px);
+  width: fit-content;
+}
+
+.vacancy-card__city svg {
+  color: var(--color-blue-main);
+}
+
+/* SECCIONES INTERNAS (Objetivo y Perfil) */
+.vacancy-card__section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* SUB-ETIQUETAS INTERNAS */
+.vacancy-card__tag {
+  display: flex;
+  align-items: center;
   gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-blue-main);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vacancy-card__tag svg {
+  opacity: 0.8;
+}
+
+/* DESCRIPCIÓN */
+.vacancy-card__description {
+  font-size: 0.9rem;
+  color: var(--color-text-body, #475569);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* LISTA DE PERFIL REQUERIDO (Estilo Checklist Limpio) */
+.vacancy-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   padding-left: 0;
   margin: 0;
   list-style: none;
 }
 
-.vacancy-card li {
-  font-size: 0.8rem;
+.vacancy-card__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--color-text-body, #475569);
+  line-height: 1.5;
+  background: transparent;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  transition: none;
+}
+
+.vacancy-card__list li:hover {
+  background: transparent;
+}
+
+/* Color personalizado para los iconos de check (Verde Éxito/Salud) */
+.vacancy-card__list li svg {
+  color: #10b981; 
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* FOOTER DE LA TARJETA */
+.vacancy-card__footer {
+  margin-top: auto; /* Empuja el footer al fondo si hay tarjetas con textos más largos */
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border-soft, #e2e8f0);
+}
+
+.vacancy-card__schedule {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.vacancy-card__schedule svg {
   color: var(--color-blue-main);
-  background: rgba(37, 99, 235, 0.08);
-  border: 1px solid rgba(37, 99, 235, 0.2);
-  padding: 6px 10px;
-  border-radius: var(--radius-full);
-  transition: var(--transition-fast);
-}
-
-.vacancy-card li:hover {
-  background: rgba(37, 99, 235, 0.15);
-}
-
-/* CTA */
-.vacancies__cta {
-  margin-top: 50px;
-}
-
-.vacancies__cta p {
-  font-size: 0.95rem;
-  margin-bottom: 16px;
-  color: var(--color-text-body);
 }
 
 /* ==================== RESPONSIVE ==================== */
-
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .vacancies__grid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 
+/* ==================== CTA (LLAMADO A LA ACCIÓN) ==================== */
+
+.vacancies__cta {
+  margin-top: 75px; /* Incrementado para alejarlo del grid y darle una separación perfecta */
+  padding: 32px 24px;
+  background: rgba(37, 99, 235, 0.02); /* Fondo azul extremadamente suave */
+  border: 1px dashed var(--color-border-soft, #e2e8f0); /* Borde punteado sutil */
+  border-radius: var(--radius-md, 16px);
+  max-width: 650px;
+  margin-left: auto; /* Centra el bloque horizontalmente */
+  margin-right: auto; /* Centra el bloque horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px; /* Controla el espacio exacto entre el texto y el botón */
+  transition: all 0.3s ease;
+}
+
+/* Micro-interacción al pasar el mouse sobre el bloque del CTA */
+.vacancies__cta:hover {
+  background: rgba(37, 99, 235, 0.04);
+  border-color: rgba(37, 99, 235, 0.25);
+}
+
+.vacancies__cta p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-body, #475569);
+  margin: 0; /* Eliminamos el margin-bottom para que el gap del padre maneje el espacio */
+  line-height: 1.5;
+}
+
+/* Estilo estilizado para tu botón de postulación */
+.vacancies__cta .btn-primary-blue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  background: linear-gradient(135deg, var(--color-blue-main, #0a4ea3), #2563eb);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: var(--radius-full, 9999px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efecto hover interactivo para el botón */
+.vacancies__cta .btn-primary-blue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+  opacity: 0.95;
+}
 
 /* ==================== APPLY SECTION (CENTERED) ==================== */
 

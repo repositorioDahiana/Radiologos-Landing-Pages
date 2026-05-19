@@ -1,57 +1,56 @@
 import heroBg from "../../assets/images/Fondo.jpg";
-
-// ICONOS HEADER
-import medicinaIcon from "../../assets/Iconos/email.png";
+import medicinaIcon from "../../assets/Iconos/doctor.png";
 
 // ICONOS CARDS
-import colsanitasIcon from "../../assets/Iconos/email.png";
-import medplusIcon from "../../assets/Iconos/email.png";
-import saludTotalIcon from "../../assets/Iconos/email.png";
-import nuevaEpsIcon from "../../assets/Iconos/email.png";
-import suraIcon from "../../assets/Iconos/email.png";
-import coomevaIcon from "../../assets/Iconos/email.png";
-import famisanarIcon from "../../assets/Iconos/email.png";
-import compensarIcon from "../../assets/Iconos/email.png";
+import Icono1 from "../../assets/Iconos/LogoBMI.png";
+import Icono2 from "../../assets/Iconos/LogoColmedica.png";
+import Icono3 from "../../assets/Iconos/LogoColsanitas.png";
+import Icono4 from "../../assets/Iconos/email.png";
+import Icono5 from "../../assets/Iconos/email.png";
+import Icono6 from "../../assets/Iconos/email.png";
+import Icono7 from "../../assets/Iconos/LogoBMI.png";
+import Icono8 from "../../assets/Iconos/LogoColmedica.png";
+
 
 const allies = [
   {
-    icon: colsanitasIcon,
-    name: "Colsanitas",
+    icon: Icono1,
+    name: "Axa Colpatria Medicina Prepagada Y Pólizas",
   },
 
   {
-    icon: medplusIcon,
-    name: "Medplus",
+    icon: Icono2,
+    name: "Colmédica Medicina Prepagada",
   },
 
   {
-    icon: saludTotalIcon,
-    name: "Salud Total EPS",
+    icon: Icono3,
+    name: "Compañía De Medicina Prepagada Colsanitas",
   },
 
   {
-    icon: nuevaEpsIcon,
-    name: "Nueva EPS",
+    icon: Icono4,
+    name: "Coomeva Medicina Prepagada",
   },
 
   {
-    icon: suraIcon,
-    name: "EPS SURA",
+    icon: Icono5,
+    name: "Medisanitas",
   },
 
   {
-    icon: coomevaIcon,
-    name: "Coomeva EPS",
+    icon: Icono6,
+    name: "Medplus Medicina Prepagada",
   },
 
   {
-    icon: famisanarIcon,
-    name: "Famisanar",
+    icon: Icono7,
+    name: "Colmedica Mp",
   },
 
   {
-    icon: compensarIcon,
-    name: "Compensar EPS",
+    icon: Icono8,
+    name: "Axa Colpatria Mp",
   },
 ];
 

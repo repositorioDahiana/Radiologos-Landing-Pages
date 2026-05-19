@@ -129,7 +129,7 @@ function Hero() {
               className="hero__statIcon hero__statIcon--sedes"
             />
             <div className="hero__statText">
-              <div className="hero__statNumber">17+</div>
+              <div className="hero__statNumber">11+</div>
               <div className="hero__statLabel">Sedes</div>
             </div>
           </div>

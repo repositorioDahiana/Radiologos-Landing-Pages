@@ -1,8 +1,8 @@
-import peticionIcon from "../../assets/Iconos/email.png";
-import quejaIcon from "../../assets/Iconos/email.png";
-import reclamoIcon from "../../assets/Iconos/email.png";
-import sugerenciaIcon from "../../assets/Iconos/email.png";
-import felicitacionIcon from "../../assets/Iconos/email.png";
+import peticionIcon from "../../assets/Iconos/peticion.png";
+import quejaIcon from "../../assets/Iconos/quejas.png";
+import reclamoIcon from "../../assets/Iconos/reclamo.png";
+import sugerenciaIcon from "../../assets/Iconos/comentario.png";
+import felicitacionIcon from "../../assets/Iconos/felicitaciones.png";
 import { useState } from "react";
 
 function PQRSForm() {
@@ -292,7 +292,7 @@ function PQRSForm() {
 
               <input
                 type="text"
-                placeholder="Ej: Resonancia Magnética"
+                placeholder="Ej: Andres Ramirez"
               />
             </div>
 

@@ -1,9 +1,7 @@
 import heroBg from "../../assets/images/Fondo.jpg";
-
-// 🔥 ICONOS
-import controlIcon from "../../assets/Iconos/email.png";
-import comunidadIcon from "../../assets/Iconos/email.png";
-import capacitacionIcon from "../../assets/Iconos/email.png";
+import controlIcon from "../../assets/Iconos/control.png";
+import comunidadIcon from "../../assets/Iconos/participacion.png";
+import capacitacionIcon from "../../assets/Iconos/formacion.png";
 
 function PpssHero() {
   return (

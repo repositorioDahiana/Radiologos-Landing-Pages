@@ -1,57 +1,116 @@
 import heroBg from "../../assets/images/Fondo.jpg";
-
-// ICONOS HEADER
-import medicinaIcon from "../../assets/Iconos/email.png";
+import medicinaIcon from "../../assets/Iconos/atencionintegral.png";
 
 // ICONOS CARDS
-import colsanitasIcon from "../../assets/Iconos/email.png";
-import medplusIcon from "../../assets/Iconos/email.png";
-import saludTotalIcon from "../../assets/Iconos/email.png";
-import nuevaEpsIcon from "../../assets/Iconos/email.png";
-import suraIcon from "../../assets/Iconos/email.png";
-import coomevaIcon from "../../assets/Iconos/email.png";
-import famisanarIcon from "../../assets/Iconos/email.png";
-import compensarIcon from "../../assets/Iconos/email.png";
+import Icono1 from "../../assets/Iconos/email.png";
+import Icono2 from "../../assets/Iconos/email.png";
+import Icono3 from "../../assets/Iconos/email.png";
+import Icono4 from "../../assets/Iconos/email.png";
+import Icono5 from "../../assets/Iconos/email.png";
+import Icono6 from "../../assets/Iconos/email.png";
+import Icono7 from "../../assets/Iconos/email.png";
+import Icono8 from "../../assets/Iconos/email.png";
+import Icono9 from "../../assets/Iconos/email.png";
+import Icono10 from "../../assets/Iconos/email.png";
+import Icono11 from "../../assets/Iconos/email.png";
+import Icono12 from "../../assets/Iconos/email.png";
+import Icono13 from "../../assets/Iconos/email.png";
+import Icono14 from "../../assets/Iconos/email.png";
+import Icono15 from "../../assets/Iconos/email.png";
+import Icono16 from "../../assets/Iconos/email.png";
+import Icono17 from "../../assets/Iconos/email.png";
+import Icono18 from "../../assets/Iconos/email.png";
+import Icono19 from "../../assets/Iconos/email.png";
+import Icono20 from "../../assets/Iconos/email.png";
 
 const allies = [
   {
-    icon: colsanitasIcon,
-    name: "Allianz Seguros",
+    icon: Icono1,
+    name: "Allianz Seguros De Vida S.A",
   },
 
   {
-    icon: medplusIcon,
-    name: "AXA Colpatria",
+    icon: Icono2,
+    name: "Aseguradora Solidaria De Colombia",
   },
 
   {
-    icon: saludTotalIcon,
-    name: "Mapfre Seguros",
+    icon: Icono3,
+    name: "Bmi Colombia Compañia De Seguros De Vida S.A.",
   },
 
   {
-    icon: nuevaEpsIcon,
-    name: "Seguros Bolívar",
+    icon: Icono4,
+    name: "Compañía De Seguros Bolívar",
   },
 
   {
-    icon: suraIcon,
-    name: "Liberty Seguros",
+    icon: Icono5,
+    name: "Compañía De Seguros Aurora",
   },
 
   {
-    icon: coomevaIcon,
-    name: "SBS Seguros",
+    icon: Icono6,
+    name: "Compañia Mundial De Seguros (Polizas)",
   },
 
   {
-    icon: famisanarIcon,
-    name: "HDI Seguros",
+    icon: Icono7,
+    name: "La Equidad Seguros De Vida",
   },
 
   {
-    icon: compensarIcon,
-    name: "Suramericana",
+    icon: Icono8,
+    name: "Hdi Seguros Colombia (Antes Liberty)",
+  },
+
+  {
+    icon: Icono9,
+    name: "Mapfre Colombia Vida Seguros (Arl-Polizas De Salud Y Estudiantil)",
+  },
+  {
+    icon: Icono10,
+    name: "Pan American Life De Colombia",
+  },
+  {
+    icon: Icono11,
+    name: "Positiva Compañia De Seguros Arl",
+  },
+  {
+    icon: Icono12,
+    name: "Seguros De Vida Suramericana (Polizas)",
+  },
+  {
+    icon: Icono13,
+    name: "Compañia De Seguros Colsanitas S.A.",
+  },
+  {
+    icon: Icono14,
+    name: "Colsanitas",
+  },
+  {
+    icon: Icono15,
+    name: "Colmena Seguros De Vida",
+  },
+  {
+    icon: Icono16,
+    name: "Medisanitas-Banco De La Republica",
+  },
+  {
+    icon: Icono17,
+    name: "Allianz Seguros De Vida",
+  },
+  {
+    icon: Icono18,
+    name: "Axa Colpatria Seguros Sa",
+  },
+  {
+    icon: Icono19,
+    name: "Colsanitas Integral",
+  },
+  {
+    icon: Icono20,
+    name: "La Equidad Seguros De Vidad O.C",
   },
 ];
 
@@ -87,7 +146,7 @@ function AlliesPols() {
               </h2>
 
               <p className="allies-prepaid__subtitle">
-                8 entidades aliadas
+                20 entidades aliadas
               </p>
 
             </div>

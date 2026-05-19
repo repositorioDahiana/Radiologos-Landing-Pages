@@ -1,57 +1,85 @@
 import heroBg from "../../assets/images/Fondo.jpg";
+import medicinaIcon from "../../assets/Iconos/especial.png";
 
-// ICONOS HEADER
-import medicinaIcon from "../../assets/Iconos/email.png";
-
-// ICONOS CARDS
-import colsanitasIcon from "../../assets/Iconos/email.png";
-import medplusIcon from "../../assets/Iconos/email.png";
-import saludTotalIcon from "../../assets/Iconos/email.png";
-import nuevaEpsIcon from "../../assets/Iconos/email.png";
-import suraIcon from "../../assets/Iconos/email.png";
-import coomevaIcon from "../../assets/Iconos/email.png";
-import famisanarIcon from "../../assets/Iconos/email.png";
-import compensarIcon from "../../assets/Iconos/email.png";
+import Icono1 from "../../assets/Iconos/LogoBMI.png";
+import Icono2 from "../../assets/Iconos/LogoColmedica.png";
+import Icono3 from "../../assets/Iconos/LogoColsanitas.png";
+import Icono4 from "../../assets/Iconos/email.png";
+import Icono5 from "../../assets/Iconos/email.png";
+import Icono6 from "../../assets/Iconos/email.png";
+import Icono7 from "../../assets/Iconos/LogoBMI.png";
+import Icono8 from "../../assets/Iconos/LogoColmedica.png";
+import Icono9 from "../../assets/Iconos/LogoColmedica.png";
+import Icono10 from "../../assets/Iconos/LogoColmedica.png";
+import Icono11 from "../../assets/Iconos/LogoColmedica.png";
+import Icono12 from "../../assets/Iconos/LogoColmedica.png";
+import Icono13 from "../../assets/Iconos/LogoColmedica.png";
+import Icono14 from "../../assets/Iconos/LogoColmedica.png";
 
 const allies = [
   {
-    icon: colsanitasIcon,
-    name: "Fosyga",
+    icon: Icono1,
+    name: "Policía Regional N3",
   },
 
   {
-    icon: medplusIcon,
+    icon: Icono2,
     name: "Fomag",
   },
 
   {
-    icon: saludTotalIcon,
-    name: "COLFONDOS",
+    icon: Icono3,
+    name: "ESM Batallon Cacique Calarca",
   },
 
   {
-    icon: nuevaEpsIcon,
-    name: "Porvenir",
+    icon: Icono4,
+    name: "Ecopetrol",
   },
 
   {
-    icon: suraIcon,
-    name: "Protección",
+    icon: Icono5,
+    name: "Sura Eps",
   },
 
   {
-    icon: coomevaIcon,
-    name: "Colpensiones",
+    icon: Icono6,
+    name: "Salud Total",
   },
 
   {
-    icon: famisanarIcon,
-    name: "Old Mutual",
+    icon: Icono7,
+    name: "Sanitas",
   },
 
   {
-    icon: compensarIcon,
-    name: "Crecer AFP",
+    icon: Icono8,
+    name: "Sos",
+  },
+
+  {
+    icon: Icono9,
+    name: "Asmetsalud",
+  },
+  {
+    icon: Icono10,
+    name: "Coosalud",
+  },
+  {
+    icon: Icono11,
+    name: "Bienestar Salud",
+  },
+  {
+    icon: Icono12,
+    name: "Fideicomisos",
+  },
+  {
+    icon: Icono13,
+    name: "Proveer Institucional Sas",
+  },
+  {
+    icon: Icono14,
+    name: "Positiva Compañia De Seguros Arl",
   },
 ];
 
@@ -83,11 +111,11 @@ function AlliesRegEspcial() {
             <div>
 
               <h2 className="allies-prepaid__title"> 
-                Régimen Especial
+                Régimen Especial y EPS
               </h2>
 
               <p className="allies-prepaid__subtitle">
-                8 entidades aliadas
+                14 entidades aliadas
               </p>
 
             </div>

@@ -1,9 +1,7 @@
 import heroBg from "../../assets/images/Fondo.jpg";
-
-// ICONOS
-import tiempoIcon from "../../assets/Iconos/email.png";
-import privacidadIcon from "../../assets/Iconos/email.png";
-import soporteIcon from "../../assets/Iconos/email.png";
+import tiempoIcon from "../../assets/Iconos/respuesta.png";
+import privacidadIcon from "../../assets/Iconos/privacidad.png";
+import soporteIcon from "../../assets/Iconos/24-7.png";
 
 function PQRSHero() {
   return (

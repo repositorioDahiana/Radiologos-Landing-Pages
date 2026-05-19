@@ -1,9 +1,7 @@
 import heroBg from "../../assets/images/Fondo.jpg";
-
-// ICONOS
-import aliadosIcon from "../../assets/Iconos/email.png";
-import coberturaIcon from "../../assets/Iconos/email.png";
-import tramitesIcon from "../../assets/Iconos/email.png";
+import aliadosIcon from "../../assets/Iconos/aliados.png";
+import coberturaIcon from "../../assets/Iconos/cobertura.png";
+import tramitesIcon from "../../assets/Iconos/agil.png";
 
 function AlliesHero() {
   return (
@@ -24,9 +22,8 @@ function AlliesHero() {
           </h1>
 
           <p className="allies-hero__description">
-            Trabajamos con las principales entidades del sector salud en
-            Colombia para brindar acceso a servicios de radiología e
-            imágenes diagnósticas con cobertura integral.
+            Accede a servicios diagnósticos especializados con el respaldo de tus pólizas, medicinas prepagadas o 
+            convenios empresariales. Cuidamos de ti bajo las condiciones y coberturas de tu entidad de salud.
           </p>
 
           {/* STATS */}
@@ -37,13 +34,13 @@ function AlliesHero() {
 
               <img
                 src={aliadosIcon}
-                alt="50 aliados"
+                alt="80 aliados"
               />
 
               <div className="allies-hero__text">
 
                 <span className="allies-hero__label">
-                  50+ Aliados
+                  80+ Aliados
                 </span>
 
                 <span className="allies-hero__desc">

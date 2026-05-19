@@ -1,58 +1,21 @@
 import heroBg from "../../assets/images/Fondo.jpg";
-
-// ICONOS HEADER
-import medicinaIcon from "../../assets/Iconos/email.png";
+import medicinaIcon from "../../assets/Iconos/subsidios.png";
 
 // ICONOS CARDS
-import colsanitasIcon from "../../assets/Iconos/email.png";
-import medplusIcon from "../../assets/Iconos/email.png";
-import saludTotalIcon from "../../assets/Iconos/email.png";
-import nuevaEpsIcon from "../../assets/Iconos/email.png";
-import suraIcon from "../../assets/Iconos/email.png";
-import coomevaIcon from "../../assets/Iconos/email.png";
-import famisanarIcon from "../../assets/Iconos/email.png";
-import compensarIcon from "../../assets/Iconos/email.png";
+import Icono1 from "../../assets/Iconos/email.png";
+import Icono2 from "../../assets/Iconos/email.png";
+
 
 const allies = [
   {
-    icon: colsanitasIcon,
-    name: "COMFENALCO",
-  },
-
-  {
-    icon: medplusIcon,
-    name: "COMFAMILIAR",
-  },
-
-  {
-    icon: saludTotalIcon,
-    name: "CAFAM",
-  },
-
-  {
-    icon: nuevaEpsIcon,
-    name: "COLSUBSIDIO",
-  },
-
-  {
-    icon: suraIcon,
-    name: "CONFENALCO",
-  },
-
-  {
-    icon: coomevaIcon,
-    name: "Comfandi",
-  },
-
-  {
-    icon: famisanarIcon,
-    name: "Comfamiliar",
-  },
-
-  {
-    icon: compensarIcon,
-    name: "Comfamiliar",
-  },
+      icon: Icono1,
+      name: "Risaralda",
+    },
+  
+    {
+      icon: Icono2,
+      name: "Comfenalco Quindio",
+    },
 ];
 
 function AlliesCaja() {
@@ -87,7 +50,7 @@ function AlliesCaja() {
               </h2>
 
               <p className="allies-prepaid__subtitle">
-                8 entidades aliadas
+                2 entidades aliadas
               </p>
 
             </div>

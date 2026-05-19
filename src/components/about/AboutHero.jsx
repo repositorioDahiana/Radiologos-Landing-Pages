@@ -38,7 +38,7 @@ function AboutHero() {
             <img src={sedesIcon} className="about-hero__statIcon" />
 
             <div className="about-hero__statText">
-              <strong>+17 sedes</strong>
+              <strong>+11 sedes</strong>
               <span>en Colombia</span>
             </div>
           </article>

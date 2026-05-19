@@ -48,7 +48,7 @@ function Footer() {
             <li><a href="/especialidades">Especialidades</a></li>
             <li>
               <a href="/privacidad" target="_blank" rel="noopener noreferrer">
-                Política de privacidad
+                Política de datos
               </a>
             </li>
             <li>

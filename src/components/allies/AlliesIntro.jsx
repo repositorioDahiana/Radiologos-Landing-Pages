@@ -21,7 +21,7 @@ function AlliesIntro() {
         </p>
 
         <a
-          href="#aliados"
+          href="#medicinaprepagada"
           className="btn-base btn-primary-blue allies-intro__button"
         >
           Conocer más

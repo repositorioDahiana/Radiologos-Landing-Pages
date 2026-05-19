@@ -20,7 +20,7 @@ function ServicesPreview() {
       icon: mujerIcon,
       title: "Centro Médico para la Mujer",
       description:
-        "Un espacio diseñado para la mujer. Contamos con mamografía con tomosíntesis para una detección precisa, y un portafolio integral en ginecología, obstetricia, perinatología y terapias de piso pélvico, con los más altos estándares de salud.",
+        "Un espacio diseñado para la mujer. Contamos con mamografía con tomosíntesis para una detección precisa, y un portafolio integral en ginecología, obstetricia, perinatología y terapias de piso pélvico, con los más altos estándares de calidad.",
       link: "/services",
       featured: false,
     },

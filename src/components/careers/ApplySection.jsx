@@ -55,7 +55,7 @@ function ApplySection() {
 
 
           <div className="apply__field">
-            <label>Adjuntar Hoja de Vida</label>
+            <label>Adjuntar Hoja de Vida*</label>
             <input type="file" />
             <small>PDF, DOC, DOCX — máx. 5MB</small>
           </div>
