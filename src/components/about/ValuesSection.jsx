@@ -1,4 +1,4 @@
-import bgValores from "../../assets/images/Fondo.jpg";
+import bgValores from "../../assets/images/NuesValores.png";
 
 import pasionIcon from "../../assets/Iconos/pasion.png";
 import transparenciaIcon from "../../assets/Iconos/transparencia.png";

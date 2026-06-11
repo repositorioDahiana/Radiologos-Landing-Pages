@@ -1,12 +1,18 @@
 import { useMemo, useState } from "react";
 
-import losRosalesImg from "../../assets/images/Fondo.jpg";
+import losRosalesImg from "../../assets/images/ImgRosales.png";
 import comfamiliarImg from "../../assets/images/Fondo.jpg";
-import sanRafaelImg from "../../assets/images/Fondo.jpg";
-import centroMedicoImg from "../../assets/images/Fondo.jpg";
-import pinaresImg from "../../assets/images/UbicacionPlus.jpg";
+import sanRafaelImg from "../../assets/images/ImgEseCentro.png";
+import centroMedicoImg from "../../assets/images/ImgCentroCorazon.png";
+import pinaresImg from "../../assets/images/ImgPlus.png";
 import ubicacionIcon from "../../assets/Iconos/ubicacion.png";
 import relojIcon from "../../assets/Iconos/reloj.png";
+import ImgCentroMujer from "../../assets/images/ImgCentroMujer.png";
+import Ubicacion1 from "../../assets/images/ImgSanRafael.png";
+import Ubicacion2 from "../../assets/images/EseSanJuaquin.png";
+import centroCartagoImg from "../../assets/images/CentroCartago.png";
+import mariscalCartagoImg from "../../assets/images/Mariscal.png";
+import ArmeniaImg from "../../assets/images/Armenia.png";
 
 function LocationsPreview() {
   const [activeCity, setActiveCity] = useState("Pereira");
@@ -35,7 +41,7 @@ function LocationsPreview() {
     {
       id: 3,
       city: "Pereira",
-      image: sanRafaelImg,
+      image: Ubicacion1,
       title: "Radiólogos Asociados Sede Clínica San Rafael Megacentro",
       address: "Carrera 19 No. 12-32 Primer piso",
       schedule1: "Ambulatorios (L-S): 7:00 a.m. – 6:00 p.m.",
@@ -66,7 +72,7 @@ function LocationsPreview() {
     {
       id: 6,
       city: "Pereira",
-      image: losRosalesImg,
+      image: ImgCentroMujer,
       title: "Radiólogos Asociados Sede Centro Médico De La Mujer",
       address: "Carrera 9 No. 25-25 Torre C Piso 4 Clínica Rosales",
       schedule1: "L-V: 7:00 a.m. – 5:00 p.m.",
@@ -76,7 +82,7 @@ function LocationsPreview() {
     {
       id: 7,
       city: "Pereira",
-      image: comfamiliarImg,
+      image: Ubicacion2,
       title: "Radiólogos Asociados Sede ESE San Joaquín",
       address: "Carrera 26 No. 78-80 Barrio Cuba",
       schedule1: "L-V: 8:00 a.m. – 5:00 p.m.",
@@ -97,7 +103,7 @@ function LocationsPreview() {
     {
       id: 9,
       city: "Cartago",
-      image: centroMedicoImg,
+      image: centroCartagoImg,
       title: "Radiólogos Asociados Sede Cartago Centro",
       address: "Carrera 5 No. 7-88",
       schedule1: "L-V: 7:00 a.m. – 4:00 p.m.",
@@ -107,7 +113,7 @@ function LocationsPreview() {
     {
       id: 10,
       city: "Cartago",
-      image: pinaresImg,
+      image: mariscalCartagoImg,
       title: "Radiólogos Asociados Sede Mariscal",
       address: "Carrera 5 No. 8-55",
       schedule1: "L-V: 7:00 a.m. – 4:00 p.m.",
@@ -118,7 +124,7 @@ function LocationsPreview() {
     {
       id: 11,
       city: "Armenia",
-      image: losRosalesImg,
+      image: ArmeniaImg,
       title: "Radiólogos Asociados Sede Armenia",
       address: "Carrera 12 1A norte-20 local 101-102",
       schedule1: "L-V: 7:00 a.m. – 4:00 p.m.",
