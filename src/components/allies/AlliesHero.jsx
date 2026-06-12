@@ -1,4 +1,5 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/Aliados.png";
+
 import aliadosIcon from "../../assets/Iconos/aliados.png";
 import coberturaIcon from "../../assets/Iconos/cobertura.png";
 import tramitesIcon from "../../assets/Iconos/agil.png";

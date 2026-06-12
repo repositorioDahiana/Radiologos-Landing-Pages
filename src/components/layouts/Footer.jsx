@@ -5,6 +5,7 @@ import supersalud from "../../assets/Iconos/supersalud.png";
 import telefono from "../../assets/Iconos/telefono.png";
 import email from "../../assets/Iconos/email.png";
 import ubicacion from "../../assets/Iconos/ubicacion.png";
+import google from "../../assets/Iconos/google.png";
 
 function Footer() {
   return (
@@ -20,10 +21,26 @@ function Footer() {
             alt="Logo Radiologos Asociados"
           />
 
-          <p>
-            Más de 46 años brindando servicios de radiología e imágenes
-            diagnósticas con tecnología de vanguardia y atención humanizada.
-          </p>
+          <a
+            href="https://www.google.com/search?q=radiologos+pereira&sca_esv=88d66a416da09828&biw=1536&bih=730&sxsrf=ANbL-n4hFbTcpVMD0Di2sz0YZqRlLp6AFw%3A1781234681918&ei=-XsraqLCN76FwbkP6vm5wQU&ved=0ahUKEwjiouij4ICVAxW-QjABHep8LlgQ4dUDCBI&uact=5&oq=radiologos+pereira&gs_lp=Egxnd3Mtd2l6LXNlcnAiEnJhZGlvbG9nb3MgcGVyZWlyYTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwFI4BtQ0gZY8hpwBXgBkAEAmAGHAqAB9BCqAQUwLjguNLgBA8gBAPgBAZgCEaAC8RHCAgoQABhHGNYEGLADwgIKECMYgAQYigUYJ8ICBBAjGCfCAg0QABiABBiKBRhDGLEDwgIQEC4YgAQYigUYQxjHARivAcICCBAAGIAEGLEDwgIGEAAYHhgNwgIFEAAY7wXCAgcQABiABBgNwgINEC4YgAQYDRjHARivAZgDAIgGAZAGCJIHBTUuNy41oAeUXrIHBTAuNy41uAfQEcIHBjAuMi4xNcgHXIAIAQ&sclient=gws-wiz-serp#sv=CAESzQEKuQEStgEKd0FNbjMteVNKMExpUDBwa0RoMktZaFcxQ2t5WVgxeHB6RHJIMTYyUExwa2NwMFRuMThPaG5EclREbEJoUThqMmduRnloWGhmY1dhY0I4V1FTLTMzQnJCZ29zby1tMEhqdlFpdTIwNTdEWEdwWDF3VUtyUDViUXE4EhdDSHdyYW83WEF1Q1d3YmtQXy1qUmtBTRoiQUpLTEZtSXFxUGxLVEtNalZQZnhZNDZqVjhNdVNFRmpWZxIEODA1MRoBMyoAMAA4AUAAGAAgjZXDpg9KAhAC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="google-rating"
+          >
+            <img
+              src={google}
+              className="google-mini-logo"
+              alt="Google"
+            />
+
+            <div className="google-stars">
+              ★★★★★
+            </div>
+
+            <p className="google-text">
+              Califícanos en Google
+            </p>
+          </a>
         </div>
 
         {/* Servicios */}

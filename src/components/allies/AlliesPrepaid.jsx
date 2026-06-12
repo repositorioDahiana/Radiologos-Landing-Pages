@@ -1,16 +1,13 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/MedicinaPrepagada.png";
 import medicinaIcon from "../../assets/Iconos/doctor.png";
 
 // ICONOS CARDS
-import Icono1 from "../../assets/Iconos/LogoBMI.png";
-import Icono2 from "../../assets/Iconos/LogoColmedica.png";
-import Icono3 from "../../assets/Iconos/LogoColsanitas.png";
-import Icono4 from "../../assets/Iconos/email.png";
-import Icono5 from "../../assets/Iconos/email.png";
-import Icono6 from "../../assets/Iconos/email.png";
-import Icono7 from "../../assets/Iconos/LogoBMI.png";
-import Icono8 from "../../assets/Iconos/LogoColmedica.png";
-
+import Icono1 from "../../assets/images/LogoAxaColpatria.png";
+import Icono2 from "../../assets/images/LogoColmedica.png";
+import Icono3 from "../../assets/images/LogoColsanitas.png";
+import Icono4 from "../../assets/images/LogoCoomeva.png";
+import Icono5 from "../../assets/images/LogoMedisanitas.png";
+import Icono6 from "../../assets/images/LogoMedPlus.png";
 
 const allies = [
   {
@@ -41,16 +38,6 @@ const allies = [
   {
     icon: Icono6,
     name: "Medplus Medicina Prepagada",
-  },
-
-  {
-    icon: Icono7,
-    name: "Colmedica Mp",
-  },
-
-  {
-    icon: Icono8,
-    name: "Axa Colpatria Mp",
   },
 ];
 

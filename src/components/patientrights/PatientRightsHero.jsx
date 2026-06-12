@@ -1,4 +1,5 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/DerechosDeberes.png";
+
 import derechosIcon from "../../assets/Iconos/derechos.png";
 import deberesIcon from "../../assets/Iconos/deberes.png";
 

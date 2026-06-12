@@ -1,15 +1,37 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import React, { useState, useEffect } from "react";
+import heroBg1 from "../../assets/images/Trabajo1.png";
+import heroBg2 from "../../assets/images/Trabajo2.png";
+import heroBg3 from "../../assets/images/Trabajo3.png";
+import heroBg4 from "../../assets/images/Trabajo4.png";
 
 // 🔥 ICONOS
 import vacantesIcon from "../../assets/Iconos/trabajo.png";
 import hojaVidaIcon from "../../assets/Iconos/enviar.png";
 
+const backgroundImages = [heroBg1, heroBg2, heroBg3, heroBg4];
+
 function CareersHero() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+    }, 4000); // Cambia de imagen cada 4 segundos
+
+    return () => clearInterval(intervalId); // Limpiar el intervalo al desmontar
+  }, []);
+
   return (
-    <section
-      className="careers-hero"
-      style={{ backgroundImage: `url(${heroBg})` }}
-    >
+    <section className="careers-hero">
+      {/* Carrusel de fondo */}
+      {backgroundImages.map((img, index) => (
+        <div
+          key={index}
+          className={`careers-hero__bg ${index === currentImageIndex ? 'active' : ''}`}
+          style={{ backgroundImage: `url(${img})` }}
+        ></div>
+      ))}
+
       {/* Overlay */}
       <div className="careers-hero__overlay"></div>
 

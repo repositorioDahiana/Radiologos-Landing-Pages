@@ -4,6 +4,8 @@ import AboutSummary from "../components/home/AboutSummary";
 import ServicesPreview from "../components/home/ServicesPreview";
 import LocationsPreview from "../components/home/LocationsPreview";
 import ExternalPartners from "../components/home/ExternalPartners";
+import OurSpecialists from "../components/home/OurSpecialists";
+import AgreementsPreview from "../components/home/AgreementsPreview";
 
 function Home() {
   return (
@@ -11,7 +13,10 @@ function Home() {
       <Hero />
       <ServicesPreview />
       <AboutSummary />
+      <OurSpecialists />
       <LocationsPreview />
+      <AgreementsPreview />
+      
     </main>
   );
 }

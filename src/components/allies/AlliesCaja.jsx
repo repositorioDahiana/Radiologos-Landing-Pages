@@ -1,21 +1,15 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/CajaCompensa.png";
 import medicinaIcon from "../../assets/Iconos/subsidios.png";
 
 // ICONOS CARDS
-import Icono1 from "../../assets/Iconos/email.png";
-import Icono2 from "../../assets/Iconos/email.png";
+import caja1 from "../../assets/images/LogoRisaralda.png";
+import caja2 from "../../assets/images/LogoComfenalco.png";
+
 
 
 const allies = [
-  {
-      icon: Icono1,
-      name: "Risaralda",
-    },
-  
-    {
-      icon: Icono2,
-      name: "Comfenalco Quindio",
-    },
+  { name: "Risaralda", icon: caja1 },
+  { name: "Comfenalco Quindio", icon: caja2 },
 ];
 
 function AlliesCaja() {

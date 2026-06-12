@@ -1,86 +1,34 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/RegimenEPS.png";
 import medicinaIcon from "../../assets/Iconos/especial.png";
 
-import Icono1 from "../../assets/Iconos/LogoBMI.png";
-import Icono2 from "../../assets/Iconos/LogoColmedica.png";
-import Icono3 from "../../assets/Iconos/LogoColsanitas.png";
-import Icono4 from "../../assets/Iconos/email.png";
-import Icono5 from "../../assets/Iconos/email.png";
-import Icono6 from "../../assets/Iconos/email.png";
-import Icono7 from "../../assets/Iconos/LogoBMI.png";
-import Icono8 from "../../assets/Iconos/LogoColmedica.png";
-import Icono9 from "../../assets/Iconos/LogoColmedica.png";
-import Icono10 from "../../assets/Iconos/LogoColmedica.png";
-import Icono11 from "../../assets/Iconos/LogoColmedica.png";
-import Icono12 from "../../assets/Iconos/LogoColmedica.png";
-import Icono13 from "../../assets/Iconos/LogoColmedica.png";
-import Icono14 from "../../assets/Iconos/LogoColmedica.png";
+import Especial1 from "../../assets/images/LogoPolicia.png";
+import Especial2 from "../../assets/images/LogoFomag.png";
+import Especial3 from "../../assets/images/LogoBatallon.png";
+import Especial4 from "../../assets/images/LogoEcopetrol.png";
+import Especial5 from "../../assets/images/LogoSura.png";
+import Especial6 from "../../assets/images/LogoSaludTotal.png";
+import Especial7 from "../../assets/images/LogoSanitas.png";
+import Especial8 from "../../assets/images/LogoSOS.png";
+import Especial9 from "../../assets/images/LogoAsmet.png";
+import Especial10 from "../../assets/images/LogoCooperativa.png";
+import Especial11 from "../../assets/images/LogoProtegemos.png";
+import Especial13 from "../../assets/images/LogoProveer.png";
+import Especial14 from "../../assets/images/LogoPositiva.png";
 
 const allies = [
-  {
-    icon: Icono1,
-    name: "Policía Regional N3",
-  },
-
-  {
-    icon: Icono2,
-    name: "Fomag",
-  },
-
-  {
-    icon: Icono3,
-    name: "ESM Batallon Cacique Calarca",
-  },
-
-  {
-    icon: Icono4,
-    name: "Ecopetrol",
-  },
-
-  {
-    icon: Icono5,
-    name: "Sura Eps",
-  },
-
-  {
-    icon: Icono6,
-    name: "Salud Total",
-  },
-
-  {
-    icon: Icono7,
-    name: "Sanitas",
-  },
-
-  {
-    icon: Icono8,
-    name: "Sos",
-  },
-
-  {
-    icon: Icono9,
-    name: "Asmetsalud",
-  },
-  {
-    icon: Icono10,
-    name: "Coosalud",
-  },
-  {
-    icon: Icono11,
-    name: "Bienestar Salud",
-  },
-  {
-    icon: Icono12,
-    name: "Fideicomisos",
-  },
-  {
-    icon: Icono13,
-    name: "Proveer Institucional Sas",
-  },
-  {
-    icon: Icono14,
-    name: "Positiva Compañia De Seguros Arl",
-  },
+  { name: "Policía Regional N3", icon: Especial1 },
+  { name: "Fomag", icon: Especial2 },
+  { name: "ESM Batallon Cacique Calarca", icon: Especial3 },
+  { name: "Ecopetrol", icon: Especial4 },
+  { name: "Sura Eps", icon: Especial5 },
+  { name: "Salud Total", icon: Especial6 },
+  { name: "Sanitas", icon: Especial7 },
+  { name: "SOS", icon: Especial8 },
+  { name: "Asmetsalud", icon: Especial9 },
+  { name: "Coosalud", icon: Especial10 },
+  { name: "Bienestar Salud", icon: Especial11 },
+  { name: "Proveer Institucional S.A.S", icon: Especial13 },
+  { name: "Positiva Compañia De Seguros ARL", icon: Especial14 },
 ];
 
 function AlliesRegEspcial() {

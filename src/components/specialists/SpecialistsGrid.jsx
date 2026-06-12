@@ -1,65 +1,117 @@
-import img1 from "../../assets/images/Fondo.jpg";
-import img2 from "../../assets/images/Fondo.jpg";
-import img3 from "../../assets/images/Fondo.jpg";
-import img4 from "../../assets/images/Fondo.jpg";
-import img5 from "../../assets/images/Fondo.jpg";
-import img6 from "../../assets/images/Fondo.jpg";
-import img7 from "../../assets/images/Fondo.jpg";
-import img8 from "../../assets/images/Fondo.jpg";
-import img9 from "../../assets/images/Fondo.jpg";
-import img10 from "../../assets/images/Fondo.jpg";
-import img11 from "../../assets/images/Fondo.jpg";
-import img12 from "../../assets/images/Fondo.jpg";
-import img13 from "../../assets/images/Fondo.jpg";
-import img14 from "../../assets/images/Fondo.jpg";
-import img15 from "../../assets/images/Fondo.jpg";
+import doc1 from "../../assets/images/Doctor1.png";
+import doc2 from "../../assets/images/Doctor2.png";
+import doc3 from "../../assets/images/Doctor3.png";
+import doc4 from "../../assets/images/Doctor4.png";
+import doc5 from "../../assets/images/Doctor5.png";
+import doc6 from "../../assets/images/Doctor6.png";
+import doc7 from "../../assets/images/Doctor7.png";
+import doc8 from "../../assets/images/Doctor8.png";
+import doc9 from "../../assets/images/Doctor9.png";
+import doc10 from "../../assets/images/Doctor13.png";
+import doc11 from "../../assets/images/Doctor11.png";
+import doc12 from "../../assets/images/Doctor12.jpg";
+import doc13 from "../../assets/images/Doctor10.png";
 
 const specialists = [
   {
     id: 1,
-    name: "Dr. Carlos Andrés Mejía",
-    specialty: "Radiología Diagnóstica",
-    sub: "Neurorradiología",
-    exp: "18 años de experiencia",
-    tags: ["Resonancia Magnética", "Neurorradiología"],
-    image: img1,
+    name: "Dr. Carlos Felipe Hurtado",
+    specialty: "Médico Radiólogo",
+    experience: "Radiólogo",
+    image: doc1,
   },
   {
     id: 2,
-    name: "Dra. Marcela Ríos Ospina",
-    specialty: "Radiología e Imágenes Diagnósticas",
-    sub: "Radiología de Mama",
-    exp: "14 años de experiencia",
-    tags: ["Mamografía", "Ecografía Mamaria"],
-    image: img2,
+    name: "Dr. Juan Pablo Camacho Calderón",
+    specialty: "Médico Radiólogo",
+    experience: "Radiólogo",
+    image: doc2,
   },
-  // 👇 puedes repetir patrón hasta 15
   {
     id: 3,
-    name: "Dr. Hernán Darío Zuluaga",
-    specialty: "Cardiología",
-    sub: "Ecocardiografía",
-    exp: "22 años de experiencia",
-    tags: ["Ecocardiografía", "Holter"],
-    image: img3,
+    name: "Dra. Diana Cristina Ramírez Mesías",
+    specialty: "Médico Internista / Cardióloga",
+    experience: "Cardióloga",
+    image: doc3,
   },
   {
     id: 4,
-    name: "Dra. Paola Andrea Gómez",
-    specialty: "Radiología Intervencionista",
-    sub: "Procedimientos guiados",
-    exp: "11 años de experiencia",
-    tags: ["Biopsias", "Drenajes"],
-    image: img4,
+    name: "Dr. Carlos Andres Montoya Hidalgo",
+    specialty: "Médico Radiólogo",
+    experience: "Radiólogo",
+    image: doc4,
+  },
+  {
+    id: 5,
+    name: "Dra. Diana Marcela Montoya",
+    specialty: "Médico Radiólogo",
+    experience: "Radiólogo",
+    image: doc5,
+  },
+  {
+    id: 6,
+    name: "Dra. Paula Ximena Burbano Gutiérrez",
+    specialty: "Médico Internista / Cardióloga",
+    experience: "Cardióloga",
+    image: doc6,
+  },
+  {
+    id: 7,
+    name: "Dra. Ana Carolina Torres",
+    specialty: "Médico Radiólogo",
+    experience: "Radiólogo",
+    image: doc7,
+  },
+  {
+    id: 8,
+    name: "Dr. Juan Mauricio Cárdenas Castellanos",
+    specialty: "Médico Internista / Cardiólogo",
+    experience: "Cardiólogo",
+    image: doc8,
+  },
+  {
+    id: 9,
+    name: "Dr. Andrés Felipe Usma",
+    specialty: "Médico General / Apoyo Sedaciones y Contraste",
+    experience: "Médico General",
+    image: doc9,
+  },
+  {
+    id: 10,
+    name: "Dr Oscar Vallejo Giraldo",
+    specialty: "Médico Radiólogo",
+    experience: "Radiólogo",
+    image: doc10,
+  },
+  {
+    id: 11,
+    name: "Dra. Sandra Lorena Díaz Guerrero",
+    specialty: "Médico Radiólogo",
+    experience: "Radiólogo",
+    image: doc11,
+  },
+  {
+    id: 12,
+    name: "Dr. Juan Pablo Arismendi Muñoz",
+    specialty: "Médico Radiólogo",
+    experience: "Radiólogo",
+    image: doc12,
+  },
+  {
+    id: 13,
+    name: "Dra. Laura Melina López",
+    specialty: "Médico Ginecólogo",
+    experience: "Ginecóloga",
+    image: doc13,
   },
 ];
 
 function SpecialistsGrid() {
   return (
-    <section className="specialists-grid"  id="equipo">
+    <section className="specialists-grid" id="equipo">
       <div className="specialists-grid__container">
 
-        {/* HEADER */}
+        {/* HEADER - RESTAURADO EXACTAMENTE COMO LO TENÍAS */}
         <div className="specialists-grid__header">
           <h2 className="specialists-grid__title">
             Conoce a Nuestros{" "}
@@ -72,35 +124,24 @@ function SpecialistsGrid() {
           </p>
         </div>
 
-        {/* GRID */}
+        {/* GRID DE 4 COLUMNAS */}
         <div className="specialists-grid__content">
           {specialists.map((doc) => (
             <article key={doc.id} className="specialist-card">
 
-              {/* IMAGE */}
               <div className="specialist-card__image">
-                <img src={doc.image} alt={doc.name} />
+                <img src={doc.image} alt={doc.name} loading="lazy" />
               </div>
 
-              {/* INFO */}
               <div className="specialist-card__info">
                 <h3 className="specialist-card__name">{doc.name}</h3>
-
+                
                 <span className="specialist-card__specialty">
                   {doc.specialty}
                 </span>
 
-                <p className="specialist-card__sub">{doc.sub}</p>
-
-                <div className="specialist-card__exp">
-                  ⏱ {doc.exp}
-                </div>
-
-                {/* TAGS */}
-                <div className="specialist-card__tags">
-                  {doc.tags.map((tag, i) => (
-                    <span key={i}>{tag}</span>
-                  ))}
+                <div className="specialist-card__badge-exp">
+                  <span>{doc.experience}</span>
                 </div>
               </div>
 

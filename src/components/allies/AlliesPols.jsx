@@ -1,117 +1,44 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/Polizas.png";
 import medicinaIcon from "../../assets/Iconos/atencionintegral.png";
 
 // ICONOS CARDS
-import Icono1 from "../../assets/Iconos/email.png";
-import Icono2 from "../../assets/Iconos/email.png";
-import Icono3 from "../../assets/Iconos/email.png";
-import Icono4 from "../../assets/Iconos/email.png";
-import Icono5 from "../../assets/Iconos/email.png";
-import Icono6 from "../../assets/Iconos/email.png";
-import Icono7 from "../../assets/Iconos/email.png";
-import Icono8 from "../../assets/Iconos/email.png";
-import Icono9 from "../../assets/Iconos/email.png";
-import Icono10 from "../../assets/Iconos/email.png";
-import Icono11 from "../../assets/Iconos/email.png";
-import Icono12 from "../../assets/Iconos/email.png";
-import Icono13 from "../../assets/Iconos/email.png";
-import Icono14 from "../../assets/Iconos/email.png";
-import Icono15 from "../../assets/Iconos/email.png";
-import Icono16 from "../../assets/Iconos/email.png";
-import Icono17 from "../../assets/Iconos/email.png";
-import Icono18 from "../../assets/Iconos/email.png";
-import Icono19 from "../../assets/Iconos/email.png";
-import Icono20 from "../../assets/Iconos/email.png";
+
+import Poliza1 from "../../assets/images/LogoAllianz.png";
+import Poliza2 from "../../assets/images/LogoAsegSolCol.png";
+import Poliza3 from "../../assets/images/LogoBMI.png";
+import Poliza4 from "../../assets/images/LogoSeguroBol.png";
+import Poliza5 from "../../assets/images/LogoAurora.png";
+import Poliza6 from "../../assets/images/LogoSeguros.png";
+import Poliza7 from "../../assets/images/LogoEquidadSeguros.png";
+import Poliza8 from "../../assets/images/LogoHDI.png";
+import Poliza9 from "../../assets/images/LogoMapfre.png";
+import Poliza10 from "../../assets/images/LogoPanAmerican.png";
+import Poliza11 from "../../assets/images/LogoPositiva.png";
+import Poliza12 from "../../assets/images/LogoSura.png";
+import Poliza13 from "../../assets/images/LogoColsanitas.png";
+import Poliza14 from "../../assets/images/LogoColmena.png";
+import Poliza15 from "../../assets/images/LogoMedisanitas.png";
+import Poliza16 from "../../assets/images/LogoAxaColpatria.png";
+import Poliza17 from "../../assets/images/LogoColsanitas.png";
 
 const allies = [
-  {
-    icon: Icono1,
-    name: "Allianz Seguros De Vida S.A",
-  },
-
-  {
-    icon: Icono2,
-    name: "Aseguradora Solidaria De Colombia",
-  },
-
-  {
-    icon: Icono3,
-    name: "Bmi Colombia Compañia De Seguros De Vida S.A.",
-  },
-
-  {
-    icon: Icono4,
-    name: "Compañía De Seguros Bolívar",
-  },
-
-  {
-    icon: Icono5,
-    name: "Compañía De Seguros Aurora",
-  },
-
-  {
-    icon: Icono6,
-    name: "Compañia Mundial De Seguros (Polizas)",
-  },
-
-  {
-    icon: Icono7,
-    name: "La Equidad Seguros De Vida",
-  },
-
-  {
-    icon: Icono8,
-    name: "Hdi Seguros Colombia (Antes Liberty)",
-  },
-
-  {
-    icon: Icono9,
-    name: "Mapfre Colombia Vida Seguros (Arl-Polizas De Salud Y Estudiantil)",
-  },
-  {
-    icon: Icono10,
-    name: "Pan American Life De Colombia",
-  },
-  {
-    icon: Icono11,
-    name: "Positiva Compañia De Seguros Arl",
-  },
-  {
-    icon: Icono12,
-    name: "Seguros De Vida Suramericana (Polizas)",
-  },
-  {
-    icon: Icono13,
-    name: "Compañia De Seguros Colsanitas S.A.",
-  },
-  {
-    icon: Icono14,
-    name: "Colsanitas",
-  },
-  {
-    icon: Icono15,
-    name: "Colmena Seguros De Vida",
-  },
-  {
-    icon: Icono16,
-    name: "Medisanitas-Banco De La Republica",
-  },
-  {
-    icon: Icono17,
-    name: "Allianz Seguros De Vida",
-  },
-  {
-    icon: Icono18,
-    name: "Axa Colpatria Seguros Sa",
-  },
-  {
-    icon: Icono19,
-    name: "Colsanitas Integral",
-  },
-  {
-    icon: Icono20,
-    name: "La Equidad Seguros De Vidad O.C",
-  },
+  { name: "Allianz Seguros De Vida S.A", icon: Poliza1 },
+  { name: "Aseguradora Solidaria De Colombia", icon: Poliza2},
+  { name: "Bmi Colombia Compañia De Seguros De Vida S.A.", icon: Poliza3},
+  { name: "Compañía De Seguros Bolívar", icon: Poliza4},
+  { name: "Compañía De Seguros Aurora", icon: Poliza5},
+  { name: "Compañia Mundial De Seguros (Polizas)", icon: Poliza6},
+  { name: "La Equidad Seguros De Vida", icon: Poliza7},
+  { name: "Hdi Seguros Colombia (Antes Liberty)", icon: Poliza8},
+  { name: "Mapfre Colombia Vida Seguros (Arl-Polizas De Salud Y Estudiantil)", icon: Poliza9},
+  { name: "Pan American Life De Colombia", icon: Poliza10},
+  { name: "Positiva Compañia De Seguros Arl", icon: Poliza11},
+  { name: "Seguros De Vida Suramericana (Polizas)", icon: Poliza12},
+  { name: "Colsanitas", icon: Poliza13},
+  { name: "Colmena Seguros De Vida", icon: Poliza14},
+  { name: "Medisanitas-Banco De La Republica", icon: Poliza15},
+  { name: "Axa Colpatria Seguros Sa", icon: Poliza16},
+  { name: "Colsanitas Integral", icon: Poliza17},
 ];
 
 function AlliesPols() {

@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/Peticiones.png";
 import tiempoIcon from "../../assets/Iconos/respuesta.png";
 import privacidadIcon from "../../assets/Iconos/privacidad.png";
 import soporteIcon from "../../assets/Iconos/24-7.png";

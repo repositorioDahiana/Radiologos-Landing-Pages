@@ -1,4 +1,4 @@
-import especialistasHero from "../../assets/images/Fondo.jpg";
+import especialistasHero from "../../assets/images/Especialistas.png";
 
 function SpecialistsHero() {
   return (

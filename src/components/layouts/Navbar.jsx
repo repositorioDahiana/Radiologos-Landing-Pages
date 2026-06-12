@@ -8,7 +8,8 @@ import pseIcon from "../../assets/Iconos/pse.png";
 function Navbar() {
   return (
     <div className="topbar-clean w-full">
-      <div className="topbar-inner max-w-7xl mx-auto px-3 py-2">
+      {/* Cambiamos max-w-7xl mx-auto por w-full y subimos el padding horizontal a px-6 */}
+      <div className="topbar-inner w-full px-6 py-2">
         {/* Logos */}
         <div className="topbar-logos">
           <a
@@ -38,7 +39,7 @@ function Navbar() {
 
         {/* Opciones */}
         <div className="topbar-actions">
-          {/* Consultar cita */}
+          {/* ... Todo el resto de tus opciones (Consultar cita, Teléfono, Resultados, PSE) queda exactamente igual ... */}
           <a
             href="https://appcedira.com/solicitarcita/public/consultar-cita"
             target="_blank"
@@ -51,7 +52,6 @@ function Navbar() {
             <span className="top-link-text hide-mobile-sm">Consultar Cita</span>
           </a>
 
-          {/* Teléfono */}
           <a href="tel:+6063402333" className="top-link phone-link">
             <div className="icon-box">
               <img src={telefonoIcon} alt="Teléfono" />
@@ -59,7 +59,6 @@ function Navbar() {
             <span className="top-link-text hide-mobile-md">+606 340 23 33</span>
           </a>
 
-          {/* Resultados */}
           <a
             href="https://nexxa.com.co/portal/login"
             target="_blank"
@@ -72,7 +71,6 @@ function Navbar() {
             <span className="top-link-text hide-mobile-sm">Ver Resultados</span>
           </a>
 
-          {/* PSE */}
           <a
             href="https://portalpagos.davivienda.com/#/comercio/11396/RADIOLOGOS"
             target="_blank"
@@ -82,7 +80,6 @@ function Navbar() {
             <div className="pse-icon-zone">
               <img src={pseIcon} alt="PSE" />
             </div>
-
             <span className="pse-text hide-mobile-sm">
               Pagos Seguros en Línea
             </span>

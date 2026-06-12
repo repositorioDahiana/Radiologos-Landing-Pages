@@ -639,166 +639,97 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 /* ==================== PQRS CONTACT ==================== */
-
 .pqrs-contact {
   position: relative;
-
   width: 100%;
   min-height: 78vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 100px 20px;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   overflow: hidden;
 }
 
-/* ==================== OVERLAY ==================== */
-
+/* ==================== OVERLAY DE COLOR OSCURO ==================== */
+/* 🌟 Cambiado de blanco a un azul oscuro traslúcido para que la imagen de fondo resalte sin opacar el texto */
 .pqrs-contact__overlay {
   position: absolute;
   inset: 0;
-
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.92),
-    rgba(255, 255, 255, 0.82),
-    rgba(255, 255, 255, 0.68)
+    rgba(15, 23, 42, 0.85), /* Azul pizarra muy oscuro */
+    rgba(10, 78, 163, 0.75)  /* Tu azul corporativo con opacidad */
   );
-
   z-index: 1;
 }
 
 /* ==================== CONTAINER ==================== */
-
 .pqrs-contact__container {
   position: relative;
   z-index: 2;
-
   width: 100%;
   max-width: 1200px;
-
   margin: auto;
-
   display: flex;
   justify-content: center;
 }
 
 /* ==================== CONTENT ==================== */
-
 .pqrs-contact__content {
   max-width: 780px;
-
   text-align: center;
 }
 
 /* ==================== BADGE ==================== */
-
 .pqrs-contact__badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 10px 22px;
   margin-bottom: 26px;
-
   border-radius: var(--radius-full);
-
   background: rgba(255, 255, 255, 0.12);
-
-  border: 1px solid rgba(255, 255, 255, 0.18);
-
+  border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-
   color: var(--color-white);
-
   font-size: 0.9rem;
   font-weight: 700;
 }
 
 /* ==================== TITLE ==================== */
-/* TITLE */
-
 .pqrs-contact__title {
   font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 800;
-
   line-height: 1.05;
-
-  color: var(--color-hero-title);
-
+  color: var(--color-white); /* 🌟 Cambiado a blanco para contrastar perfectamente sobre el nuevo fondo oscuro */
   margin-bottom: 24px;
 }
 
-/* DESCRIPTION */
-
+/* ==================== DESCRIPTION (TEXTO MÁS OSCURO/LEGIBLE) ==================== */
+/* 🌟 Unificado y configurado en un tono gris claro/blanco roto de alta legibilidad sobre fondos oscuros */
 .pqrs-contact__description {
   max-width: 720px;
-
   margin: 0 auto 40px;
-
-  font-size: 1.12rem;
-  line-height: 1.9;
-
-  color: var(--color-text-body);
-}
-
-/* BADGE */
-
-.pqrs-contact__badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 10px 22px;
-  margin-bottom: 26px;
-
-  border-radius: var(--radius-full);
-
-  background: rgba(10, 78, 163, 0.08);
-
-  border: 1px solid rgba(10, 78, 163, 0.12);
-
-  color: var(--color-blue-main);
-
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-/* ==================== DESCRIPTION ==================== */
-
-.pqrs-contact__description {
-  max-width: 720px;
-
-  margin: 0 auto 40px;
-
-  font-size: 1.12rem;
-  line-height: 1.9;
-
-  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #e2e8f0; /* Color gris claro premium de excelente contraste */
+  font-weight: 500;
 }
 
 /* ==================== ACTIONS ==================== */
-
 .pqrs-contact__actions {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 18px;
-
   flex-wrap: wrap;
 }
 
 /* BOTÓN PRINCIPAL */
-
 .pqrs-contact .btn-primary-blue {
   background: linear-gradient(
     135deg,
@@ -806,15 +737,11 @@
     #1565c0,
     #2563eb
   );
-
   border: none;
-
   min-width: 210px;
   height: 58px;
-
   font-size: 1rem;
   font-weight: 700;
-
   box-shadow: 0 16px 35px rgba(37, 99, 235, 0.35);
 }
 
@@ -823,41 +750,28 @@
 }
 
 /* BOTÓN SECUNDARIO */
-
 .pqrs-contact .btn-secondary-outline {
   min-width: 210px;
   height: 58px;
-
   border-radius: var(--radius-full);
-
   background: rgba(255, 255, 255, 0.92);
-
   border: 1px solid rgba(10, 78, 163, 0.14);
-
   color: var(--color-blue-main);
-
   font-size: 1rem;
   font-weight: 700;
-
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-
   backdrop-filter: blur(10px);
 }
 
 .pqrs-contact .btn-secondary-outline:hover {
   background: var(--color-white);
-
   border-color: rgba(10, 78, 163, 0.22);
-
   color: var(--color-blue-main);
-
   transform: translateY(-4px);
 }
 
 /* ==================== RESPONSIVE ==================== */
-
 @media (max-width: 768px) {
-
   .pqrs-contact {
     min-height: auto;
     padding: 90px 16px;
@@ -868,7 +782,7 @@
   }
 
   .pqrs-contact__description {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .pqrs-contact__actions {

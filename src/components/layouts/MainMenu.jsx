@@ -14,12 +14,12 @@ function MainMenu() {
 
   return (
     <nav className="main-navbar">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4">
+      <div className="w-full flex items-center justify-between px-6">
 
         <Link to="/" className="logo" onClick={closeMenu}>
           <img
             src={logoRadiologos}
-            className="h-12"
+            className="h-14"
             alt="Logo Radiólogos Asociados"
           />
         </Link>
@@ -38,30 +38,43 @@ function MainMenu() {
             <Link to="/">Inicio</Link>
           </li>
 
-          <li
-            className="dropdown"
-            onMouseEnter={() => setSubmenu("quienes")}
-            onMouseLeave={() => setSubmenu(null)}
-          >
-            <Link to="/about" onClick={closeMenu}>
-              Quiénes Somos
-            </Link>
-
-            <ul className={`submenu ${submenu === "quienes" ? "show" : ""}`}>
-              <li onClick={closeMenu}>
-                <Link to="/company">Nuestra Empresa</Link>
-              </li>
-              <li onClick={closeMenu}>
-                <Link to="/careers">Trabaje con Nosotros</Link>
-              </li>
-              <li onClick={closeMenu}>
-                <Link to="/specialists">Especialistas</Link>
-              </li>
-            </ul>
+          <li onClick={closeMenu}>
+            <Link to="/services">Servicio</Link>
           </li>
 
           <li onClick={closeMenu}>
-            <Link to="/services">Servicio</Link>
+            <Link to="/specialists">Especialistas</Link>
+          </li>
+
+          <li onClick={closeMenu}>
+            <Link to="/location">Sedes</Link>
+          </li>
+
+          <li
+            className="dropdown"
+            onMouseEnter={() => setSubmenu("aliados")}
+            onMouseLeave={() => setSubmenu(null)}
+          >
+            <Link to="/allies" onClick={closeMenu}>
+              Convenios
+            </Link>
+            <ul className={`submenu ${submenu === "aliados" ? "show" : ""}`}>
+              <li onClick={closeMenu}>
+                <Link to="/allies#medicinaprepagada">Medicina Prepagada</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="/allies#polizas">Pólizas</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="/allies#convenioempre">Convenios Empresas</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="/allies#regimenEsp">Régimen Especial y EPS</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="/allies#caja">Caja de Compensación</Link>
+              </li>
+            </ul>
           </li>
 
           <li
@@ -89,33 +102,22 @@ function MainMenu() {
 
           <li
             className="dropdown"
-            onMouseEnter={() => setSubmenu("aliados")}
+            onMouseEnter={() => setSubmenu("quienes")}
             onMouseLeave={() => setSubmenu(null)}
           >
-            <Link to="/allies" onClick={closeMenu}>
-              Aliados
+            <Link to="/about" onClick={closeMenu}>
+              Quiénes Somos
             </Link>
-            <ul className={`submenu ${submenu === "aliados" ? "show" : ""}`}>
-              <li onClick={closeMenu}>
-                <Link to="/allies#medicinaprepagada">Medicina Prepagada</Link>
-              </li>
-              <li onClick={closeMenu}>
-                <Link to="/allies#polizas">Pólizas</Link>
-              </li>
-              <li onClick={closeMenu}>
-                <Link to="/allies#convenioempre">Convenios Empresas</Link>
-              </li>
-              <li onClick={closeMenu}>
-                <Link to="/allies#regimenEsp">Régimen Especial y EPS</Link>
-              </li>
-              <li onClick={closeMenu}>
-                <Link to="/allies#caja">Caja de Compensación</Link>
-              </li>
-            </ul>
-          </li>
 
-          <li onClick={closeMenu}>
-            <Link to="/location">Sedes</Link>
+            <ul className={`submenu ${submenu === "quienes" ? "show" : ""}`}>
+              <li onClick={closeMenu}>
+                <Link to="/company">Nuestra Empresa</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="/careers">Trabaje con Nosotros</Link>
+              </li>
+              
+            </ul>
           </li>
 
           <li onClick={closeMenu}>

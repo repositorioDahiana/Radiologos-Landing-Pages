@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 
 import losRosalesImg from "../../assets/images/ImgRosales.png";
-import comfamiliarImg from "../../assets/images/Fondo.jpg";
+import comfamiliarImg from "../../assets/images/UbicacionConfamiliar.png";
 import sanRafaelImg from "../../assets/images/ImgEseCentro.png";
 import centroMedicoImg from "../../assets/images/ImgCentroCorazon.png";
 import pinaresImg from "../../assets/images/ImgPlus.png";
@@ -9,10 +9,10 @@ import ubicacionIcon from "../../assets/Iconos/ubicacion.png";
 import relojIcon from "../../assets/Iconos/reloj.png";
 import ImgCentroMujer from "../../assets/images/ImgCentroMujer.png";
 import Ubicacion1 from "../../assets/images/ImgSanRafael.png";
-import Ubicacion2 from "../../assets/images/EseSanJuaquin.png";
-import centroCartagoImg from "../../assets/images/CentroCartago.png";
-import mariscalCartagoImg from "../../assets/images/Mariscal.png";
-import ArmeniaImg from "../../assets/images/Armenia.png";
+import Ubicacion2 from "../../assets/images/UbicacionEseSanJuaquin.png";
+import centroCartagoImg from "../../assets/images/UbicacionCentroCartago.png";
+import mariscalCartagoImg from "../../assets/images/UbicacionMariscal.png";
+import ArmeniaImg from "../../assets/images/UbicacionArmenia.png";
 
 function LocationsPreview() {
   const [activeCity, setActiveCity] = useState("Pereira");
@@ -27,6 +27,7 @@ function LocationsPreview() {
       schedule1: "Ambulatorios (L-S): 7:00 a.m. – 6:00 p.m.",
       schedule2: "Hospitalarios: 24 x 7",
       featured: false,
+      mapsUrl: "https://maps.google.com/?q=Radiologos+Asociados+Clinica+Los+Rosales+Pereira"
     },
     {
       id: 2,
@@ -37,6 +38,7 @@ function LocationsPreview() {
       schedule1: "L-V: 6:00 a.m. – 9:00 p.m.",
       schedule2: "S: 6:00 a.m. – 6:00 p.m.",
       featured: false,
+      mapsUrl: "https://maps.google.com/?q=Radiologos+Asociados+Clinica+Comfamiliar+Pereira"
     },
     {
       id: 3,
@@ -47,6 +49,7 @@ function LocationsPreview() {
       schedule1: "Ambulatorios (L-S): 7:00 a.m. – 6:00 p.m.",
       schedule2: "Hospitalarios: 24 x 7",
       featured: true,
+      mapsUrl: "https://maps.google.com/?q=Radiologos+Asociados+Megacentro+Pinares+Pereira"
     },
     {
       id: 4,
@@ -57,6 +60,7 @@ function LocationsPreview() {
       schedule1: "L-V: 6:00 a.m. – 4:00 p.m.",
       schedule2: "S: 7:00 a.m. – 12:00 p.m.",
       featured: false,
+      mapsUrl: "https://maps.google.com/?q=Carrera+9+25-25+Pereira"
     },
     {
       id: 5,
@@ -67,8 +71,8 @@ function LocationsPreview() {
       schedule1: "L-V: 7:00 a.m. – 6:00 p.m.",
       schedule2: "S: 7:00 a.m. – 12:00 p.m.",
       featured: false,
+      mapsUrl: "https://maps.google.com/?q=Radiologos+Asociados+Megacentro+Pinares+Pereira"
     },
-
     {
       id: 6,
       city: "Pereira",
@@ -78,6 +82,7 @@ function LocationsPreview() {
       schedule1: "L-V: 7:00 a.m. – 5:00 p.m.",
       schedule2: "S: 7:00 a.m. – 12:00 p.m.",
       featured: false,
+      mapsUrl: "https://maps.google.com/?q=Carrera+9+25-25+Pereira"
     },
     {
       id: 7,
@@ -88,6 +93,7 @@ function LocationsPreview() {
       schedule1: "L-V: 8:00 a.m. – 5:00 p.m.",
       schedule2: "S: 8:00 a.m. – 12:00 p.m.",
       featured: false,
+      mapsUrl: "https://maps.google.com/?q=Hospital+San+Joaquin+Cuba+Pereira"
     },
     {
       id: 8,
@@ -98,8 +104,8 @@ function LocationsPreview() {
       schedule1: "L-V: 8:00 a.m. – 5:00 p.m.",
       schedule2: "S: 8:00 a.m. – 12:00 p.m.",
       featured: false,
+      mapsUrl: "https://maps.google.com/?q=Carrera+7+40-34+Pereira"
     },
-
     {
       id: 9,
       city: "Cartago",
@@ -109,6 +115,7 @@ function LocationsPreview() {
       schedule1: "L-V: 7:00 a.m. – 4:00 p.m.",
       schedule2: "S: 7:00 a.m. – 11:00 p.m.",
       featured: true,
+      mapsUrl: "https://maps.google.com/?q=Radiologos+Asociados+Cartago"
     },
     {
       id: 10,
@@ -119,8 +126,8 @@ function LocationsPreview() {
       schedule1: "L-V: 7:00 a.m. – 4:00 p.m.",
       schedule2: "S: 7:00 a.m. – 11:00 p.m.",
       featured: false,
+      mapsUrl: "https://maps.google.com/?q=Carrera+5+8-55+Cartago"
     },
-
     {
       id: 11,
       city: "Armenia",
@@ -130,6 +137,7 @@ function LocationsPreview() {
       schedule1: "L-V: 7:00 a.m. – 4:00 p.m.",
       schedule2: "S: 7:00 a.m. – 12:00 p.m.",
       featured: true,
+      mapsUrl: "https://maps.google.com/?q=Radiologos+Asociados+Armenia"
     },
   ];
 
@@ -138,6 +146,13 @@ function LocationsPreview() {
   const filteredHeadquarters = useMemo(() => {
     return headquarters.filter((item) => item.city === activeCity);
   }, [activeCity]);
+
+  // Función para manejar la redirección segura a Maps en pestaña nueva
+  const handleCardClick = (url) => {
+    if (url) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
 
   return (
     <section className="locations-preview" id="ubicacion">
@@ -150,8 +165,7 @@ function LocationsPreview() {
           <div className="locations-preview__line"></div>
 
           <p className="locations-preview__description">
-            Encuentra nuestra clínica más cercana y conoce nuestros horarios de
-            atención.
+            Encuentra nuestra clínica más cercana y conoce nuestros horarios de atención.
           </p>
 
           <div className="locations-preview__tabs">
@@ -177,6 +191,8 @@ function LocationsPreview() {
               className={`locations-preview__card ${
                 item.featured ? "locations-preview__card--featured" : ""
               }`}
+              onClick={() => handleCardClick(item.mapsUrl)} // 🌟 CLIC EN TODA LA TARJETA
+              style={{ cursor: "pointer" }} // Respaldo visual rápido
             >
               <div className="locations-preview__image-wrapper">
                 <img
