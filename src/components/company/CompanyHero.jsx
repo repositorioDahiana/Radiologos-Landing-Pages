@@ -1,4 +1,4 @@
-import empresaImg from "../../assets/images/nuestraEmpresa.png";
+import empresaImg from "../../assets/images/NuestraEmpresa.png";
 
 function CompanyHero() {
   return (
