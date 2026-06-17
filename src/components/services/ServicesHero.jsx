@@ -20,7 +20,7 @@ const slides = [
     title: (
       <>
         Tecnología <span className="text-gradient-blue">Avanzada</span> en{" "}
-        Servicios Médicos
+        Servicios <span className="text-gradient-blue">Médicos</span>
       </>
     ),
     description:
@@ -31,7 +31,7 @@ const slides = [
     title: (
       <>
         Diagnóstico <span className="text-gradient-blue">Cardiovascular</span>{" "}
-        de Alta Precisión
+        de Alta <span className="text-gradient-blue">Precisión</span>
       </>
     ),
     description:

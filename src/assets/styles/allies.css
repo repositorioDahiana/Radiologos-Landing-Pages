@@ -418,43 +418,61 @@
 }
 
 /* ==================== HEADER ==================== */
-
+/* ==================== HEADER REFORMADO ==================== */
 .allies-prepaid__header {
   position: relative;
-
   overflow: hidden;
-
   border-radius: var(--radius-lg);
-
   min-height: 220px;
-
   display: flex;
   align-items: center;
-
   padding: 50px;
-
   margin-bottom: 40px;
-
   background-size: cover;
-  background-position: center;
+  /* CAMBIO: Forzar a que la imagen se posicione desde la parte superior */
+  background-position: top center; 
   background-repeat: no-repeat;
-
   box-shadow: 0 18px 40px rgba(10, 78, 163, 0.14);
 }
 
-/* OVERLAY */
-
+/* OVERLAY OSCURECIDO (Para dar contraste al texto blanco) */
 .allies-prepaid__overlay {
   position: absolute;
   inset: 0;
+  /* Degradado azul oscuro semi-transparente que garantiza legibilidad */
+  background: linear-gradient(
+    135deg,
+    rgba(10, 37, 83, 0.75) 0%,
+    rgba(15, 76, 167, 0.7) 100%
+  );
+  z-index: 1;
+}
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.12),
-      rgba(37, 99, 235, 0.15),
-      rgba(74, 163, 255, 0.08)
-    );
+/* CAMBIO TEXTOS A BLANCO EN EL HEADER */
+.allies-prepaid__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: #ffffff; /* Texto del título en blanco */
+  margin-bottom: 8px;
+}
+
+.allies-prepaid__subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85); /* Subtítulo blanco suave */
+}
+
+/* Asegurar el icono del header en este nuevo contraste */
+.allies-prepaid__icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2); /* Más brillante */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* CONTENT */
@@ -468,51 +486,16 @@
   gap: 24px;
 }
 
-/* ICON */
 
-.allies-prepaid__icon {
-  width: 78px;
-  height: 78px;
-
-  border-radius: 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: rgba(255, 255, 255, 0.14);
-
-  backdrop-filter: blur(10px);
-
-  border: 1px solid rgba(255, 255, 255, 0.18);
+/* ICONO DE LA TARJETA CORREGIDO */
+.allies-prepaid__card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  padding: 8px; /* Espaciado interno para que el logo respire */
 }
 
-.allies-prepaid__icon img {
-  width: 45px;
-  height: 45px;
 
-  object-fit: contain;
-}
-
-/* TITLE */
-
-.allies-prepaid__title {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 900;
-
-  color: var(--color-blue-dark);
-
-  margin-bottom: 8px;
-}
-
-/* SUBTITLE */
-
-.allies-prepaid__subtitle {
-  font-size: 1rem;
-  font-weight: 600;
-
-  color: var(--color-text-soft);
-}
 /* ==================== GRID ==================== */
 
 .allies-prepaid__grid {
@@ -608,13 +591,17 @@
 
   .allies-prepaid__header {
     padding: 34px 24px;
-    min-height: 180px;
+    min-height: 200px;
   }
 
   .allies-prepaid__content {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Centra el contenido en móviles para que luzca mejor */
+    text-align: center;
+    gap: 16px;
+    width: 100%;
   }
+
 
   .allies-prepaid__grid {
     grid-template-columns: 1fr;

@@ -1,13 +1,13 @@
 import "../assets/styles/location.css";
 
 import LocationsHero from "../components/location/LocationsHero";
-import LocationsPreview from "../components/home/LocationsPreview";
+import LocationIntro from "../components/location/LocationIntro";
 
 function Ppss() {
   return (
     <div className="ppss-page">
       <LocationsHero />
-      <LocationsPreview />
+      <LocationIntro />
     </div>
   );
 }

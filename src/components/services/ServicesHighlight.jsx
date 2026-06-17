@@ -5,6 +5,7 @@ import icon4 from "../../assets/Iconos/Ferrari4.png";
 import icon5 from "../../assets/Iconos/Ferrari5.png";
 import icon6 from "../../assets/Iconos/Ferrari6.png";
 import icon7 from "../../assets/Iconos/Ferrari7.png";
+import icon8 from "../../assets/Iconos/Ferrari8.png";
 
 import img1 from "../../assets/images/Ferrari1.png";
 import img2 from "../../assets/images/Ferrari2.png";
@@ -60,8 +61,8 @@ const services = [
   },
   {
     title: "Tomosíntesis",
-    desc: "...IA",
-    icon: icon7,
+    desc: "La detección temprana evoluciona con Tomosíntesis 3D, el examen de mama más avanzado y preciso. Su tecnología de cortes tridimensionales elimina dudas y te brinda total certeza. Elige la máxima tecnología para cuidar lo que más importa.",
+    icon: icon8,
     image: img8,
   },
 ];
@@ -117,7 +118,7 @@ function ServicesHighlight() {
             </article>
             ))}
         </div>
-
+        <br></br>
         <div className="services-hero__actions">
             <a href="#especialidad" className="btn-base btn-primary-blue">
               Ver más servicios

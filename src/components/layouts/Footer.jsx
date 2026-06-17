@@ -52,8 +52,8 @@ function Footer() {
           </ul>
 
           <div className="footer-logos">
-            <img src={icontec} className="logo-icontec" alt="Icontec" />
-            {/*<img src={iqnet} className="logo-iqnet" alt="IQNET" />*/}
+            {/*<img src={icontec} className="logo-icontec" alt="Icontec" />*/}
+            <img src={iqnet} className="logo-iqnet" alt="IQNET" />
             <img src={supersalud} className="logo-supersalud" alt="Supersalud" />
           </div>
         </div>

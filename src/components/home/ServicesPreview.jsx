@@ -1,7 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-// IMPORTACIÓN DE ICONOS
 import corazonIcon from "../../assets/Iconos/Logo-CMC.png";
 import radiologiaIcon from "../../assets/Iconos/radiologia.png";
 import mujerIcon from "../../assets/Iconos/Logo_Mujer.png";
@@ -12,10 +11,11 @@ import icon4 from "../../assets/Iconos/Ferrari4.png";
 import icon5 from "../../assets/Iconos/Ferrari5.png";
 import icon6 from "../../assets/Iconos/Ferrari6.png";
 import icon7 from "../../assets/Iconos/Ferrari7.png";
-// IMPORTACIÓN DE IMÁGENES DESDE ASSETS
+import icon8 from "../../assets/Iconos/Ferrari8.png";
+
 import imgRadiologia from "../../assets/images/HomeService1.png"; 
 import imgMujer from "../../assets/images/HomeService2.png";
-import imgCorazon from "../../assets/images/HomeService03.png";
+import imgCorazon from "../../assets/images/Servicio03.png";
 import img1 from "../../assets/images/Ferrari1.png";
 import img2 from "../../assets/images/Ferrari2.png";
 import img3 from "../../assets/images/Ferrari3.png";
@@ -23,6 +23,8 @@ import img4 from "../../assets/images/Ferrari4.png";
 import img5 from "../../assets/images/Ferrari5.png";
 import img6 from "../../assets/images/Ferrari6.png";
 import img7 from "../../assets/images/Ferrari7.png";
+import img8 from "../../assets/images/Ferrari8.png";
+
 
 function ServicesPreview() {
   const carouselRef = useRef(null);
@@ -107,6 +109,14 @@ function ServicesPreview() {
       bgImage: img7,
       title: "AngioTAC Aorta Abdominal y Miembros Inferiores",
       description: "Recupera la seguridad en tu movilidad con un diagnóstico integral de tu circulación. Evaluamos a detalle la aorta abdominal y el flujo sanguíneo hacia tus piernas para detectar obstrucciones o problemas circulatorios, permitiendo un tratamiento efectivo para mejorar tu bienestar vascular.",
+      link: "/services",
+    },
+    {
+      id:11,
+      icon: icon8,
+      bgImage: img8,
+      title: "Tomosíntesis",
+      description: "La detección temprana evoluciona con la Tomosíntesis 3D, el examen de mama más avanzado y preciso del momento. Gracias a su tecnología de cortes tridimensionales, logramos una claridad sin precedentes que elimina dudas y te brinda resultados con total certeza. No te conformes con lo común; elige la máxima tecnología para cuidar lo que más importa.",
       link: "/services",
     },
   ];

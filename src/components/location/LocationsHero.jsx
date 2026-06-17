@@ -1,9 +1,8 @@
 import heroBg from "../../assets/images/PqrVoz.png";
 
 // ICONOS
-import sedesIcon from "../../assets/Iconos/email.png";
-import ciudadesIcon from "../../assets/Iconos/email.png";
-import horarioIcon from "../../assets/Iconos/email.png";
+import sedesIcon from "../../assets/Iconos/sedes.png";
+import ciudadesIcon from "../../assets/Iconos/seguro.png";
 
 function LocationsHero() {
   return (
@@ -74,16 +73,6 @@ function LocationsHero() {
               </div>
 
             </div>
-
-            {/* CARD 3 */}
-            <div className="locations-hero__stat">
-
-              <img
-                src={horarioIcon}
-                alt="Atención"
-              />
-            </div>
-
           </div>
 
         </div>

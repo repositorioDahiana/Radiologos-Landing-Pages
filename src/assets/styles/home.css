@@ -789,27 +789,7 @@ body {
   display: none;
 }
 
-/* EFECTO DEGRADADO ELEGANTE EN LOS EXTREMOS (FADE EFFECT) */
-.services-preview__carousel-wrapper::before,
-.services-preview__carousel-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 80px;
-  height: 100%;
-  z-index: 5;
-  pointer-events: none;
-}
 
-.services-preview__carousel-wrapper::before {
-  left: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.95), transparent);
-}
-
-.services-preview__carousel-wrapper::after {
-  right: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.95), transparent);
-}
 
 /* CARRUSEL AUTOMÁTICO INFINITO */
 .services-preview__carousel {
@@ -1044,6 +1024,7 @@ body {
     width: 40px; /* Degradados más pequeños en móvil */
   }
 }
+
 /* ==================== OUR SPECIALISTS SECTION ==================== */
 .specialists {
   position: relative;
@@ -1088,15 +1069,21 @@ body {
 }
 
 /* CONTENEDOR CARRUSEL CON FADE EFECT DE TUS TONOS AZULES */
+.specialists__carousel-container {
+  position: relative;
+  width: 100%;
+}
+
 .specialists__carousel-wrapper {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
   padding: 20px 0;
 }
 
-.specialists__carousel-wrapper::before,
-.specialists__carousel-wrapper::after {
+.specialists__carousel-container::before,
+.specialists__carousel-container::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1106,25 +1093,26 @@ body {
   pointer-events: none;
 }
 
-.specialists__carousel-wrapper::before {
+.specialists__carousel-container::before {
   left: 0;
   background: linear-gradient(to right, var(--color-white), transparent);
 }
 
-.specialists__carousel-wrapper::after {
+.specialists__carousel-container::after {
   right: 0;
   background: linear-gradient(to left, var(--color-white), transparent);
 }
 
 /* TRACK DE ANIMACIÓN INFINITA */
+/* TRACK DE ANIMACIÓN INFINITA CORREGIDO */
 .specialists__carousel {
   display: flex;
   gap: 30px;
-  overflow-x: auto;
-  scrollbar-width: none;
+  width: max-content; /* CRÍTICO: Permite que el contenedor se estire con todas las tarjetas */
 }
 
-.specialists__carousel::-webkit-scrollbar {
+/* Forzamos a quitar el scrollbar por si acaso */
+.specialists__carousel-wrapper::-webkit-scrollbar {
   display: none;
 }
 
@@ -1263,19 +1251,15 @@ body {
 .specialist-nav-btn--left { left: 15px; }
 .specialist-nav-btn--right { right: 15px; }
 
-/* ANIMACIÓN */
-@keyframes specialistsScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+/* ANIMACIÓN ELIMINADA: Usamos JS para scroll */
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .specialist-nav-btn {
     display: none;
   }
-  .specialists__carousel-wrapper::before,
-  .specialists__carousel-wrapper::after {
+  .specialists__carousel-container::before,
+  .specialists__carousel-container::after {
     width: 40px;
   }
 }

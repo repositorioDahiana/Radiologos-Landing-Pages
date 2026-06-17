@@ -13,6 +13,7 @@ import doc10 from "../../assets/images/Doctor13.png";
 import doc11 from "../../assets/images/Doctor11.png";
 import doc12 from "../../assets/images/Doctor12.jpg";
 import doc13 from "../../assets/images/Doctor10.png";
+import doc14 from "../../assets/images/Doctor14.png";
 
 function OurSpecialists() {
   const specialistCarouselRef = useRef(null);
@@ -27,12 +28,11 @@ function OurSpecialists() {
       if (container && !isScrollingRef.current && !isHoveredRef.current) {
         container.scrollLeft += 1;
         
-        const firstSetItem = container.children[0];
-        const secondSetItem = container.children[8];
-        const jumpDistance = secondSetItem ? secondSetItem.offsetLeft - firstSetItem.offsetLeft : container.scrollWidth / 2;
+        // Usar la mitad exacta del scroll total es 100% preciso para arreglos dinámicos
+        const jumpDistance = container.scrollWidth / 2;
 
         if (container.scrollLeft >= jumpDistance) {
-          container.scrollLeft -= jumpDistance;
+          container.scrollLeft = 0; // Reseteo limpio al inicio real
         }
       }
       animationFrameId = requestAnimationFrame(autoScroll);
@@ -41,7 +41,7 @@ function OurSpecialists() {
     animationFrameId = requestAnimationFrame(autoScroll);
     return () => cancelAnimationFrame(animationFrameId);
   }, []);
-
+  
   const specialists = [
     {
       id: 1,
@@ -134,6 +134,13 @@ function OurSpecialists() {
       experience: "Ginecóloga",
       image: doc13,
     },
+    {
+      id: 14,
+      name: "Dr. Luis Fernando Grisales",
+      specialty: "Médico Radiólogo / Director Científico Fellow",
+      experience: "Radiólogo",
+      image: doc14,
+    },
   ];
 
   const duplicatedSpecialists = [...specialists, ...specialists];
@@ -143,32 +150,33 @@ function OurSpecialists() {
     if (container) {
       isScrollingRef.current = true;
       
-      // Dynamic calculation of one set's width
-      const firstSetItem = container.children[0];
-      const secondSetItem = container.children[specialists.length];
-      const jumpDistance = secondSetItem ? secondSetItem.offsetLeft - firstSetItem.offsetLeft : container.scrollWidth / 2;
-      
-      const scrollAmount = 340; // Approximate card width + gap for responsive design
-      
-      if (direction === "left" && container.scrollLeft < scrollAmount) {
-        container.scrollLeft += jumpDistance;
-      } else if (direction === "right" && container.scrollLeft >= jumpDistance) {
-        container.scrollLeft -= jumpDistance;
+      // Calculamos de forma segura la mitad exacta del carrusel (la distancia de un set completo)
+      const jumpDistance = container.scrollWidth / 2;
+      const scrollAmount = 340; // Ancho aproximado de tarjeta + gap
+
+      // --- LOGICA DE CONTROL DE INFINITO PARA LAS FLECHAS ---
+      if (direction === "left") {
+        // Si va a scrollear a la izquierda y está muy cerca del inicio, salta al segundo set
+        if (container.scrollLeft <= 10) {
+          container.scrollLeft = jumpDistance;
+        }
+        // Ejecuta el movimiento hacia la izquierda
+        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      } else {
+        // Si va a la derecha y está por superar el primer bloque, salta al inicio sutilmente
+        if (container.scrollLeft >= jumpDistance - scrollAmount) {
+          container.scrollLeft = container.scrollLeft - jumpDistance;
+        }
+        // Ejecuta el movimiento hacia la derecha
+        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
       }
       
-      container.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-      
+      // Tiempo para bloquear el autoscroll mientras dura la transición
       setTimeout(() => {
         isScrollingRef.current = false;
       }, 600);
     }
   };
-
-
-
 
   return (
     <section className="specialists">
@@ -186,7 +194,11 @@ function OurSpecialists() {
         </div>
 
         {/* CONTENEDOR INTERMEDIO DEL CARRUSEL (FLECHAS + TRACK) */}
-        <div className="specialists__carousel-wrapper">
+        <div 
+          className="specialists__carousel-container"
+          onMouseEnter={() => { isHoveredRef.current = true; }}
+          onMouseLeave={() => { isHoveredRef.current = false; }}
+        >
           
           <button 
             className="specialist-nav-btn specialist-nav-btn--left" 
@@ -196,31 +208,33 @@ function OurSpecialists() {
             ‹
           </button>
 
-          <div className="specialists__carousel" ref={specialistCarouselRef}>
-            {duplicatedSpecialists.map((doctor, index) => (
-              <article 
-                key={`${doctor.id}-${index}`} 
-                className="specialists__card"
-              >
-                <div className="specialists__image-box">
-                  <img 
-                    src={doctor.image} 
-                    alt={doctor.name} 
-                    className="specialists__img" 
-                  />
-                  <div className="specialists__badge">
-                    {doctor.experience}
+          <div className="specialists__carousel-wrapper" ref={specialistCarouselRef}>
+            <div className="specialists__carousel">
+              {duplicatedSpecialists.map((doctor, index) => (
+                <article 
+                  key={`${doctor.id}-${index}`} 
+                  className="specialists__card"
+                >
+                  <div className="specialists__image-box">
+                    <img 
+                      src={doctor.image} 
+                      alt={doctor.name} 
+                      className="specialists__img" 
+                    />
+                    <div className="specialists__badge">
+                      {doctor.experience}
+                    </div>
                   </div>
-                </div>
 
-                {/* CUERPO LIMPIO: Información esencial sin botones molestos */}
-                <div className="specialists__card-body">
-                  <h3 className="specialists__card-name">{doctor.name}</h3>
-                  <div className="specialists__card-divider"></div>
-                  <p className="specialists__card-specialty">{doctor.specialty}</p>
-                </div>
-              </article>
-            ))}
+                  {/* CUERPO LIMPIO: Información esencial sin botones molestos */}
+                  <div className="specialists__card-body">
+                    <h3 className="specialists__card-name">{doctor.name}</h3>
+                    <div className="specialists__card-divider"></div>
+                    <p className="specialists__card-specialty">{doctor.specialty}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
 
           <button 
