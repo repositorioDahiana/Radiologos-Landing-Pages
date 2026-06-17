@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/ConvenioEmpresas.png";
+import heroBg from "../../assets/images/Aliados3.png";
 import medicinaIcon from "../../assets/Iconos/convenioEmpresa.png";
 
 import Empresa1 from "../../assets/images/LogoPreviser.png";

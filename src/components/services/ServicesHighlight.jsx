@@ -13,6 +13,7 @@ import img4 from "../../assets/images/Ferrari4.png";
 import img5 from "../../assets/images/Ferrari5.png";
 import img6 from "../../assets/images/Ferrari6.png";
 import img7 from "../../assets/images/Ferrari7.png";
+import img8 from "../../assets/images/Ferrari8.png";
 
 const services = [
   {
@@ -56,6 +57,12 @@ const services = [
     desc: "Recupera la seguridad en tu movilidad con un diagnóstico integral de tu circulación. Evaluamos a detalle la aorta abdominal y el flujo sanguíneo hacia tus piernas para detectar obstrucciones o problemas circulatorios, permitiendo un tratamiento efectivo para mejorar tu bienestar vascular.",
     icon: icon7,
     image: img7,
+  },
+  {
+    title: "Tomosíntesis",
+    desc: "...IA",
+    icon: icon7,
+    image: img8,
   },
 ];
 

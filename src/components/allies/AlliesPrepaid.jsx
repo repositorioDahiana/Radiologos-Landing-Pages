@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/MedicinaPrepagada.png";
+import heroBg from "../../assets/images/Aliado1.png";
 import medicinaIcon from "../../assets/Iconos/doctor.png";
 
 // ICONOS CARDS

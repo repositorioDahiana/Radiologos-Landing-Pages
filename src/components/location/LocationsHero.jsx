@@ -42,7 +42,7 @@ function LocationsHero() {
               <div className="locations-hero__text">
 
                 <span className="locations-hero__label">
-                  8 Sedes
+                  11 Sedes
                 </span>
 
                 <span className="locations-hero__desc">
@@ -82,19 +82,6 @@ function LocationsHero() {
                 src={horarioIcon}
                 alt="Atención"
               />
-
-              <div className="locations-hero__text">
-
-                <span className="locations-hero__label">
-                  24/7 Atención
-                </span>
-
-                <span className="locations-hero__desc">
-                  Servicio hospitalario
-                </span>
-
-              </div>
-
             </div>
 
           </div>

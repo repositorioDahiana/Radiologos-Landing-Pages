@@ -42,16 +42,6 @@ function TechnologySection() {
 
             <div className="tech-card">
               <div className="tech-card__icon">
-                <img src={certificacionIcon} alt="Certificaciones" />
-              </div>
-              <div>
-                <h3>Certificaciones Internacionales</h3>
-                <p>Cumplimos con los más altos estándares de calidad</p>
-              </div>
-            </div>
-
-            <div className="tech-card">
-              <div className="tech-card__icon">
                 <img src={especialistasIcon} alt="Especialistas" />
               </div>
               <div>

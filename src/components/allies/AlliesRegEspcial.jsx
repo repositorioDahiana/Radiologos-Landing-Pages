@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/RegimenEPS.png";
+import heroBg from "../../assets/images/Aliados4.png";
 import medicinaIcon from "../../assets/Iconos/especial.png";
 
 import Especial1 from "../../assets/images/LogoPolicia.png";

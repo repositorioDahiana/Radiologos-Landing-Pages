@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/PPSS.png";
+import heroBg from "../../assets/images/PPSS.jpeg";
 
 import controlIcon from "../../assets/Iconos/control.png";
 import comunidadIcon from "../../assets/Iconos/participacion.png";

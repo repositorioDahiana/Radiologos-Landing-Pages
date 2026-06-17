@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 // IMPORTACIÓN DE ICONOS
-import corazonIcon from "../../assets/Iconos/corazon.png";
+import corazonIcon from "../../assets/Iconos/Logo-CMC.png";
 import radiologiaIcon from "../../assets/Iconos/radiologia.png";
 import mujerIcon from "../../assets/Iconos/Logo_Mujer.png";
 import icon1 from "../../assets/Iconos/Ferrari1.png";
@@ -15,7 +15,7 @@ import icon7 from "../../assets/Iconos/Ferrari7.png";
 // IMPORTACIÓN DE IMÁGENES DESDE ASSETS
 import imgRadiologia from "../../assets/images/HomeService1.png"; 
 import imgMujer from "../../assets/images/HomeService2.png";
-import imgCorazon from "../../assets/images/Servicio03.png";
+import imgCorazon from "../../assets/images/HomeService03.png";
 import img1 from "../../assets/images/Ferrari1.png";
 import img2 from "../../assets/images/Ferrari2.png";
 import img3 from "../../assets/images/Ferrari3.png";
@@ -205,13 +205,13 @@ function ServicesPreview() {
 
                 <div className="services-preview__card-body">
                   <div className="services-preview__top">
-                    <div className="services-preview__icon-box">
-                      <img
-                        src={service.icon}
-                        alt={service.title}
-                        className="services-preview__icon"
-                      />
-                    </div>
+                  <div className={`services-preview__icon-box ${service.id === 3 ? 'services-preview__icon-box--large' : ''}`}>
+                    <img
+                      src={service.icon}
+                      alt={service.title}
+                      className={`services-preview__icon ${service.id === 3 ? 'services-preview__icon--large' : ''}`}
+                    />
+                  </div>
 
                     <h3 className="services-preview__card-title">
                       {service.title.split("\n").map((line, idx) => (

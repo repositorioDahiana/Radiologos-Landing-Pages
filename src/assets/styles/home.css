@@ -687,6 +687,7 @@ body {
     font-size: 0.8rem;
   }
 }
+
 /* ==================== SERVICES PREVIEW ==================== */
 .services-preview {
   position: relative;
@@ -895,6 +896,17 @@ body {
   height: 38px;
   object-fit: contain;
   transition: filter 0.3s ease;
+}
+
+/* ESTILOS EXCLUSIVOS PARA EL ICONO DEL CORAZÓN (ID: 3) */
+.services-preview__icon-box--large {
+  width: 80px;   /* Aumentado de 58px a 66px para dar más espacio */
+  height: 80px;
+}
+
+.services-preview__icon--large {
+  width: 90px;   /* Aumentado de 38px a 48px para que se vea más grande */
+  height: 90px;
 }
 
 .services-preview__card-title {

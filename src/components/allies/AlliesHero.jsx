@@ -41,33 +41,11 @@ function AlliesHero() {
               <div className="allies-hero__text">
 
                 <span className="allies-hero__label">
-                  80+ Aliados
+                  100+ Aliados
                 </span>
 
                 <span className="allies-hero__desc">
                   Entidades nacionales
-                </span>
-
-              </div>
-
-            </div>
-
-            {/* CARD 2 */}
-            <div className="allies-hero__stat">
-
-              <img
-                src={coberturaIcon}
-                alt="Cobertura total"
-              />
-
-              <div className="allies-hero__text">
-
-                <span className="allies-hero__label">
-                  Cobertura Total
-                </span>
-
-                <span className="allies-hero__desc">
-                  Todas las modalidades
                 </span>
 
               </div>
