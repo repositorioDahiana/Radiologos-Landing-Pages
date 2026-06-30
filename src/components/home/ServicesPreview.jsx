@@ -60,7 +60,7 @@ function ServicesPreview() {
       icon: icon1,
       bgImage: img1,
       title: "AngioTAC de Arterias Coronarias",
-      description: "Protege tu corazón con tecnología de vanguardia. Un estudio rápido y no invasivo que permite visualizar tus arterias con total precisión para detectar obstrucciones a tiempo y prevenir riesgos cardíacos, sin necesidad de procedimientos complejos.",
+      description: "Es un examen que mira las arterias del corazón. Sirve para ver si están tapadas o estrechas, lo que ayuda a prevenir infartos sin necesidad de procedimientos invasivos.",
       link: "/services",
     },
     {
@@ -68,7 +68,7 @@ function ServicesPreview() {
       icon: icon2,
       bgImage: img2,
       title: "AngioTAC de Corazón y Grandes Vasos (Mapeo)",
-      description: "La visión más completa de tu anatomía cardíaca. Evaluamos con máxima precisión el corazón y los grandes vasos sanguíneos para entender su funcionamiento estructural y detectar cualquier anomalía con tecnología de última generación.",
+      description: "Es un estudio completo del corazón y sus principales vasos sanguíneos. Permite ver su forma y funcionamiento para detectar problemas de manera precisa.",
       link: "/services",
     },
     {
@@ -76,7 +76,7 @@ function ServicesPreview() {
       icon: icon3,
       bgImage: img3,
       title: "Score de Calcio Coronario",
-      description: "Detecta el riesgo cardiovascular de forma silenciosa. A través de un escaneo preciso, determinamos el nivel de calcificación en tus arterias coronarias para establecer un plan de prevención personalizado y efectivo contra enfermedades del corazón.",
+      description: "Es una prueba que mide cuánto calcio (depósitos) hay en las arterias del corazón. Entre más calcio, mayor riesgo de enfermedad cardíaca. Sirve para prevenir antes de que aparezcan síntomas.",
       link: "/services",   
     },
     {
@@ -84,7 +84,7 @@ function ServicesPreview() {
       icon: icon4,
       bgImage: img4,
       title: "AngioTAC Protocolo TAVI",
-      description: "Estudio especializado de alta resolución para la planificación de reemplazo valvular. Evaluamos integralmente el corazón, la aorta y los accesos vasculares, proporcionando las medidas y especificaciones exactas necesarias para un procedimiento mínimamente invasivo y seguro.",
+      description: "Es un estudio especializado para personas que pueden necesitar cambiar una válvula del corazón sin cirugía abierta. Ayuda a planear el procedimiento de forma segura y precisa.",
       link: "/services",  
     },
     {
@@ -92,7 +92,7 @@ function ServicesPreview() {
       icon: icon5,
       bgImage: img5,
       title: "AngioTAC Coronarias",
-      description: "Visualiza la salud de tu corazón con claridad absoluta. Nuestro diagnóstico avanzado utiliza imágenes de alta definición para evaluar el estado real de tus arterias coronarias, permitiendo identificar anomalías con una precisión milimétrica.",
+      description: "Es una imagen muy detallada de las arterias del corazón. Se usa para ver si hay bloqueos o problemas en la circulación con gran precisión.",
       link: "/services",
     },
     {
@@ -100,7 +100,7 @@ function ServicesPreview() {
       icon: icon6,
       bgImage: img6,
       title: "AngioTAC Aorta Torácica",
-      description: "Evaluación especializada de la arteria más importante de tu tórax. Este estudio de alta resolución permite identificar de manera precisa aneurismas, disecciones y otras anomalías, proporcionando información vital para la prevención y el tratamiento oportuno.",
+      description: "Examina la arteria principal del pecho (aorta). Sirve para detectar problemas como dilataciones o rupturas que pueden ser graves si no se tratan.",
       link: "/services",  
     },
     {
@@ -108,7 +108,7 @@ function ServicesPreview() {
       icon: icon7,
       bgImage: img7,
       title: "AngioTAC Aorta Abdominal y Miembros Inferiores",
-      description: "Recupera la seguridad en tu movilidad con un diagnóstico integral de tu circulación. Evaluamos a detalle la aorta abdominal y el flujo sanguíneo hacia tus piernas para detectar obstrucciones o problemas circulatorios, permitiendo un tratamiento efectivo para mejorar tu bienestar vascular.",
+      description: "Revisa la circulación en el abdomen y las piernas.Ayuda a identificar problemas de flujo sanguíneo que pueden causar dolor o dificultad para caminar.",
       link: "/services",
     },
     {
@@ -116,7 +116,7 @@ function ServicesPreview() {
       icon: icon8,
       bgImage: img8,
       title: "Tomosíntesis",
-      description: "La detección temprana evoluciona con la Tomosíntesis 3D, el examen de mama más avanzado y preciso del momento. Gracias a su tecnología de cortes tridimensionales, logramos una claridad sin precedentes que elimina dudas y te brinda resultados con total certeza. No te conformes con lo común; elige la máxima tecnología para cuidar lo que más importa.",
+      description: "Es un tipo avanzado de mamografía.Toma varias imágenes del seno desde diferentes ángulos para detectar el cáncer de forma más clara y temprana. especialmente si tienes protesis.",
       link: "/services",
     },
   ];

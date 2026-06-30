@@ -1,4 +1,3 @@
-import heroBg from "../../assets/images/Aliados3.png";
 import medicinaIcon from "../../assets/Iconos/convenioEmpresa.png";
 
 import Empresa1 from "../../assets/images/LogoPreviser.png";
@@ -78,10 +77,7 @@ function AlliesConEmp() {
       <div className="allies-prepaid__container">
 
         {/* HEADER */}
-        <div
-          className="allies-prepaid__header"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
+        <div className="allies-prepaid__header">
 
           <div className="allies-prepaid__overlay"></div>
 

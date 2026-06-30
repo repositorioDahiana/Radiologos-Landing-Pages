@@ -1,4 +1,3 @@
-import heroBg from "../../assets/images/Aliados4.png";
 import medicinaIcon from "../../assets/Iconos/especial.png";
 
 import Especial1 from "../../assets/images/LogoPolicia.png";
@@ -38,10 +37,7 @@ function AlliesRegEspcial() {
       <div className="allies-prepaid__container">
 
         {/* HEADER */}
-        <div
-          className="allies-prepaid__header"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
+        <div className="allies-prepaid__header">
 
           <div className="allies-prepaid__overlay"></div>
 

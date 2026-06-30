@@ -133,11 +133,15 @@
 .specialists-hero {
   position: relative;
   width: 100%;
-  min-height: 70vh;
+  height: calc(100vh - 120px); 
+  min-height: 580px; 
+  max-height: 720px; 
   display: flex;
   align-items: center;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .specialists-hero__overlay {
@@ -155,14 +159,20 @@
 .specialists-hero__container {
   position: relative;
   z-index: 2;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 24px 80px 10px;
   width: 100%;
+  max-width: 1400px;
+  height: 100%; 
+  margin: 0 auto;
+  padding: 30px 32px 30px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .specialists-hero__content {
-  max-width: 600px;
+  max-width: 700px;
+  margin-left: 50px;
+  margin-bottom: 40px; 
 }
 
 .specialists-hero__title {

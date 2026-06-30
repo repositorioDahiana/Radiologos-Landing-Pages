@@ -2,10 +2,10 @@ import "../assets/styles/home.css";
 import Hero from "../components/home/Hero";
 import AboutSummary from "../components/home/AboutSummary";
 import ServicesPreview from "../components/home/ServicesPreview";
-import LocationsPreview from "../components/home/LocationsPreview";
 import ExternalPartners from "../components/home/ExternalPartners";
 import OurSpecialists from "../components/home/OurSpecialists";
 import AgreementsPreview from "../components/home/AgreementsPreview";
+import LocationIntro from "../components/location/LocationIntro";
 
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
       <ServicesPreview />
       <AboutSummary />
       <OurSpecialists />
-      <LocationsPreview />
+      <LocationIntro />
       <AgreementsPreview />
       
     </main>

@@ -6,26 +6,43 @@ import sedesIcon from "../../assets/Iconos/sedes.png";
 import pacientesIcon from "../../assets/Iconos/paciente1.png";
 import especialidadesIcon from "../../assets/Iconos/medico.png";
 
-function Counter({ end, suffix = "", duration = 2000 }) {
-  const [count, setCount] = useState(0);
+
+function Counter({ end, suffix = "", duration = 2000, startFrom = 0, loop = false }) {
+  const [count, setCount] = useState(startFrom);
 
   useEffect(() => {
-    let start = 0;
-    const increment = end / (duration / 16);
+    let start = startFrom;
+    // Calculamos el incremento por frame (aprox 60fps -> 16ms)
+    const increment = (end - startFrom) / (duration / 16);
+    let timer;
 
-    const timer = setInterval(() => {
-      start += increment;
+    const runCounter = () => {
+      timer = setInterval(() => {
+        start += increment;
 
-      if (start >= end) {
-        setCount(end);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, 16);
+        if (start >= end) {
+          clearInterval(timer);
+          setCount(end); 
 
-    return () => clearInterval(timer);
-  }, [end, duration]);
+          if (loop) {
+            setTimeout(() => {
+              start = startFrom;
+              setCount(startFrom);
+              runCounter(); 
+            }, 1200);
+          }
+        } else {
+          setCount(Math.floor(start));
+        }
+      }, 16);
+    };
+
+    runCounter();
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [end, duration, startFrom, loop]);
 
   return (
     <span>
@@ -36,11 +53,24 @@ function Counter({ end, suffix = "", duration = 2000 }) {
 }
 
 function AboutSummary() {
+  const getExperienceYears = () => {
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const currentMonth = today.getMonth(); 
+    
+    if (currentMonth < 1) {
+      return currentYear - 1980 - 1;
+    }
+    return currentYear - 1980;
+  };
+
+  const yearsOfExperience = getExperienceYears();
+
   const stats = [
     {
       id: 1,
       icon: experienciaIcon,
-      end: 46,
+      end: yearsOfExperience,
       suffix: "+",
       label: "Años de Experiencia",
       iconClass: "about-summary__icon-box--blue",
@@ -56,7 +86,10 @@ function AboutSummary() {
     {
       id: 3,
       icon: pacientesIcon,
-      end: 500,
+      startFrom: 450,         
+      end: 501,               
+      loop: true,            
+      duration: 35000,         
       suffix: "K+",
       label: "Pacientes Atendidos",
       iconClass: "about-summary__icon-box--blue",
@@ -100,7 +133,13 @@ function AboutSummary() {
 
               <div className="about-summary__card-content">
                 <h3 className="about-summary__number">
-                  <Counter end={item.end} suffix={item.suffix} />
+                  <Counter 
+                    end={item.end} 
+                    suffix={item.suffix} 
+                    startFrom={item.startFrom || 0} 
+                    loop={item.loop || false}
+                    duration={item.duration || 2000}
+                  />
                 </h3>
                 <p className="about-summary__label">{item.label}</p>
               </div>

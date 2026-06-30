@@ -27,12 +27,11 @@ function OurSpecialists() {
     const autoScroll = () => {
       if (container && !isScrollingRef.current && !isHoveredRef.current) {
         container.scrollLeft += 1;
-        
-        // Usar la mitad exacta del scroll total es 100% preciso para arreglos dinámicos
+
         const jumpDistance = container.scrollWidth / 2;
 
         if (container.scrollLeft >= jumpDistance) {
-          container.scrollLeft = 0; // Reseteo limpio al inicio real
+          container.scrollLeft = 0; 
         }
       }
       animationFrameId = requestAnimationFrame(autoScroll);
@@ -137,7 +136,7 @@ function OurSpecialists() {
     {
       id: 14,
       name: "Dr. Luis Fernando Grisales",
-      specialty: "Médico Radiólogo / Director Científico Fellow",
+      specialty: "Médico Radiólogo / Director Científico Fellow Resonancia de Prostata",
       experience: "Radiólogo",
       image: doc14,
     },
@@ -149,29 +148,22 @@ function OurSpecialists() {
     const container = specialistCarouselRef.current;
     if (container) {
       isScrollingRef.current = true;
-      
-      // Calculamos de forma segura la mitad exacta del carrusel (la distancia de un set completo)
-      const jumpDistance = container.scrollWidth / 2;
-      const scrollAmount = 340; // Ancho aproximado de tarjeta + gap
 
-      // --- LOGICA DE CONTROL DE INFINITO PARA LAS FLECHAS ---
+      const jumpDistance = container.scrollWidth / 2;
+      const scrollAmount = 340; 
+
       if (direction === "left") {
-        // Si va a scrollear a la izquierda y está muy cerca del inicio, salta al segundo set
         if (container.scrollLeft <= 10) {
           container.scrollLeft = jumpDistance;
         }
-        // Ejecuta el movimiento hacia la izquierda
         container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
       } else {
-        // Si va a la derecha y está por superar el primer bloque, salta al inicio sutilmente
         if (container.scrollLeft >= jumpDistance - scrollAmount) {
           container.scrollLeft = container.scrollLeft - jumpDistance;
         }
-        // Ejecuta el movimiento hacia la derecha
         container.scrollBy({ left: scrollAmount, behavior: "smooth" });
       }
-      
-      // Tiempo para bloquear el autoscroll mientras dura la transición
+
       setTimeout(() => {
         isScrollingRef.current = false;
       }, 600);
@@ -182,7 +174,6 @@ function OurSpecialists() {
     <section className="specialists">
       <div className="specialists__container">
 
-        {/* HEADER USANDO TUS LLAMADOS DE DISEÑO */}
         <div className="specialists__header">
           <h2 className="specialists__title">
             Nuestros <span className="text-gradient-blue">Especialistas</span>
@@ -193,7 +184,6 @@ function OurSpecialists() {
           <div className="specialists__line section-line-blue"></div>
         </div>
 
-        {/* CONTENEDOR INTERMEDIO DEL CARRUSEL (FLECHAS + TRACK) */}
         <div 
           className="specialists__carousel-container"
           onMouseEnter={() => { isHoveredRef.current = true; }}
@@ -226,7 +216,6 @@ function OurSpecialists() {
                     </div>
                   </div>
 
-                  {/* CUERPO LIMPIO: Información esencial sin botones molestos */}
                   <div className="specialists__card-body">
                     <h3 className="specialists__card-name">{doctor.name}</h3>
                     <div className="specialists__card-divider"></div>
