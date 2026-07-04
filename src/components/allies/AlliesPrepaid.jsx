@@ -68,10 +68,6 @@ function AlliesPrepaid() {
                 Medicina Prepagada
               </h2>
 
-              <p className="allies-prepaid__subtitle">
-                8 entidades aliadas
-              </p>
-
             </div>
 
           </div>

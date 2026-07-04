@@ -31,9 +31,6 @@ function AlliesCaja() {
               <h2 className="allies-prepaid__title"> 
                 Cajas de Compensación
               </h2>
-              <p className="allies-prepaid__subtitle">
-                2 entidades aliadas
-              </p>
             </div>
           </div>
 

@@ -16,6 +16,7 @@ import Pqrs from "./pages/Pqrs";
 import Ppss from "./pages/Ppss";
 import Allies from "./pages/Allies";
 import Location from "./pages/Location";
+import DataProtection from "./pages/DataProtection";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/ppss" element = {<Ppss />} />
         <Route path="/allies" element = {<Allies />} />
         <Route path="/location" element = {<Location />} />
+        <Route path="/dataprotection" element = {<DataProtection />} />
       </Routes>
 
       <Footer />

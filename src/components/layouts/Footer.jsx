@@ -46,9 +46,9 @@ function Footer() {
         {/* Servicios */}
         <div className="footer-col">
           <ul>
-            <li><a href="/servicios">Servicios</a></li>
-            <li><a href="/conocenos">Conócenos</a></li>
-            <li><a href="/profesionales">Nuestros profesionales</a></li>
+            <li><a href="/services">Servicios</a></li>
+            <li><a href="/about">Conócenos</a></li>
+            <li><a href="/specialists">Nuestros profesionales</a></li>
           </ul>
 
           <div className="footer-logos">
@@ -61,10 +61,10 @@ function Footer() {
         {/* Pacientes */}
         <div className="footer-col">
           <ul>
-            <li><a href="/citas">Pide tu cita</a></li>
-            <li><a href="/especialidades">Especialidades</a></li>
+            <li><a href="https://appcedira.com/solicitarcita/public/solicitud-examen">Pide tu cita</a></li>
+            <li><a href="/services#especialidad">Especialidades</a></li>
             <li>
-              <a href="/privacidad" target="_blank" rel="noopener noreferrer">
+              <a href="/dataprotection">
                 Política de datos
               </a>
             </li>
