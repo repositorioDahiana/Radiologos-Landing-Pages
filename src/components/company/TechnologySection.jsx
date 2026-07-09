@@ -1,7 +1,7 @@
 import techImg from "../../assets/images/Tecnologia.jpg";
 
 import equipoIcon from "../../assets/Iconos/ecografia.png";
-import especialistasIcon from "../../assets/Iconos/ferrari8.png";
+import especialistasIcon from "../../assets/Iconos/Ferrari8.png";
 import resultadosIcon from "../../assets/Iconos/resonancia.png";
 
 function TechnologySection() {
