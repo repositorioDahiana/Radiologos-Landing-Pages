@@ -37,7 +37,7 @@ const allies = [
   { name: "Colmena Seguros De Vida", icon: Poliza14},
   { name: "Medisanitas-Banco De La Republica", icon: Poliza15},
   { name: "Axa Colpatria Seguros Sa", icon: Poliza16},
-  { name: "Colsanitas Integral", icon: Poliza17},
+  { name: "Colsanitas Integral", icon: Poliza17}
 ];
 
 function AlliesPols() {

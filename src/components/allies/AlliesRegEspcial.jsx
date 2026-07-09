@@ -10,9 +10,8 @@ import Especial7 from "../../assets/images/LogoSanitas.png";
 import Especial8 from "../../assets/images/LogoSOS.png";
 import Especial9 from "../../assets/images/LogoAsmet.png";
 import Especial10 from "../../assets/images/LogoCooperativa.png";
-import Especial11 from "../../assets/images/LogoProtegemos.png";
-import Especial13 from "../../assets/images/LogoProveer.png";
-import Especial14 from "../../assets/images/LogoPositiva.png";
+
+
 
 const allies = [
   { name: "Policía Regional N3", icon: Especial1 },
@@ -25,9 +24,6 @@ const allies = [
   { name: "SOS", icon: Especial8 },
   { name: "Asmetsalud", icon: Especial9 },
   { name: "Coosalud", icon: Especial10 },
-  { name: "Bienestar Salud", icon: Especial11 },
-  { name: "Proveer Institucional S.A.S", icon: Especial13 },
-  { name: "Positiva Compañia De Seguros ARL", icon: Especial14 },
 ];
 
 function AlliesRegEspcial() {

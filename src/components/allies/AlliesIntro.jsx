@@ -14,10 +14,12 @@ function AlliesIntro() {
         </h2>
 
         <p className="allies-intro__description">
-          Radiólogos Asociados tiene convenios y alianzas con las principales
-          entidades del sector salud en Colombia, garantizando acceso a
-          nuestros servicios de imágenes diagnósticas para todos nuestros
-          usuarios.
+          En Radiólogos Asociados contamos con convenios y alianzas con las principales entidades del 
+          sector salud en Colombia, facilitando el acceso de nuestros usuarios a servicios de imágenes 
+          diagnósticas con altos estándares de calidad.
+          Si no encuentras tu entidad o tienes dudas sobre la cobertura de tu convenio, te invitamos a 
+          comunicarte con nuestros canales de atención, donde nuestro equipo verificará tu afiliación y te 
+          brindará la información necesaria para programar tu solicitud.
         </p>
 
         <a

@@ -32,7 +32,8 @@ import Empresa32 from "../../assets/images/LogoMinser.png";
 import Empresa33 from "../../assets/images/LogoReprotec.png";
 import Empresa34 from "../../assets/images/LogoICRE.png";
 import Empresa35 from "../../assets/images/LogoHuman.png";
-
+import Especial11 from "../../assets/images/LogoProtegemos.png";
+import Especial13 from "../../assets/images/LogoProveer.png";
 
 const allies = [
   { name: "Previser", icon: Empresa1 },
@@ -67,6 +68,8 @@ const allies = [
   { name: "Reprotec", icon: Empresa33 },
   { name: "Instituto de Colon y Recto", icon: Empresa34 },
   { name: "Hwcc Human Wellness Center Colombia A.S.A.", icon: Empresa35 },
+  { name: "Bien Estar Salud IPS", icon: Especial11 },
+  { name: "Proveer Institucional S.A.S", icon: Especial13 },
   
 ];
 

@@ -21,18 +21,7 @@ function PrinciplesSection() {
         <div className="principles__grid">
 
           {/* CARD */}
-          <div className="principle-card">
-            <div className="principle-card__icon">
-              <img src={eficienciaIcon} alt="Eficiencia" />
-            </div>
-            <h3>Eficiencia y confiabilidad</h3>
-            <p>
-              Aprovechamos nuestros recursos de la mejor manera para obtener
-              resultados de calidad, optimizamos procesos y garantizamos la
-              seguridad de las personas.
-            </p>
-          </div>
-
+        
           <div className="principle-card">
             <div className="principle-card__icon">
               <img src={servicioIcon} alt="Servicio" />
@@ -74,6 +63,18 @@ function PrinciplesSection() {
             <p>
               Somos parte de un todo, por eso el apoyo entre compañeros es clave
               para alcanzar nuestros objetivos comunes.
+            </p>
+          </div>
+
+          <div className="principle-card">
+            <div className="principle-card__icon">
+              <img src={eficienciaIcon} alt="Eficiencia" />
+            </div>
+            <h3>Eficiencia y confiabilidad</h3>
+            <p>
+              Aprovechamos nuestros recursos de la mejor manera para obtener
+              resultados de calidad, optimizamos procesos y garantizamos la
+              seguridad de las personas.
             </p>
           </div>
 

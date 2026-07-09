@@ -61,7 +61,7 @@ function Footer() {
         {/* Pacientes */}
         <div className="footer-col">
           <ul>
-            <li><a href="https://appcedira.com/solicitarcita/public/solicitud-examen">Pide tu cita</a></li>
+            <li><a href="https://appcedira.com/solicitarcita/public/solicitud-examen" target="_blank" rel="noopener noreferrer">Pide tu cita</a></li>
             <li><a href="/services#especialidad">Especialidades</a></li>
             <li>
               <a href="/dataprotection">

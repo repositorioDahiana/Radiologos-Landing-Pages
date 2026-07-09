@@ -151,6 +151,8 @@ function AgreementsPreview() {
         { name: "Reprotec", icon: Empresa33 },
         { name: "Instituto de Colon y Recto", icon: Empresa34 },
         { name: "Hwcc Human Wellness Center Colombia A.S.A.", icon: Empresa35 },
+        { name: "Bien Estar Salud IPS", icon: Especial11 },
+        { name: "Proveer Institucional S.A.S", icon: Especial13 },
 
       ]
     },
@@ -169,9 +171,6 @@ function AgreementsPreview() {
         { name: "SOS", icon: Especial8 },
         { name: "Asmetsalud", icon: Especial9 },
         { name: "Coosalud", icon: Especial10 },
-        { name: "Bienestar Salud", icon: Especial11 },
-        { name: "Proveer Institucional S.A.S", icon: Especial13 },
-        { name: "Positiva Compañia De Seguros ARL", icon: Especial14 },
       ]
     },
     {

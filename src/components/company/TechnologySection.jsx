@@ -1,9 +1,8 @@
 import techImg from "../../assets/images/Tecnologia.jpg";
 
-import equipoIcon from "../../assets/Iconos/resonancia.png";
-import certificacionIcon from "../../assets/Iconos/insignia.png";
-import especialistasIcon from "../../assets/Iconos/doctor.png";
-import resultadosIcon from "../../assets/Iconos/resultadosprueba.png";
+import equipoIcon from "../../assets/Iconos/ecografia.png";
+import especialistasIcon from "../../assets/Iconos/ferrari8.png";
+import resultadosIcon from "../../assets/Iconos/resonancia.png";
 
 function TechnologySection() {
   return (
@@ -35,8 +34,8 @@ function TechnologySection() {
                 <img src={equipoIcon} alt="Equipos" />
               </div>
               <div>
-                <h3>Equipos de Última Generación</h3>
-                <p>Tecnología médica de punta para diagnósticos precisos</p>
+                <h3>Ecógrafo Piel y Uñas</h3>
+                <p>Ultrasonido Dermatológico de Alta Frecuencia Equipo de ultrasonido de alta frecuencia especializado en estructuras superficiales: piel, uñas y tejidos blandos. Visualización en tiempo real con resolución submilimétrica para diagnóstico no invasivo.</p>
               </div>
             </div>
 
@@ -45,8 +44,9 @@ function TechnologySection() {
                 <img src={especialistasIcon} alt="Especialistas" />
               </div>
               <div>
-                <h3>Especialistas Certificados</h3>
-                <p>Equipo médico altamente capacitado y experimentado</p>
+                <h3>Mamógrafo Digital con Tomosíntesis</h3>
+                <p>Diagnóstico Mamario 3D de Alta Precisión
+                Tecnología de imagen en 3D que permite detectar lesiones mamarias con mayor precisión que la mamografía convencional. Reduce falsos positivos y mejora la detección temprana del cáncer de mama.</p>
               </div>
             </div>
 
@@ -55,8 +55,8 @@ function TechnologySection() {
                 <img src={resultadosIcon} alt="Resultados" />
               </div>
               <div>
-                <h3>Resultados Rápidos</h3>
-                <p>Entrega ágil de resultados a través de nuestro portal</p>
+                <h3>Tomógrafo GE Revolution Ascend</h3>
+                <p>TC 64 Cortes. 72 kW Mod. 6969000-100. Tomógrafo computarizado de gama alta GE Revolution Ascend de 64 cortes con 72 kW de potencia. Alta resolución, baja dosis de radiación y reconstrucción ultrarrápida para estudios cardíacos, oncológicos y de urgencias.</p>
               </div>
             </div>
 
