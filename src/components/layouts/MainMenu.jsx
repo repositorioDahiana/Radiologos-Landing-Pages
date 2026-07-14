@@ -12,6 +12,19 @@ function MainMenu() {
     setSubmenu(null);
   };
 
+  const handleDropdownClick = (e, menuName) => {
+    if (window.innerWidth < 768) {
+      if (submenu !== menuName) {
+        e.preventDefault();
+        setSubmenu(menuName);
+      } else {
+        closeMenu();
+      }
+    } else {
+      closeMenu();
+    }
+  };
+
   return (
     <nav className="main-navbar">
       <div className="w-full flex items-center justify-between px-6">
@@ -43,7 +56,7 @@ function MainMenu() {
             onMouseEnter={() => setSubmenu("servicios")}
             onMouseLeave={() => setSubmenu(null)}
           >
-            <Link to="/services">Servicios</Link>
+            <Link to="/services" onClick={(e) => handleDropdownClick(e, "servicios")}>Servicios</Link>
             <ul className={`submenu ${submenu === "servicios" ? "show" : ""}`}>
               <li onClick={closeMenu}>
                 <Link to="/servicios">Programas 360</Link>
@@ -64,7 +77,7 @@ function MainMenu() {
             onMouseEnter={() => setSubmenu("aliados")}
             onMouseLeave={() => setSubmenu(null)}
           >
-            <Link to="/allies" onClick={closeMenu}>
+            <Link to="/allies" onClick={(e) => handleDropdownClick(e, "aliados")}>
               Convenios
             </Link>
             <ul className={`submenu ${submenu === "aliados" ? "show" : ""}`}>
@@ -91,7 +104,9 @@ function MainMenu() {
             onMouseEnter={() => setSubmenu("paciente")}
             onMouseLeave={() => setSubmenu(null)}
           >
-            <span>Pacientes</span>
+            <span onClick={() => { if (window.innerWidth < 768) setSubmenu(submenu === "paciente" ? null : "paciente"); }}>
+              Pacientes
+            </span>
 
             <ul className={`submenu ${submenu === "paciente" ? "show" : ""}`}>
               <li onClick={closeMenu}>
@@ -114,7 +129,7 @@ function MainMenu() {
             onMouseEnter={() => setSubmenu("quienes")}
             onMouseLeave={() => setSubmenu(null)}
           >
-            <Link to="/about" onClick={closeMenu}>
+            <Link to="/about" onClick={(e) => handleDropdownClick(e, "quienes")}>
               Quiénes Somos
             </Link>
 
