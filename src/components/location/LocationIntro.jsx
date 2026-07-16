@@ -16,11 +16,7 @@ import ubicacionIcon from "../../assets/Iconos/ubicacion.png";
 import relojIcon from "../../assets/Iconos/reloj.png";
 import estudiosIcon from "../../assets/Iconos/especialidad6.png";
 
-function LocationsPreview() {
-
-  const [activeCity, setActiveCity] = useState("Pereira");
-  const [selectedLocation, setSelectedLocation] = useState(null);
-  const headquarters = [
+export const headquarters = [
 
     {
       id: 1,
@@ -226,6 +222,10 @@ function LocationsPreview() {
     },
   ];
 
+function LocationsPreview() {
+
+  const [activeCity, setActiveCity] = useState("Pereira");
+  const [selectedLocation, setSelectedLocation] = useState(null);
   const cities = ["Pereira", "Cartago", "Armenia"];
 
   const filteredHeadquarters = useMemo(() => {

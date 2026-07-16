@@ -116,7 +116,7 @@ function MainMenu() {
                 <Link to="/patientsecurity">Políticas de Seguridad</Link>
               </li>
               <li onClick={closeMenu}>
-                <Link to="/pqrs">PQRSF</Link>
+                <Link to="/pqrs">PQRS</Link>
               </li>
               <li onClick={closeMenu}>
                 <Link to="/ppss">PPSS</Link>
