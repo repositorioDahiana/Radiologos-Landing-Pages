@@ -1,4 +1,4 @@
-import pqrsBg from "../../assets/images/PqrVoz.png";
+import pqrsBg from "../../assets/images/PqrVoz.webp";
 
 function PQRSContact() {
 

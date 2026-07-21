@@ -1,8 +1,8 @@
 import medicinaIcon from "../../assets/Iconos/subsidios.png";
 
 // ICONOS CARDS
-import caja1 from "../../assets/images/LogoRisaralda.png";
-import caja2 from "../../assets/images/LogoComfenalco.png";
+import caja1 from "../../assets/images/LogoRisaralda.webp";
+import caja2 from "../../assets/images/LogoComfenalco.webp";
 
 const allies = [
   { name: "Risaralda", icon: caja1 },

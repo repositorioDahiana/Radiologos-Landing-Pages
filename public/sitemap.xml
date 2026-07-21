@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página Principal -->
+  <url>
+    <loc>https://radiologos.co/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Sobre Nosotros -->
+  <url>
+    <loc>https://radiologos.co/about</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Empresa / Compañía -->
+  <url>
+    <loc>https://radiologos.co/company</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Servicios -->
+  <url>
+    <loc>https://radiologos.co/services</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Especialistas -->
+  <url>
+    <loc>https://radiologos.co/specialists</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Trabaja con nosotros / Carreras -->
+  <url>
+    <loc>https://radiologos.co/careers</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Derechos del Paciente -->
+  <url>
+    <loc>https://radiologos.co/patientrights</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Seguridad del Paciente -->
+  <url>
+    <loc>https://radiologos.co/patientsecurity</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- PQRS -->
+  <url>
+    <loc>https://radiologos.co/pqrs</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PPSS (Participación Social en Salud) -->
+  <url>
+    <loc>https://radiologos.co/ppss</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Aliados -->
+  <url>
+    <loc>https://radiologos.co/allies</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ubicación -->
+  <url>
+    <loc>https://radiologos.co/location</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Protección de Datos -->
+  <url>
+    <loc>https://radiologos.co/dataprotection</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

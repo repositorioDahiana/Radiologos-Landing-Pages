@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/Aliados.png";
+import heroBg from "../../assets/images/Aliados.webp";
 
 import aliadosIcon from "../../assets/Iconos/aliados.png";
 import coberturaIcon from "../../assets/Iconos/cobertura.png";

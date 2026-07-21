@@ -1,16 +1,15 @@
 import medicinaIcon from "../../assets/Iconos/especial.png";
 
-import Especial1 from "../../assets/images/LogoPolicia.png";
-import Especial2 from "../../assets/images/LogoFomag.png";
-import Especial3 from "../../assets/images/LogoBatallon.png";
-import Especial4 from "../../assets/images/LogoEcopetrol.png";
-import Especial5 from "../../assets/images/LogoSura.png";
-import Especial6 from "../../assets/images/LogoSaludTotal.png";
-import Especial7 from "../../assets/images/LogoSanitas.png";
-import Especial8 from "../../assets/images/LogoSOS.png";
-import Especial9 from "../../assets/images/LogoAsmet.png";
-import Especial10 from "../../assets/images/LogoCooperativa.png";
-
+import Especial1 from "../../assets/images/LogoPolicia.webp";
+import Especial2 from "../../assets/images/LogoFomag.webp";
+import Especial3 from "../../assets/images/LogoBatallon.webp";
+import Especial4 from "../../assets/images/LogoEcopetrol.webp";
+import Especial5 from "../../assets/images/LogoSura.webp";
+import Especial6 from "../../assets/images/LogoSaludTotal.webp";
+import Especial7 from "../../assets/images/LogoSanitas.webp";
+import Especial8 from "../../assets/images/LogoSOS.webp";
+import Especial9 from "../../assets/images/LogoAsmet.webp";
+import Especial10 from "../../assets/images/LogoCooperativa.webp";
 
 
 const allies = [

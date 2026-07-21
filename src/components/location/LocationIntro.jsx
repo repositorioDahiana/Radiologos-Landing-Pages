@@ -1,16 +1,16 @@
 import { useMemo, useState } from "react";
 
-import losRosalesImg from "../../assets/images/ImgRosales.png";
-import comfamiliarImg from "../../assets/images/UbicacionConfamiliar.png";
-import sanRafaelImg from "../../assets/images/ImgEseCentro.png";
-import centroMedicoImg from "../../assets/images/ImgCentroCorazon.png";
-import pinaresImg from "../../assets/images/ImgPlus.png";
-import ImgCentroMujer from "../../assets/images/ImgCentroMujer.png";
-import Ubicacion1 from "../../assets/images/ImgSanRafael.png";
-import Ubicacion2 from "../../assets/images/UbicacionEseSanJuaquin.png";
-import centroCartagoImg from "../../assets/images/UbicacionCentroCartago.png";
-import mariscalCartagoImg from "../../assets/images/UbicacionMariscal.png";
-import ArmeniaImg from "../../assets/images/UbicacionArmenia.png";
+import losRosalesImg from "../../assets/images/ImgRosales.webp";
+import comfamiliarImg from "../../assets/images/UbicacionConfamiliar.webp";
+import sanRafaelImg from "../../assets/images/ImgEseCentro.webp";
+import centroMedicoImg from "../../assets/images/ImgCentroCorazon.webp";
+import pinaresImg from "../../assets/images/ImgPlus.webp";
+import ImgCentroMujer from "../../assets/images/ImgCentroMujer.webp";
+import Ubicacion1 from "../../assets/images/ImgSanRafael.webp";
+import Ubicacion2 from "../../assets/images/UbicacionEseSanJuaquin.webp";
+import centroCartagoImg from "../../assets/images/UbicacionCentroCartago.webp";
+import mariscalCartagoImg from "../../assets/images/UbicacionMariscal.webp";
+import ArmeniaImg from "../../assets/images/UbicacionArmenia.webp";
 
 import ubicacionIcon from "../../assets/Iconos/ubicacion.png";
 import relojIcon from "../../assets/Iconos/reloj.png";
@@ -330,8 +330,8 @@ function LocationsPreview() {
                     </div>
 
                     <p>{item.schedule1}</p>
-
                     <p>{item.schedule2}</p>
+                    {item.schedule3 && <p>{item.schedule3}</p>}
 
                   </div>
 

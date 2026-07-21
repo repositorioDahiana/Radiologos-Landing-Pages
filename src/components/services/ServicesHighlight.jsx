@@ -7,14 +7,14 @@ import icon6 from "../../assets/Iconos/Ferrari6.png";
 import icon7 from "../../assets/Iconos/Ferrari7.png";
 import icon8 from "../../assets/Iconos/Ferrari8.png";
 
-import img1 from "../../assets/images/Ferrari1.png";
-import img2 from "../../assets/images/Ferrari2.png";
-import img3 from "../../assets/images/Ferrari3.png";
-import img4 from "../../assets/images/Ferrari4.png";
-import img5 from "../../assets/images/Ferrari5.png";
-import img6 from "../../assets/images/Ferrari6.png";
-import img7 from "../../assets/images/Ferrari7.png";
-import img8 from "../../assets/images/Ferrari8.png";
+import img1 from "../../assets/images/Ferrari1.webp";
+import img2 from "../../assets/images/Ferrari2.webp";
+import img3 from "../../assets/images/Ferrari3.webp";
+import img4 from "../../assets/images/Ferrari4.webp";
+import img5 from "../../assets/images/Ferrari5.webp";
+import img6 from "../../assets/images/Ferrari6.webp";
+import img7 from "../../assets/images/Ferrari7.webp";
+import img8 from "../../assets/images/Ferrari8.webp";
 
 const services = [
   {

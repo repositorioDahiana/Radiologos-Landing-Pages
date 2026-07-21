@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/Proteccion.png";
+import heroBg from "../../assets/images/Proteccion.webp";
 
 function DataProtectionHero() {
   return (

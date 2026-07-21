@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/Seguridad.png";
+import heroBg from "../../assets/images/Seguridad.webp";
 import integralIcon from "../../assets/Iconos/atencionintegral.png";
 import seguridadIcon from "../../assets/Iconos/seguridad.png";
 

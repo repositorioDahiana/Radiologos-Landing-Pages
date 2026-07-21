@@ -1,4 +1,4 @@
-import techImg from "../../assets/images/Tecnologia.jpg";
+import techImg from "../../assets/images/Tecnologia.webp";
 
 import equipoIcon from "../../assets/Iconos/ecografia.png";
 import especialistasIcon from "../../assets/Iconos/Ferrari8.png";

@@ -2,23 +2,23 @@ import medicinaIcon from "../../assets/Iconos/atencionintegral.png";
 
 // ICONOS CARDS
 
-import Poliza1 from "../../assets/images/LogoAllianz.png";
-import Poliza2 from "../../assets/images/LogoAsegSolCol.png";
-import Poliza3 from "../../assets/images/LogoBMI.png";
-import Poliza4 from "../../assets/images/LogoSeguroBol.png";
-import Poliza5 from "../../assets/images/LogoAurora.png";
-import Poliza6 from "../../assets/images/LogoSeguros.png";
-import Poliza7 from "../../assets/images/LogoEquidadSeguros.png";
-import Poliza8 from "../../assets/images/LogoHDI.png";
-import Poliza9 from "../../assets/images/LogoMapfre.png";
-import Poliza10 from "../../assets/images/LogoPanAmerican.png";
-import Poliza11 from "../../assets/images/LogoPositiva.png";
-import Poliza12 from "../../assets/images/LogoSura.png";
-import Poliza13 from "../../assets/images/LogoColsanitas.png";
-import Poliza14 from "../../assets/images/LogoColmena.png";
-import Poliza15 from "../../assets/images/LogoMedisanitas.png";
-import Poliza16 from "../../assets/images/LogoAxaColpatria.png";
-import Poliza17 from "../../assets/images/LogoColsanitas.png";
+import Poliza1 from "../../assets/images/LogoAllianz.webp";
+import Poliza2 from "../../assets/images/LogoAsegSolCol.webp";
+import Poliza3 from "../../assets/images/LogoBMI.webp";
+import Poliza4 from "../../assets/images/LogoSeguroBol.webp";
+import Poliza5 from "../../assets/images/LogoAurora.webp";
+import Poliza6 from "../../assets/images/LogoSeguros.webp";
+import Poliza7 from "../../assets/images/LogoEquidadSeguros.webp";
+import Poliza8 from "../../assets/images/LogoHDI.webp";
+import Poliza9 from "../../assets/images/LogoMapfre.webp";
+import Poliza10 from "../../assets/images/LogoPanAmerican.webp";
+import Poliza11 from "../../assets/images/LogoPositiva.webp";
+import Poliza12 from "../../assets/images/LogoSura.webp";
+import Poliza13 from "../../assets/images/LogoColsanitas.webp";
+import Poliza14 from "../../assets/images/LogoColmena.webp";
+import Poliza15 from "../../assets/images/LogoMedisanitas.webp";
+import Poliza16 from "../../assets/images/LogoAxaColpatria.webp";
+import Poliza17 from "../../assets/images/LogoColsanitas.webp";
 
 const allies = [
   { name: "Allianz Seguros De Vida S.A", icon: Poliza1 },

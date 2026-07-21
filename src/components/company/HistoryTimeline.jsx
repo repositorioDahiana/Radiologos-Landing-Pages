@@ -1,7 +1,7 @@
-import historia1 from "../../assets/images/History1.png";
-import historia2 from "../../assets/images/History2.png";
-import historia3 from "../../assets/images/History3.jpg";
-import historia4 from "../../assets/images/History4.png";
+import historia1 from "../../assets/images/History1.webp";
+import historia2 from "../../assets/images/History2.webp";
+import historia3 from "../../assets/images/History3.webp";
+import historia4 from "../../assets/images/History4.webp";
 
 function HistoryTimeline() {
   return (

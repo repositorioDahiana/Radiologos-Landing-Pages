@@ -1,12 +1,12 @@
 import medicinaIcon from "../../assets/Iconos/doctor.png";
 
 // ICONOS CARDS
-import Icono1 from "../../assets/images/LogoAxaColpatria.png";
-import Icono2 from "../../assets/images/LogoColmedica.png";
-import Icono3 from "../../assets/images/LogoColsanitas.png";
-import Icono4 from "../../assets/images/LogoCoomeva.png";
-import Icono5 from "../../assets/images/LogoMedisanitas.png";
-import Icono6 from "../../assets/images/LogoMedPlus.png";
+import Icono1 from "../../assets/images/LogoAxaColpatria.webp";
+import Icono2 from "../../assets/images/LogoColmedica.webp";
+import Icono3 from "../../assets/images/LogoColsanitas.webp";
+import Icono4 from "../../assets/images/LogoCoomeva.webp";
+import Icono5 from "../../assets/images/LogoMedisanitas.webp";
+import Icono6 from "../../assets/images/LogoMedPlus.webp";
 
 const allies = [
   {

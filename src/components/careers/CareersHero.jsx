@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import heroBg1 from "../../assets/images/Trabajo1.png";
-import heroBg2 from "../../assets/images/Trabajo2.png";
-import heroBg3 from "../../assets/images/Trabajo3.png";
-import heroBg4 from "../../assets/images/Trabajo4.png";
+import heroBg1 from "../../assets/images/Trabajo1.webp";
+import heroBg2 from "../../assets/images/Trabajo2.webp";
+import heroBg3 from "../../assets/images/Trabajo3.webp";
+import heroBg4 from "../../assets/images/Trabajo4.webp";
 
-// 🔥 ICONOS
+
 import vacantesIcon from "../../assets/Iconos/trabajo.png";
 import hojaVidaIcon from "../../assets/Iconos/enviar.png";
 
