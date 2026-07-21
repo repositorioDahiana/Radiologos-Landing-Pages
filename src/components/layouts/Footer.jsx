@@ -6,6 +6,7 @@ import telefono from "../../assets/Iconos/telefono.png";
 import email from "../../assets/Iconos/email.png";
 import ubicacion from "../../assets/Iconos/ubicacion.png";
 import google from "../../assets/Iconos/google.png";
+import instagram from "../../assets/Iconos/instagram.png";
 
 function Footer() {
   return (
@@ -99,6 +100,17 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 Pereira, Risaralda, Colombia
+              </a>
+            </li>
+
+            <li>
+              <img src={instagram} alt="Instagram" />
+              <a
+                href="https://www.instagram.com/radiologosasociados_?utm_source=qr&igsh=MXNieWczbWc3MXgxdQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @radiologosasociados_
               </a>
             </li>
           </ul>

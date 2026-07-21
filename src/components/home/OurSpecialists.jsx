@@ -14,6 +14,8 @@ import doc11 from "../../assets/images/Doctor11.png";
 import doc12 from "../../assets/images/Doctor12.jpg";
 import doc13 from "../../assets/images/Doctor10.png";
 import doc14 from "../../assets/images/Doctor14.png";
+import doc15 from "../../assets/images/Doctor15.jpeg";
+import doc16 from "../../assets/images/Doctor16.jpeg";
 
 function OurSpecialists() {
   const specialistCarouselRef = useRef(null);
@@ -139,7 +141,21 @@ function OurSpecialists() {
           specialty: "Director Científico Médico Especialista en radiología , Fellow en Próstata ",
           experience: "Radiólogo",
           image: doc14,
-    },
+      },
+      {
+        id: 15,
+        name: "Dr. Jairo Leon Acevedo",
+        specialty: "Médico Internista / Especialista en Cardióloga / Subespecialista en diagnostico no invasivo",
+        experience: "Cardiólogo",
+        image: doc15,
+      },
+      {
+        id: 16,
+        name: "Dr. Alonso Gómez García",
+        specialty: "Médico Especialista en Pediatría, subespecialista en Cardiología pediátrica hemodinamia en cardiopatías congénitas",
+        experience: "Cardiólogo Pediátria",
+        image: doc16,
+      },
   ];
 
   const duplicatedSpecialists = [...specialists, ...specialists];
