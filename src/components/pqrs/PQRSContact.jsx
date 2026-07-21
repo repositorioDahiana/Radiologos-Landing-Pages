@@ -48,6 +48,8 @@ function PQRSContact() {
             <a
               href="https://appcedira.com/solicitarcita/public/solicitud-examen"
               className="btn-base btn-secondary-outline"
+              target="_blank"         
+              rel="noopener noreferrer"
             >
               Agendar cita
             </a>
