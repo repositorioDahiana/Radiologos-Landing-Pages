@@ -59,7 +59,7 @@ function MainMenu() {
             <Link to="/services" onClick={(e) => handleDropdownClick(e, "servicios")}>Servicios</Link>
             <ul className={`submenu ${submenu === "servicios" ? "show" : ""}`}>
               <li onClick={closeMenu}>
-                <Link to="/servicios">Programas 360</Link>
+                <Link to="/services360">Programas 360</Link>
               </li>
             </ul>
           </li>

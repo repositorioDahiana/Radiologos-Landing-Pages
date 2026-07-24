@@ -9,6 +9,14 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Servicios -->
+  <url>
+    <loc>https://radiologos.co/services</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Sobre Nosotros -->
   <url>
     <loc>https://radiologos.co/about</loc>

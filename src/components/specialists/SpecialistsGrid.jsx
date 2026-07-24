@@ -95,7 +95,7 @@ const specialists = [
   },
   {
     id: 12,
-    name: "Dr. Juan Pablo Arismendi Muñoz",
+    name: "Dr. Juan Pablo Arismendy Muñoz",
     specialty: "Médico Especialista en Radiología ",
     experience: "Radiólogo",
     image: doc12,
