@@ -333,6 +333,25 @@ body {
   right: 20px;
 }
 
+/* ==================== MOSTRAR IMAGEN COMPLETA SIN ZOOM ==================== */
+.hero--only-image {
+  /* 🌟 'contain' obliga a mostrar la imagen 100% completa sin recortarla ni hacerle zoom */
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  
+  /* Color de fondo opcional para rellenar el espacio libre si la imagen no ocupa todo el ancho/alto */
+  background-color: #f8fafc; 
+}
+
+/* En celulares también asegura que mantenga sus proporciones exactas */
+@media (max-width: 768px) {
+  .hero--only-image {
+    background-size: contain !important;
+    background-position: center center !important;
+  }
+}
+
 
 /* ==================== RESPONSIVE HERO ==================== */
 @media (max-width: 992px) {

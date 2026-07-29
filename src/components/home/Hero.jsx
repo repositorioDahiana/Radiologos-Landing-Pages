@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import tecnologiaHero from "../../assets/images/HomeHero1.webp";
 import especialistasHero from "../../assets/images/HomeHero2.webp";
 import clinicaHero from "../../assets/images/HomeHero3.webp";
+import bannerPromocional1 from "../../assets/images/Promocion1.webp";
+
 
 import resultadosIcon from "../../assets/Iconos/resultados.png";
 import agendarIcon from "../../assets/Iconos/consultarita.png";
@@ -11,7 +13,15 @@ import experienciaIcon from "../../assets/Iconos/tiempo.png";
 import sedesIcon from "../../assets/Iconos/sedes.png";
 import pacientesIcon from "../../assets/Iconos/paciente.png";
 
+
 const slides = [
+  {
+    id: 4,
+    image: bannerPromocional1,
+    alt: "Promoción o Banner Informativo",
+    onlyImage: true, 
+  },
+  
   {
     id: 1,
     title: "Tecnología de ",
@@ -41,7 +51,6 @@ const slides = [
   },
 ];
 
-
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const navigate = useNavigate();
@@ -63,105 +72,111 @@ function Hero() {
   }, []);
 
   const slide = slides[currentSlide];
+  const isOnlyImage = slide.onlyImage || slide.id === 4;
 
   return (
     <section
-      className="hero"
+      className={`hero ${isOnlyImage ? "hero--only-image" : ""}`}
       style={{ backgroundImage: `url(${slide.image})` }}
       aria-label={slide.alt}
     >
-      <div className="hero__overlay"></div>
+      {!isOnlyImage && <div className="hero__overlay"></div>}
 
       <div className="hero__container">
-        <div className="hero__content">
-          <h1 className="hero__title">
-            {slide.title}
-            <span className="highlight">{slide.highlight}</span>
-          </h1>
+        {!isOnlyImage && (
+          <div className="hero__content">
+            <h1 className="hero__title">
+              {slide.title}
+              <span className="highlight">{slide.highlight}</span>
+            </h1>
 
-          <p className="hero__description">{slide.description}</p>
+            <p className="hero__description">{slide.description}</p>
 
-          <div className="hero__actions">
-            <a
-              href="https://nexxa.com.co/portal/login"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-secondary"
+            <div className="hero__actions">
+              <a
+                href="https://nexxa.com.co/portal/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+              >
+                <img src={resultadosIcon} alt="" className="btn-icon" />
+                Ver Resultados
+              </a>
+
+              <a
+                href="https://appcedira.com/solicitarcita/public/consultar-cita"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+              >
+                <img
+                  src={agendarIcon}
+                  alt=""
+                  className="btn-icon btn-icon--agendar"
+                />
+                Consultar Cita
+              </a>
+            </div>
+          </div>
+        )}
+
+        {!isOnlyImage && (
+          <div className="hero__stats">
+            {/* 1 - ABOUT */}
+            <div
+              className="hero__statItem"
+              onClick={() => navigate("/about")}
             >
-              <img src={resultadosIcon} alt="" className="btn-icon" />
-              Ver Resultados
+              <img
+                src={experienciaIcon}
+                alt="Años de experiencia"
+                className="hero__statIcon"
+              />
+              <div className="hero__statText">
+                <div className="hero__statNumber">46+</div>
+                <div className="hero__statLabel">Años de Experiencia</div>
+              </div>
+            </div>
+
+            <a href="#ubicacion">
+              <div className="hero__statItem">
+                <img
+                  src={sedesIcon}
+                  alt="Sedes"
+                  className="hero__statIcon hero__statIcon--sedes"
+                />
+                <div className="hero__statText">
+                  <div className="hero__statNumber">11+</div>
+                  <div className="hero__statLabel">Sedes</div>
+                </div>
+              </div>
             </a>
 
-            <a
-              href="https://appcedira.com/solicitarcita/public/consultar-cita"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-secondary"
+            {/* 3 - ABOUT */}
+            <div
+              className="hero__statItem"
+              onClick={() => navigate("/about")}
             >
-              <img src={agendarIcon} alt="" className="btn-icon btn-icon--agendar" />
-              Consultar Cita
-            </a>
-          </div>
-        </div>
-
-        <div className="hero__stats">
-
-          {/* 1 - ABOUT */}
-          <div
-            className="hero__statItem"
-            onClick={() => navigate("/about")}
-          >
-            <img
-              src={experienciaIcon}
-              alt="Años de experiencia"
-              className="hero__statIcon"
-            />
-            <div className="hero__statText">
-              <div className="hero__statNumber">46+</div>
-              <div className="hero__statLabel">Años de Experiencia</div>
+              <img
+                src={pacientesIcon}
+                alt="Pacientes"
+                className="hero__statIcon"
+              />
+              <div className="hero__statText">
+                <div className="hero__statNumber">500K+</div>
+                <div className="hero__statLabel">Pacientes</div>
+              </div>
             </div>
           </div>
+        )}
 
-          {/* 2 - SCROLL A HOME SECTION */}
-          <a href="#ubicacion">
-          <div className="hero__statItem">
-            <img
-              src={sedesIcon}
-              alt="Sedes"
-              className="hero__statIcon hero__statIcon--sedes"
-            />
-            <div className="hero__statText">
-              <div className="hero__statNumber">11+</div>
-              <div className="hero__statLabel">Sedes</div>
-            </div>
-          </div>
-          </a>
+        <button className="nav-arrow left" onClick={prevSlide} aria-label="Anterior">
+          ‹
+        </button>
 
-          {/* 3 - ABOUT */}
-          <div
-            className="hero__statItem"
-            onClick={() => navigate("/about")}
-          >
-            <img
-              src={pacientesIcon}
-              alt="Pacientes"
-              className="hero__statIcon"
-            />
-            <div className="hero__statText">
-              <div className="hero__statNumber">500K+</div>
-              <div className="hero__statLabel">Pacientes</div>
-            </div>
-          </div>
-
-        </div>
-
-          <button className="nav-arrow left" onClick={prevSlide}>
-            ‹
-          </button>
-
-          <button className="nav-arrow right" onClick={nextSlide}>
-            ›
-          </button>
+        <button className="nav-arrow right" onClick={nextSlide} aria-label="Siguiente">
+          ›
+        </button>
       </div>
     </section>
   );
