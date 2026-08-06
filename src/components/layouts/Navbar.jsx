@@ -13,7 +13,7 @@ function Navbar() {
         {/* Logos */}
         <div className="topbar-logos">
           <a
-            href="https://cedicaf.com"
+            href="https://www.cedicaf.com"
             target="_blank"
             rel="noopener noreferrer"
           >
